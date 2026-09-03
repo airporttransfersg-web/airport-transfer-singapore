@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hourly Chauffeur Service | LUXE SG</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#ebe8e1",
+                        "inverse-on-surface": "#f3f0e9",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#574324",
+                        "outline": "#76777b",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#fddeb3",
+                        "primary-fixed-dim": "#c7c6c9",
+                        "primary-container": "#1b1c1e",
+                        "surface": "#fcf9f2",
+                        "tertiary-container": "#131d25",
+                        "secondary": "#715b39",
+                        "on-primary-fixed-variant": "#464749",
+                        "tertiary-fixed-dim": "#bdc8d3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#000000",
+                        "on-secondary-container": "#77613e",
+                        "mist": "#DDD8CE",
+                        "tertiary-fixed": "#d9e4ef",
+                        "background": "#fcf9f2",
+                        "inverse-surface": "#31312c",
+                        "outline-variant": "#c6c6ca",
+                        "on-tertiary-fixed": "#131d25",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e5e2db",
+                        "on-surface-variant": "#45474a",
+                        "destructive": "#9E332D",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f6f3ec",
+                        "on-surface": "#1c1c18",
+                        "primary-fixed": "#e3e2e4",
+                        "on-tertiary-fixed-variant": "#3e4851",
+                        "surface-tint": "#5e5e60",
+                        "paper": "#FFFFFF",
+                        "surface-container": "#f1eee7",
+                        "on-tertiary-container": "#7b8590",
+                        "success": "#315B45",
+                        "surface-variant": "#e5e2db",
+                        "on-secondary-fixed": "#281901",
+                        "on-primary-fixed": "#1b1c1e",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#fddeb3",
+                        "on-background": "#1c1c18",
+                        "secondary-fixed-dim": "#dfc299",
+                        "on-primary-container": "#848386",
+                        "inverse-primary": "#c7c6c9",
+                        "surface-bright": "#fcf9f2",
+                        "primary": "#000000",
+                        "surface-dim": "#dcdad3",
+                        "ink": "#121315",
+                        "ivory": "#F6F3EC",
+                        "brass": "#9B825D"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-desktop": "112px",
+                        "gutter-desktop": "64px",
+                        "section-mobile": "72px",
+                        "base": "8px",
+                        "max-width": "1280px",
+                        "gutter-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-regular": ["Hanken Grotesk"],
+                        "section-heading": ["Geist"],
+                        "label": ["Hanken Grotesk"],
+                        "hero-desktop": ["Geist"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "section-heading-mobile": ["Geist"],
+                        "hero-mobile": ["Geist"],
+                        "eyebrow": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-regular": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "section-heading": ["44px", { "lineHeight": "1.05", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "label": ["14px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "hero-desktop": ["72px", { "lineHeight": "1.0", "letterSpacing": "-0.035em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.55", "fontWeight": "400" }],
+                        "section-heading-mobile": ["32px", { "lineHeight": "1.08", "fontWeight": "500" }],
+                        "hero-mobile": ["44px", { "lineHeight": "1.02", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "eyebrow": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.ivory');
+            color: theme('colors.ink');
+        }
+        .text-ink { color: theme('colors.ink'); }
+        .bg-ink { background-color: theme('colors.ink'); }
+        .border-ink { border-color: theme('colors.ink'); }
+        .text-brass { color: theme('colors.brass'); }
+        .border-brass { border-color: theme('colors.brass'); }
+        .bg-paper { background-color: theme('colors.paper'); }
+        
+        .hairline-b { border-bottom: 1px solid theme('colors.mist'); }
+        .hairline-t { border-top: 1px solid theme('colors.mist'); }
+        
+        .btn-primary {
+            @apply inline-flex items-center justify-center h-[52px] px-8 bg-ink text-on-tertiary font-label rounded transition-opacity hover:opacity-90;
+        }
+        .btn-secondary {
+            @apply inline-flex items-center justify-center h-[52px] px-8 border border-ink text-ink font-label rounded transition-colors hover:bg-surface-container-high;
+        }
+    </style>
+</head>
+<body class="font-body-regular antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-primary-container text-primary dark:text-primary-fixed docked full-width top-0 border-b border-mist dark:border-outline-variant flat no shadows">
+<div class="flex justify-between items-center px-gutter-desktop max-w-max-width mx-auto h-[72px]">
+<a class="font-section-heading text-section-heading-mobile tracking-tighter text-tertiary dark:text-on-primary-fixed" href="#">LUXE SG</a>
+<div class="hidden md:flex items-center space-x-8 font-label">
+<a class="text-tertiary dark:text-on-primary-fixed border-b-2 border-secondary pb-1" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Fleet &amp; Rates</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Blog</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden lg:inline-flex items-center justify-center h-10 px-4 text-sm font-label border border-mist hover:border-secondary transition-colors text-ink">Book Online</button>
+<button class="btn-primary h-10 px-6 text-sm">Request a Quote</button>
+<button aria-label="Call" class="text-ink hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">call</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Breadcrumb -->
+<div class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop py-8">
+<nav class="text-sm font-label text-on-surface-variant flex items-center space-x-2">
+<a class="hover:text-ink" href="#">Home</a>
+<span class="text-mist">/</span>
+<a class="hover:text-ink" href="#">Services</a>
+<span class="text-mist">/</span>
+<span class="text-ink">Hourly Chauffeur Service</span>
+</nav>
+</div>
+<!-- Hero Section -->
+<header class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop mb-section-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+<div class="lg:col-span-6 space-y-8">
+<p class="font-eyebrow text-eyebrow text-brass uppercase">HOURLY CHAUFFEUR SERVICE</p>
+<h1 class="font-hero-mobile md:font-hero-desktop text-hero-mobile md:text-[56px] leading-[1.05] text-ink tracking-tight">
+                    A chauffeur and vehicle for the time your itinerary requires.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Share the schedule, passenger requirements and expected duration so the appropriate vehicle and quotation can be confirmed.
+                </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<button class="btn-primary">Request a Quote</button>
+<button class="btn-secondary">Book Online</button>
+<a class="font-label text-ink hover:text-brass underline decoration-mist hover:decoration-brass transition-colors px-4 py-2" href="#">Call Us</a>
+</div>
+</div>
+<div class="lg:col-span-6 h-[400px] lg:h-[600px] bg-surface-container-high rounded relative overflow-hidden">
+<img alt="Hourly Chauffeur Vehicle in Singapore" class="absolute inset-0 w-full h-full object-cover grayscale opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx88C7yEkZ9VR3P045vLji49VV7TS7dwbKsTUq72L-sxWOaPn-Ag-nQSk0PXg-ptxrhGbiVLmZqnlZ_yZjvHQi6oFMAByc_rF8JG18V8RuDfP5BdsC2W2I2mc2EZgHY7wm8IGQjjKXz6KoXooOx3qXViaaX-0mr1D1UwBn6EKaAKIY_cKzLJTnJEICPIsXI3TbGy1GyykgusBdn3GIFSp3iubAlVXzWbKVW7ErLuHvT-MMi1BKDUxVq1D4q5M5g2XPzn-WqpnQSOA"/>
+</div>
+</div>
+</header>
+<!-- MANDATORY BOOKING FRAME -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop mb-section-desktop">
+<div class="bg-paper border border-mist rounded p-8 md:p-12 shadow-sm min-h-[700px] flex flex-col">
+<div class="text-center mb-12">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading mb-2">Plan an hourly chauffeur booking</h2>
+<p class="font-label text-sm text-on-surface-variant uppercase tracking-wider">Secure booking application or quote form — <span class="text-brass">VERIFY provider and source</span></p>
+</div>
+<div class="flex-grow flex flex-col justify-center items-center max-w-2xl mx-auto w-full space-y-8">
+<!-- Skeleton Loader -->
+<div class="w-full space-y-6">
+<div class="h-12 bg-surface-container-high animate-pulse rounded"></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="h-12 bg-surface-container-high animate-pulse rounded"></div>
+<div class="h-12 bg-surface-container-high animate-pulse rounded"></div>
+</div>
+<div class="h-32 bg-surface-container-high animate-pulse rounded"></div>
+</div>
+<div class="w-full hairline-t pt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="btn-primary w-full sm:w-auto">Request a Quote</button>
+<button class="btn-secondary w-full sm:w-auto">Call Us</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-tertiary dark:bg-surface-container-lowest text-on-tertiary dark:text-on-surface full-width bottom-0 bg-tertiary dark:bg-surface-container-lowest flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-base px-gutter-desktop py-section-desktop max-w-max-width mx-auto">
+<div class="md:col-span-1">
+<a class="font-section-heading text-section-heading-mobile text-on-tertiary" href="#">LUXE SG</a>
+<p class="mt-4 text-sm font-body-regular text-on-tertiary-container dark:text-on-surface-variant">© 2026 Luxe SG Transport. All rights reserved.</p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-8 md:justify-end font-body-regular">
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-200" href="#">FAQ</a>
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Careers</a>
+<a class="text-on-tertiary-container dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Sustainability</a>
+</div>
+</div>
+</footer>
+</body></html>

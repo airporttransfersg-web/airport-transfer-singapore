@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Airport Transfers in Singapore | Airport Transfer SG</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#76777b",
+                    "on-primary-fixed": "#1b1c1e",
+                    "tertiary": "#000000",
+                    "primary-fixed": "#e3e2e4",
+                    "on-error-container": "#93000a",
+                    "surface": "#fcf9f2",
+                    "primary-container": "#1b1c1e",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#ebe8e1",
+                    "surface-variant": "#e5e2db",
+                    "surface-bright": "#fcf9f2",
+                    "on-surface": "#1c1c18",
+                    "on-background": "#1c1c18",
+                    "tertiary-fixed": "#d9e4ef",
+                    "mist": "#DDD8CE",
+                    "tertiary-fixed-dim": "#bdc8d3",
+                    "on-primary-container": "#848386",
+                    "success": "#315B45",
+                    "on-secondary-fixed": "#281901",
+                    "on-primary-fixed-variant": "#464749",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f6f3ec",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#77613e",
+                    "outline-variant": "#c6c6ca",
+                    "background": "#fcf9f2",
+                    "secondary-fixed-dim": "#dfc299",
+                    "surface-dim": "#dcdad3",
+                    "on-surface-variant": "#45474a",
+                    "surface-tint": "#5e5e60",
+                    "primary-fixed-dim": "#c7c6c9",
+                    "inverse-on-surface": "#f3f0e9",
+                    "error": "#ba1a1a",
+                    "surface-container": "#f1eee7",
+                    "on-tertiary-fixed": "#131d25",
+                    "error-container": "#ffdad6",
+                    "destructive": "#9E332D",
+                    "surface-container-highest": "#e5e2db",
+                    "inverse-primary": "#c7c6c9",
+                    "tertiary-container": "#131d25",
+                    "on-secondary-fixed-variant": "#574324",
+                    "on-primary": "#ffffff",
+                    "paper": "#FFFFFF",
+                    "primary": "#000000",
+                    "secondary-container": "#fddeb3",
+                    "secondary": "#715b39",
+                    "on-tertiary-container": "#7b8590",
+                    "inverse-surface": "#31312c",
+                    "secondary-fixed": "#fddeb3",
+                    "on-tertiary-fixed-variant": "#3e4851"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter-mobile": "20px",
+                    "base": "8px",
+                    "section-desktop": "112px",
+                    "section-mobile": "72px",
+                    "max-width": "1280px",
+                    "gutter-desktop": "64px"
+            },
+            "fontFamily": {
+                    "label": [
+                            "Hanken Grotesk"
+                    ],
+                    "hero-desktop": [
+                            "Geist"
+                    ],
+                    "eyebrow": [
+                            "Hanken Grotesk"
+                    ],
+                    "section-heading": [
+                            "Geist"
+                    ],
+                    "body-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "section-heading-mobile": [
+                            "Geist"
+                    ],
+                    "hero-mobile": [
+                            "Geist"
+                    ],
+                    "body-regular": [
+                            "Hanken Grotesk"
+                    ]
+            },
+            "fontSize": {
+                    "label": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "hero-desktop": [
+                            "72px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "-0.035em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "eyebrow": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.12em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "section-heading": [
+                            "44px",
+                            {
+                                    "lineHeight": "1.05",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.55",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "section-heading-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.08",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "hero-mobile": [
+                            "44px",
+                            {
+                                    "lineHeight": "1.02",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-regular": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .focus-outline:focus-within {
+            outline: 2px solid theme('colors.secondary-container');
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="w-[390px] mx-auto overflow-x-hidden border-x border-mist relative bg-surface">
+<!-- Mobile Navigation Drawer (Hidden by default, structure for interactivity) -->
+<div class="fixed inset-y-0 left-0 w-80 bg-surface dark:bg-surface-container z-[60] shadow-sm flex flex-col py-8 px-4 gap-4 transform -translate-x-full transition-transform duration-300" id="nav-drawer">
+<div class="flex items-center justify-between mb-8 px-4">
+<span class="font-hero-mobile text-section-heading-mobile text-primary">AIRPORT TRANSFER SG</span>
+<button class="text-on-surface p-2" id="close-drawer">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 px-4 py-3 bg-primary text-on-primary rounded-sm font-label text-label transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">airport_shuttle</span>
+                Services
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-mist/20 rounded-sm font-label text-label transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">directions_car</span>
+                Fleet &amp; Rates
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-mist/20 rounded-sm font-label text-label transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">info</span>
+                About
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-mist/20 rounded-sm font-label text-label transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">article</span>
+                Blog
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-mist/20 rounded-sm font-label text-label transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">mail</span>
+                Contact
+            </a>
+</nav>
+</div>
+<div class="fixed inset-0 bg-black/50 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-[390px] z-50 bg-surface border-b border-mist flex justify-between items-center px-gutter-mobile h-16 mx-auto">
+<button class="text-primary hover:opacity-80 transition-opacity active:scale-95 duration-200" id="open-drawer">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<span class="font-hero-mobile text-label tracking-widest text-primary uppercase">AIRPORT TRANSFER SG</span>
+<button class="font-label text-label text-primary hover:opacity-80 transition-opacity active:scale-95 duration-200">
+            Request Quote
+        </button>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="px-gutter-mobile pt-12 pb-8 flex flex-col gap-6">
+<div class="flex flex-col gap-4">
+<span class="font-eyebrow text-eyebrow text-on-surface uppercase tracking-widest">SINGAPORE AIRPORT &amp; CHAUFFEUR SERVICES</span>
+<h1 class="font-hero-mobile text-hero-mobile text-primary">Airport transfers in Singapore, handled properly.</h1>
+</div>
+<div class="flex flex-col gap-3 mt-4">
+<button class="w-full h-12 bg-primary text-on-primary font-label text-label rounded flex items-center justify-center hover:bg-on-surface-variant transition-colors">
+                    Request a Quote
+                </button>
+<div class="grid grid-cols-2 gap-3">
+<button class="h-12 border border-primary text-primary font-label text-label rounded flex items-center justify-center hover:bg-mist/30 transition-colors">
+                        Book Online
+                    </button>
+<a class="h-12 border border-mist text-primary font-label text-label rounded flex items-center justify-center hover:bg-mist/30 transition-colors underline underline-offset-4 decoration-mist" href="tel:+">
+                        Call Us
+                    </a>
+</div>
+</div>
+</section>
+<!-- Hero Image -->
+<div class="w-full h-[400px] bg-mist">
+<img class="w-full h-full object-cover grayscale-[0.2]" data-alt="A professional chauffeur in a dark suit standing inside Singapore Changi Airport holding a name sign. The setting is a modern, bright airport terminal with large glass windows and natural daylight. The mood is welcoming and highly professional, reflecting premium transport services in Singapore." src="https://lh3.googleusercontent.com/aida/AP1WRLuSxOonbUinBMlcppk6vsNaokZlvd3vJBfCFGF8H39mDA05gjx2ZJojNpj8Cr0q3Ky1sibWolpRzeFI7CECmz8ciL4QJ64OHuh_JdgD0RJ0rZgrAm4ovot4cX_VhQmP-TsGxYo1LdUJ-_G-pAC8RLPHN9_f_rnrLSaLI59rqS3G483fmT9uuX-jp6mBe-RFRwkpfek92jYtrCTQkdvn4GidH-nJXv-D5yLbHOUJTo5Bc1UHzc-RMvvp-t4"/>
+</div>
+<!-- Enquiry Module (Integrated stacked form) -->
+<section class="px-gutter-mobile py-section-mobile bg-surface-container-low border-b border-mist">
+<div class="bg-paper p-6 rounded shadow-sm flex flex-col gap-5 border border-mist focus-outline">
+<h2 class="font-section-heading-mobile text-section-heading-mobile text-primary mb-2">Plan your journey</h2>
+<div class="flex flex-col gap-1">
+<label class="font-label text-label text-on-surface-variant">Service type</label>
+<select class="h-12 w-full border-mist rounded bg-paper text-body-regular font-body-regular text-on-surface focus:ring-0 focus:border-secondary-container">
+<option>Airport Transfer</option>
+<option>Hourly Chauffeur</option>
+<option>City Transfer</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label text-label text-on-surface-variant">Pickup</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">location_on</span>
+<input class="h-12 w-full pl-10 border-mist rounded bg-paper text-body-regular font-body-regular text-on-surface focus:ring-0 focus:border-secondary-container" placeholder="Changi Airport (SIN)" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label text-label text-on-surface-variant">Destination</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">location_city</span>
+<input class="h-12 w-full pl-10 border-mist rounded bg-paper text-body-regular font-body-regular text-on-surface focus:ring-0 focus:border-secondary-container" placeholder="Enter hotel or address" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-1">
+<label class="font-label text-label text-on-surface-variant">Date &amp; time</label>
+<input class="h-12 w-full border-mist rounded bg-paper text-body-regular font-body-regular text-on-surface focus:ring-0 focus:border-secondary-container" type="datetime-local"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label text-label text-on-surface-variant">Passengers</label>
+<input class="h-12 w-full border-mist rounded bg-paper text-body-regular font-body-regular text-on-surface focus:ring-0 focus:border-secondary-container" min="1" type="number" value="1"/>
+</div>
+</div>
+<button class="w-full h-12 mt-2 bg-primary text-on-primary font-label text-label rounded flex items-center justify-center hover:bg-on-surface-variant transition-colors">
+                    Request a Quote
+                </button>
+</div>
+</section>
+<!-- Section 1: Intro -->
+<section class="px-gutter-mobile py-section-mobile flex flex-col gap-6">
+<h2 class="font-section-heading-mobile text-section-heading-mobile text-primary">From touchdown to destination, without the guesswork.</h2>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+                We provide structured, reliable transportation for arriving passengers and corporate clients in Singapore. Our fleet is maintained to exacting standards, and our chauffeurs are trained for quiet, professional service. VERIFY — details to be confirmed.
+            </p>
+</section>
+<!-- Section 2: Services List -->
+<section class="py-8">
+<div class="flex flex-col border-t border-mist">
+<div class="px-gutter-mobile py-6 border-b border-mist flex flex-col gap-2">
+<h3 class="font-label text-label text-primary text-lg">Singapore Airport Transfers</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant text-sm">Direct, private transfers between Changi Airport and your destination. VERIFY — details to be confirmed.</p>
+</div>
+<div class="px-gutter-mobile py-6 border-b border-mist flex flex-col gap-2">
+<h3 class="font-label text-label text-primary text-lg">Hourly Chauffeur Service</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant text-sm">Flexible transportation by the hour for multiple stops or meetings. VERIFY — details to be confirmed.</p>
+</div>
+<div class="px-gutter-mobile py-6 border-b border-mist flex flex-col gap-2">
+<h3 class="font-label text-label text-primary text-lg">Corporate Transportation</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant text-sm">Managed accounts and dedicated service for business travelers. VERIFY — details to be confirmed.</p>
+</div>
+<div class="px-gutter-mobile py-6 border-b border-mist flex flex-col gap-2">
+<h3 class="font-label text-label text-primary text-lg">Hotel &amp; City Transfers</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant text-sm">Point-to-point transfers within Singapore. VERIFY — details to be confirmed.</p>
+</div>
+<div class="px-gutter-mobile py-6 border-b border-mist flex flex-col gap-2">
+<h3 class="font-label text-label text-primary text-lg">Events &amp; Group Transportation</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant text-sm">Coordinated transport for conferences and large groups. VERIFY — details to be confirmed.</p>
+</div>
+<div class="px-gutter-mobile py-6 border-b border-mist flex flex-col gap-2">
+<h3 class="font-label text-label text-primary text-lg">VIP Airport Assistance</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant text-sm">Fast-track and bespoke terminal services. VERIFY — details to be confirmed.</p>
+</div>
+</div>
+</section>
+<!-- Section 3: Fleet -->
+<section class="py-section-mobile bg-surface-container-low">
+<div class="px-gutter-mobile mb-8">
+<h2 class="font-section-heading-mobile text-section-heading-mobile text-primary">Our Fleet</h2>
+</div>
+<div class="flex flex-col">
+<!-- Business Sedan -->
+<div class="flex flex-col border-b border-mist pb-8">
+<img class="w-full h-56 object-cover mb-4" data-alt="A sleek, black premium business sedan parked outside a luxury hotel in Singapore. The lighting is soft evening light, highlighting the pristine condition of the vehicle. Minimalist professional aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw5nIBxxoi-Z4D2IeiIkML14tIaZfVhFErACuTbJ4Q-YGQFU-QVz2tmtqIxvdwJgihotbHbtTOLZFICNyS9_-Zj8-abSEc0iN3wacKQcD1g4JsQ2Zk9FTr-YvaIolwAOFflEFDUXHKjNv2rHV_l-popSpz_g8BRErs4OcrA7N237H6bpf28rX5DdurqczTUpvU3HxTfcW_QimkAHgmRar2mCjkTh6BXp72DrdH1bFax4JK9giv0udhelpa8ezNWAGAnLmH19H-lWc"/>
+<div class="px-gutter-mobile flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<h3 class="font-section-heading-mobile text-2xl text-primary">Business Sedan</h3>
+<div class="flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span class="font-label text-sm">up to 3</span>
+</div>
+</div>
+<p class="font-body-regular text-on-surface-variant text-sm">Mercedes-Benz E-Class, BMW 5 Series model or equivalent.</p>
+<a class="font-label text-label text-primary underline underline-offset-4 decoration-mist hover:decoration-primary mt-2" href="#">Request current rates</a>
+</div>
+</div>
+<!-- Premium MPV -->
+<div class="flex flex-col border-b border-mist py-8">
+<img class="w-full h-56 object-cover mb-4" data-alt="A high-end black luxury MPV (multi-purpose vehicle) waiting at the arrivals curb of Changi Airport Terminal. Modern architecture in the background. Clean, professional documentary style photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYesgC2_26WK2-lhYVlSBIXIoa0ig8FEZoquxfy7vJHLL3MFb_N8glRMq3J9Tcb5TQIxS7dD4Bok1sV1tAloQ9jBSaoJWZSan6LLbB8foPKcIOVKBqSJmFeb5qZIM2wYU4PVXrWqK5vocG824nwU7fSTxcBxThF3JAYHxgFqx33QrP19NokY5oNK5_37yC1S1B9SkyJWc-XfznKO6naDaoXNmyHmeEaNDk-GicJg48-9ytXAMS6tFUPTa2uJ_hutDqnbKSxTRgJz4"/>
+<div class="px-gutter-mobile flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<h3 class="font-section-heading-mobile text-2xl text-primary">Premium MPV</h3>
+<div class="flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span class="font-label text-sm">up to 6</span>
+</div>
+</div>
+<p class="font-body-regular text-on-surface-variant text-sm">Toyota Alphard, Vellfire model or equivalent.</p>
+<a class="font-label text-label text-primary underline underline-offset-4 decoration-mist hover:decoration-primary mt-2" href="#">Request current rates</a>
+</div>
+</div>
+<!-- Executive Van -->
+<div class="flex flex-col border-b border-mist py-8">
+<img class="w-full h-56 object-cover mb-4" data-alt="A spacious, dark-colored executive passenger van parked in a corporate district of Singapore. Tall modern buildings provide context. The image conveys reliability and capacity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaFbhMVXh06CvGf13cfMhzJZ4sLtZ9S4-TG5H6Ew8ENacPOgeyBCyoVZCYrU2R8qd3qL-KF_-XiU4vOtYU53eYR_vFhG-uA3wn4nUXSZ2VKgOTKwzTgxO63c3uc7BB9KeCf9Zeq1-0cnZ8evIIUCcixWX5G1XGIvRzrrYgWq7EYa7GLaWBtn_sXOtPz6X-I858D9fmbB3SJrc9WBvimc5EkyeHiuw52aDzaPCfQk5iy0-oI8Lyy4RvDJ33J5RImm2j4xRA_4AhS4E"/>
+<div class="px-gutter-mobile flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<h3 class="font-section-heading-mobile text-2xl text-primary">Executive Van</h3>
+<div class="flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span class="font-label text-sm">up to 7</span>
+</div>
+</div>
+<p class="font-body-regular text-on-surface-variant text-sm">Mercedes-Benz V-Class model or equivalent.</p>
+<a class="font-label text-label text-primary underline underline-offset-4 decoration-mist hover:decoration-primary mt-2" href="#">Request current rates</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Audience -->
+<section class="px-gutter-mobile py-section-mobile border-b border-mist">
+<h2 class="font-section-heading-mobile text-section-heading-mobile text-primary mb-8">One service, several ways to travel</h2>
+<ul class="flex flex-col gap-4 font-body-regular text-body-regular text-on-surface">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                    Individual Travellers
+                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                    Corporate Teams
+                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                    Hotels
+                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                    Travel Partners
+                </li>
+</ul>
+</section>
+<!-- Section 5: Process -->
+<section class="px-gutter-mobile py-section-mobile bg-surface">
+<div class="flex flex-col gap-12">
+<div class="flex flex-col gap-2">
+<span class="font-hero-mobile text-hero-mobile text-mist/50 block mb-2">1</span>
+<h3 class="font-section-heading-mobile text-2xl text-primary">Share your journey</h3>
+<p class="font-body-regular text-on-surface-variant">Provide your flight details and destination. We monitor schedules to adjust for early or delayed arrivals.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-hero-mobile text-hero-mobile text-mist/50 block mb-2">2</span>
+<h3 class="font-section-heading-mobile text-2xl text-primary">Confirm the right vehicle</h3>
+<p class="font-body-regular text-on-surface-variant">Select from our fleet based on your passenger count and luggage requirements. Rates are fixed at booking.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-hero-mobile text-hero-mobile text-mist/50 block mb-2">3</span>
+<h3 class="font-section-heading-mobile text-2xl text-primary">Meet your chauffeur</h3>
+<p class="font-body-regular text-on-surface-variant">Your chauffeur will be waiting at the arrivals hall with a name board, ready to assist with your luggage.</p>
+</div>
+</div>
+</section>
+<!-- Section 6: Trust -->
+<section class="px-gutter-mobile py-12 bg-surface-container-high border-y border-mist text-center">
+<p class="font-body-regular text-on-surface-variant italic">Client logos and verified reviews will be added here.</p>
+</section>
+<!-- Section 7: FAQ -->
+<section class="px-gutter-mobile py-section-mobile">
+<h2 class="font-section-heading-mobile text-section-heading-mobile text-primary mb-8">Questions</h2>
+<div class="flex flex-col border-t border-mist">
+<details class="group py-4 border-b border-mist">
+<summary class="font-label text-label text-primary cursor-pointer list-none flex justify-between items-center">
+                        How far in advance should I book?
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-regular text-on-surface-variant text-sm">VERIFY — policy details to be confirmed.</p>
+</details>
+<details class="group py-4 border-b border-mist">
+<summary class="font-label text-label text-primary cursor-pointer list-none flex justify-between items-center">
+                        What happens if my flight is delayed?
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-regular text-on-surface-variant text-sm">VERIFY — policy details to be confirmed.</p>
+</details>
+<details class="group py-4 border-b border-mist">
+<summary class="font-label text-label text-primary cursor-pointer list-none flex justify-between items-center">
+                        Where do I meet my chauffeur at Changi Airport?
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-regular text-on-surface-variant text-sm">VERIFY — policy details to be confirmed.</p>
+</details>
+<details class="group py-4 border-b border-mist">
+<summary class="font-label text-label text-primary cursor-pointer list-none flex justify-between items-center">
+                        Are your rates inclusive of tolls and parking?
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-regular text-on-surface-variant text-sm">VERIFY — policy details to be confirmed.</p>
+</details>
+<details class="group py-4 border-b border-mist">
+<summary class="font-label text-label text-primary cursor-pointer list-none flex justify-between items-center">
+                        Can you provide child seats?
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-regular text-on-surface-variant text-sm">VERIFY — policy details to be confirmed.</p>
+</details>
+<details class="group py-4 border-b border-mist">
+<summary class="font-label text-label text-primary cursor-pointer list-none flex justify-between items-center">
+                        What is your cancellation policy?
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-regular text-on-surface-variant text-sm">VERIFY — policy details to be confirmed.</p>
+</details>
+</div>
+</section>
+<!-- Section 8: Final CTA -->
+<section class="px-gutter-mobile py-section-mobile bg-primary text-on-primary">
+<div class="flex flex-col gap-8 text-center">
+<h2 class="font-section-heading-mobile text-section-heading-mobile">Tell us where you need to be.</h2>
+<div class="flex flex-col gap-4">
+<button class="w-full h-12 bg-on-primary text-primary font-label text-label rounded flex items-center justify-center hover:bg-surface-variant transition-colors">
+                        Request a Quote
+                    </button>
+<button class="w-full h-12 border border-on-primary text-on-primary font-label text-label rounded flex items-center justify-center hover:bg-on-primary/10 transition-colors">
+                        Book Online
+                    </button>
+<a class="font-label text-label text-on-primary underline underline-offset-4 decoration-on-primary/50 hover:decoration-on-primary mt-2" href="tel:+">
+                        Call Us
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary w-[390px] mx-auto py-section-mobile flex flex-col items-center gap-8 px-gutter-mobile text-center border-t border-on-tertiary-container/20">
+<span class="font-hero-desktop text-section-heading text-on-tertiary uppercase tracking-widest text-2xl">AIRPORT TRANSFER SG</span>
+<nav class="flex flex-col gap-4">
+<a class="font-label text-eyebrow text-on-tertiary-container hover:text-on-tertiary transition-colors opacity-100 hover:opacity-80" href="#">Privacy Policy</a>
+<a class="font-label text-eyebrow text-on-tertiary-container hover:text-on-tertiary transition-colors opacity-100 hover:opacity-80" href="#">Terms of Service</a>
+<a class="font-label text-eyebrow text-on-tertiary-container hover:text-on-tertiary transition-colors opacity-100 hover:opacity-80" href="#">FAQ</a>
+</nav>
+<p class="font-label text-eyebrow text-on-tertiary-container mt-4">
+            © 2026 AIRPORT TRANSFER SG. All rights reserved.
+        </p>
+</footer>
+<script>
+        // Simple drawer logic
+        document.getElementById('open-drawer').addEventListener('click', () => {
+            document.getElementById('nav-drawer').classList.remove('-translate-x-full');
+            const overlay = document.getElementById('drawer-overlay');
+            overlay.classList.remove('hidden');
+            // short delay to allow display block to apply before opacity transition
+            setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+        });
+
+        const closeDrawer = () => {
+            document.getElementById('nav-drawer').classList.add('-translate-x-full');
+            const overlay = document.getElementById('drawer-overlay');
+            overlay.classList.add('opacity-0');
+            setTimeout(() => overlay.classList.add('hidden'), 300);
+        };
+
+        document.getElementById('close-drawer').addEventListener('click', closeDrawer);
+        document.getElementById('drawer-overlay').addEventListener('click', closeDrawer);
+    </script>
+</body></html>

@@ -1,0 +1,55 @@
+---
+import type { PageEntry } from "../lib/content";
+
+interface Props {
+  entry: PageEntry;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const dateLabel = data.datePublished?.toLocaleDateString("en-SG", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+---
+
+<section class="mx-auto mb-section-gap max-w-site px-margin-mobile md:px-margin-desktop" aria-label="Featured article">
+  <div class="grid grid-cols-1 items-center gap-gutter md:grid-cols-2">
+    <div class="relative h-[300px] w-full overflow-hidden rounded-lg md:h-[500px]">
+      <img
+        class="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+        src={data.image}
+        alt={data.imageAlt ?? data.title}
+        width={1024}
+        height={1000}
+      />
+      <div class="absolute inset-0 bg-deep-charcoal/10 pointer-events-none" aria-hidden="true"></div>
+    </div>
+    <div class="flex flex-col justify-center px-0 md:px-8">
+      <span class="mb-4 font-body text-label-caps uppercase tracking-widest text-champagne-gold">Featured Guide</span>
+      <h2 class="mb-4 font-display text-headline-lg leading-tight text-primary">{data.title.split(":")[0]}</h2>
+      <p class="mb-6 font-body text-body-md leading-relaxed text-on-surface-variant">{data.description}</p>
+      <div class="mb-8 flex items-center space-x-4 font-body text-sm text-on-surface-variant">
+        {dateLabel && (
+          <span class="flex items-center space-x-1">
+            <span class="material-symbols-outlined text-lg" aria-hidden="true">calendar_today</span>
+            <span>{dateLabel}</span>
+          </span>
+        )}
+        {data.readingTime && (
+          <span class="flex items-center space-x-1">
+            <span class="material-symbols-outlined text-lg" aria-hidden="true">schedule</span>
+            <span>{data.readingTime} read</span>
+          </span>
+        )}
+      </div>
+      <a
+        class="inline-flex w-fit border border-champagne-gold/30 bg-transparent px-8 py-4 font-body text-label-caps uppercase tracking-widest text-primary transition-colors duration-300 hover:bg-champagne-gold/10"
+        href={data.slug}
+      >
+        Read the Guide
+      </a>
+    </div>
+  </div>
+</section>

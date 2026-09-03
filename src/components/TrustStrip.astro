@@ -1,0 +1,26 @@
+---
+import site from "../../site.config";
+
+const icons = ["verified", "schedule", "airport_shuttle", "shield_person"] as const;
+---
+
+<section class="border-b border-champagne-gold/20 bg-surface-container-lowest py-8">
+  <div class="mx-auto max-w-site px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-wrap items-center justify-between gap-8 opacity-70">
+      {
+        site.trustSignals.map((signal, index) => (
+          <div class="flex items-center gap-3">
+            <span
+              class="material-symbols-outlined text-2xl text-champagne-gold"
+              style="font-variation-settings: 'FILL' 1;"
+              aria-hidden="true"
+            >
+              {icons[index % icons.length]}
+            </span>
+            <span class="font-body text-label-caps text-on-surface">{signal}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

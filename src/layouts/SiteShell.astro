@@ -1,0 +1,45 @@
+---
+import site from "../../site.config";
+import SeoHead from "../components/SeoHead.astro";
+import SiteNav from "../components/SiteNav.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  pageType?: string;
+  noindex?: boolean;
+  image?: string;
+  breadcrumbs?: Array<{ label: string; href: string | null }>;
+}
+
+const { title, description, path, pageType, noindex, image, breadcrumbs } =
+  Astro.props;
+const stagingNoindex = import.meta.env.PUBLIC_SITE_NOINDEX === "true";
+---
+
+<!doctype html>
+<html lang={site.locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content={site.theme.ink} />
+    <SeoHead
+      title={title}
+      description={description}
+      path={path}
+      pageType={pageType}
+      noindex={stagingNoindex || noindex}
+      image={image}
+      breadcrumbs={breadcrumbs}
+    />
+  </head>
+  <body class="flex min-h-screen flex-col bg-ivory font-body text-ink antialiased">
+    <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:bg-ink focus:px-4 focus:py-2 focus:text-ivory" href="#main">Skip to content</a>
+    <SiteNav currentPath={path} />
+    <main id="main" class="flex-grow pt-[72px]"><slot /></main>
+    <SiteFooter />
+  </body>
+</html>

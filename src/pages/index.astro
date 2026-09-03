@@ -1,0 +1,118 @@
+---
+import SiteShell from "../layouts/SiteShell.astro";
+import BookingIframe from "../components/BookingIframe.astro";
+import { pagesOfType } from "../lib/content";
+import site from "../../site.config";
+import {
+  audience, bookingExamples, bookingWindows, comparisons, coverage, faq, mistakes,
+  quickFacts, routes, travelNotes, vehicleFit, vehicleRates,
+} from "../data/homepage";
+
+const services = await pagesOfType("service");
+const fleet = [
+  { name: "Business Sedan", image: "/images/fleet/webp/mercedes-s-class-portrait-plate-safe.webp" },
+  { name: "Executive MPV", image: "/images/fleet/webp/toyota-alphard-plate-safe.webp" },
+  { name: "Executive Van", image: "/images/fleet/webp/mercedes-v-class-pair-plate-safe.webp" },
+];
+---
+
+<SiteShell
+  title="Airport Transfer Singapore | Private Changi Transfers"
+  description="Private airport transfer in Singapore with flight tracking, meet-and-greet at arrivals and a fixed fare confirmed before travel."
+  path="/"
+>
+  <section class="site-wrap grid min-h-[650px] gap-10 py-12 md:grid-cols-12 md:items-center md:py-20">
+    <div class="md:col-span-6">
+      <h1 class="display">Airport transfer Singapore</h1>
+      <p class="mt-7 max-w-xl text-lg leading-8 text-muted">An airport transfer in Singapore is a pre-booked private car that meets your flight at Changi or Seletar and drives you directly to your address, at a price agreed before you travel.</p>
+      <p class="mt-4 max-w-xl leading-7 text-muted">Airport Transfer Singapore provides a chauffeured service rather than a booking marketplace. The vehicle, driver and fare are confirmed as part of the booking instead of being matched to whichever car happens to be nearby when you land.</p>
+      <p class="mt-4 max-w-xl leading-7 text-muted">Every arrival booking is planned against the live flight schedule. Enter your flight and journey details for a fixed quotation, or contact the team directly when your itinerary has more than one stop.</p>
+      <div class="mt-9 flex flex-wrap gap-3">
+        <a class="btn-primary" href="#booking">Request a Quote</a>
+        <a class="btn-secondary" href={site.booking.url}>Book Online</a>
+      </div>
+    </div>
+    <div class="md:col-span-6">
+      <img class="h-[420px] w-full object-cover md:h-[560px]" src="/images/fleet/webp/fleet-lineup-s-class-v-class-wide-plate-safe.webp" alt="Black chauffeur vehicles from the Singapore fleet with registration plates removed" width="720" height="560" fetchpriority="high" decoding="async" />
+    </div>
+  </section>
+
+  <section class="border-y border-mist bg-paper py-14 md:py-18">
+    <div class="site-wrap grid gap-10 lg:grid-cols-[.72fr_1.28fr]">
+      <div><h2 class="section-title">Your transfer, at a glance</h2><p class="mt-4 max-w-md leading-7 text-muted">The details most travellers need before they decide.</p></div>
+      <dl class="fact-list">{quickFacts.map(([term, detail]) => <div><dt>{term}</dt><dd>{detail}</dd></div>)}</dl>
+    </div>
+  </section>
+
+  <BookingIframe showVerificationNote={false} />
+
+  <section class="site-wrap content-section grid gap-10 lg:grid-cols-12">
+    <div class="lg:col-span-4"><h2 class="section-title">What is an airport transfer in Singapore?</h2></div>
+    <div class="prose-editorial lg:col-span-7 lg:col-start-6">
+      <p>An airport transfer is a pre-arranged, one-way private journey between an airport and a fixed address, booked before the traveller arrives and priced as a single fare for the vehicle rather than per passenger. In Singapore, that means a Changi or Seletar pickup with a named driver, a confirmed vehicle class and a fare agreed before travel. Bookings usually take one of three forms: an arrival transfer, a departure transfer, or a round trip where the same operator handles both legs.</p>
+      <p>The terminology varies between travellers. Some people search for a private airport transfer, while others call the same service a chauffeur service, limousine transfer, car service or black car. All describe a pre-booked private vehicle with a driver. None describes a shared shuttle or coach seat sold per passenger, which is a different type of journey.</p>
+      <p>The practical difference from ride-hailing is that the commitment happens in advance. A Grab or Gojek booking is usually requested after customs, when demand can be highest and the available vehicle may not fit the group’s luggage. A private transfer fixes the vehicle and fare earlier, holds the pickup against the flight number and places the driver inside the terminal rather than at a kerbside pickup bay.</p>
+    </div>
+  </section>
+
+  <section class="bg-black py-20 text-white md:py-28">
+    <div class="site-wrap">
+      <div class="grid gap-8 lg:grid-cols-12"><h2 class="section-title lg:col-span-5">How much does an airport transfer cost?</h2><div class="prose-dark lg:col-span-6 lg:col-start-7"><p class="text-lg leading-8 text-white/75">A private airport transfer in Singapore starts at S$90 for a Premium MPV between Changi and the city centre. It is quoted as a flat fare for the vehicle rather than per passenger, so the same vehicle costs the same whether it carries one traveller or a family that fits its stated capacity.</p><p>Tolls, ERP charges, airport entry, parking, fuel and GST are included in the quoted rates below. The fare shown in the quotation is agreed before travel rather than calculated by a meter at the end of the journey.</p></div></div>
+      <div class="table-scroll mt-12"><table class="data-table data-table-dark"><thead><tr><th>Vehicle</th><th>Practical capacity</th><th>Arrival</th><th>Departure</th><th>Hourly</th></tr></thead><tbody>{vehicleRates.map((row) => <tr>{row.map((cell) => <td>{cell}</td>)}</tr>)}</tbody></table></div>
+      <div class="mt-16 grid gap-8 lg:grid-cols-12"><h3 class="font-display text-3xl font-medium lg:col-span-4">What a typical booking looks like</h3><p class="leading-7 text-white/65 lg:col-span-6 lg:col-start-7">The best-value format depends on the journey. A direct airport transfer suits a single pickup and destination, while an hourly booking is usually clearer for meetings, site visits and itineraries with several stops.</p></div>
+      <div class="table-scroll mt-8"><table class="data-table data-table-dark"><thead><tr><th>Assignment</th><th>Vehicle</th><th>Format</th><th>Planning note</th></tr></thead><tbody>{bookingExamples.map((row) => <tr>{row.map((cell) => <td>{cell}</td>)}</tr>)}</tbody></table></div>
+      <details class="disclosure disclosure-dark mt-8"><summary>Waiting time, late-night journeys and additional stops</summary><div><p>Arrival waiting is included for 60 minutes from touchdown, allowing time for immigration and baggage. City and hotel pickups have a 15-minute grace period from the booked time. Additional waiting starts from S$20 per 15 minutes and may vary depending on the vehicle type. Any charge for after-hours travel, additional stops, distant areas or hourly overtime is shown in the quotation before booking.</p></div></details>
+    </div>
+  </section>
+
+  <section class="site-wrap content-section">
+    <div class="mb-10 grid gap-6 lg:grid-cols-12"><h2 class="section-title lg:col-span-6">Changi transfer times across Singapore</h2><div class="prose-compact lg:col-span-5 lg:col-start-8"><p>These are indicative routes from Terminal 3. Traffic, terminal and the exact pickup and destination can change the journey.</p><p>Most city journeys use the East Coast Parkway, while northern and western destinations may use the Pan Island Expressway or Kallang–Paya Lebar Expressway. The longer end of each range allows for weekday morning and evening peaks.</p></div></div>
+    <div class="table-scroll"><table class="data-table"><thead><tr><th>Destination</th><th>Distance</th><th>Typical drive time</th><th>Rates starting from</th></tr></thead><tbody>{routes.map((row) => <tr>{row.map((cell) => <td>{cell}</td>)}</tr>)}</tbody></table></div>
+  </section>
+
+  <section class="bg-soft py-20 md:py-28">
+    <div class="site-wrap"><div class="grid gap-6 lg:grid-cols-12"><h2 class="section-title lg:col-span-5">Which vehicle fits your group and luggage?</h2><div class="prose-compact lg:col-span-6 lg:col-start-7"><p class="text-lg leading-8">Luggage decides this, not passenger count. A group can fit in a vehicle on paper and still need to upgrade once checked bags, cabin bags and a pushchair are counted.</p><p>Golf bags, surfboards, musical instruments, wheelchairs, pushchairs and other oversized items should be declared at booking because they change the usable seating and luggage space. For larger groups, the team can plan a minibus, coach or coordinated multi-vehicle movement.</p></div></div>
+      <div class="mt-12 grid gap-5 md:grid-cols-3">{fleet.map((item) => <article><img class="aspect-[4/3] w-full object-cover" src={item.image} alt={`${item.name} from the Singapore fleet with registration plate removed`} /><h3 class="mt-5 font-display text-2xl font-medium">{item.name}</h3></article>)}</div>
+      <div class="table-scroll mt-12"><table class="data-table"><thead><tr><th>Class</th><th>Seats</th><th>Practical luggage load</th><th>Best for</th></tr></thead><tbody>{vehicleFit.map((row) => <tr>{row.map((cell) => <td>{cell}</td>)}</tr>)}</tbody></table></div>
+    </div>
+  </section>
+
+  <section class="site-wrap content-section">
+    <h2 class="section-title max-w-2xl">Who books airport transfers in Singapore</h2>
+    <p class="mt-5 max-w-2xl text-lg leading-8 text-muted">Airport transport is booked by several recognisable groups, and each is solving a different problem. The passenger may care about comfort, while the person arranging the journey may care more about timing, accountability and a reliable contact path.</p>
+    <div class="editorial-grid mt-12">{audience.map(([title, copy]) => <article><h3>{title}</h3><p>{copy}</p></article>)}</div>
+  </section>
+
+  <section class="border-y border-mist bg-paper py-20 md:py-28">
+    <div class="site-wrap"><div class="grid gap-6 lg:grid-cols-12"><h2 class="section-title lg:col-span-6">Private transfer vs Grab, taxi, MRT and self-drive</h2><div class="prose-compact lg:col-span-5 lg:col-start-8"><p>The comparison most arriving travellers make is between a pre-booked car and opening a ride-hailing app in the baggage hall. Price matters, but so do fare certainty, waiting time, meeting point, luggage fit, delay handling and whether the journey must be invoiced.</p><p>Fares, surcharges and wait times can move. The practical shape of the differences is more consistent.</p></div></div>
+      <div class="table-scroll mt-12"><table class="data-table data-table-wide"><thead><tr><th>Option</th><th>Fare</th><th>Wait after landing</th><th>Meet point</th><th>Luggage</th><th>Flight delay</th><th>Late night</th><th>Corporate billing</th><th>Licensing</th></tr></thead><tbody>{comparisons.map((row) => <tr>{row.map((cell) => <td>{cell}</td>)}</tr>)}</tbody></table></div>
+      <div class="mt-10 max-w-3xl border-t border-mist pt-8"><h3 class="font-display text-2xl font-medium">When a private transfer is the wrong choice</h3><p class="mt-4 leading-7 text-muted">On price alone, the MRT wins by a wide margin. A solo traveller with one cabin bag going to a hotel near a station will pay much less for the train, and outside peak periods it may not be meaningfully slower. If your flight lands during the day, you are travelling light and the destination is convenient for the East West Line, public transport may be the better choice. The case for a private transfer is luggage, a group, a fixed onward deadline, a late arrival or a passenger whose time and certainty are worth more than the difference.</p></div>
+    </div>
+  </section>
+
+  <section class="site-wrap content-section grid gap-10 lg:grid-cols-12">
+    <div class="lg:col-span-4"><h2 class="section-title">What to know before your Singapore airport transfer</h2><p class="mt-5 leading-7 text-muted">Meeting points, roads, charges, delays and venue access—kept easy to scan before you travel.</p></div>
+    <div class="divide-y divide-mist border-y border-mist lg:col-span-7 lg:col-start-6">{travelNotes.map(([question, answer], i) => <details class="disclosure" open={i === 0}><summary>{question}</summary><div><p>{answer}</p></div></details>)}</div>
+  </section>
+
+  <section class="bg-black py-20 text-white md:py-28"><div class="site-wrap grid gap-16 lg:grid-cols-2">
+    <div><h2 class="section-title">Where we drive in Singapore</h2><p class="mt-5 max-w-xl leading-7 text-white/65">Transfers can begin or end at airports, hotels, homes, offices, cruise terminals and event venues across Singapore. Cross-border journeys are arranged separately because the vehicle, permits and checkpoint conditions must be planned together.</p><dl class="mt-9 divide-y divide-white/20 border-y border-white/20">{coverage.map(([term, detail]) => <div class="py-5"><dt class="font-semibold">{term}</dt><dd class="mt-2 text-white/65">{detail}</dd></div>)}</dl></div>
+    <div><h2 class="section-title">When to book your airport transfer</h2><p class="mt-5 max-w-xl leading-7 text-white/65">Twenty-four hours is normally enough for a standard weekday arrival. Larger vehicles, child seats, cruise days, major events and multi-vehicle schedules need more preparation because supply is allocated in advance.</p><dl class="mt-9 divide-y divide-white/20 border-y border-white/20">{bookingWindows.map(([term, detail]) => <div class="flex justify-between gap-8 py-5"><dt class="text-white/70">{term}</dt><dd class="shrink-0 text-right font-semibold">{detail}</dd></div>)}</dl><p class="mt-7 max-w-xl leading-7 text-white/65">To request a booking, share the flight number, destination address, passenger count, luggage and any child-seat or accessibility requirements. Multi-stop schedules should include every planned stop and the expected waiting time.</p></div>
+  </div></section>
+
+  <section class="site-wrap content-section grid gap-10 lg:grid-cols-12">
+    <div class="lg:col-span-5"><h2 class="section-title">Common booking mistakes</h2><p class="mt-5 max-w-md leading-7 text-muted">A little detail upfront prevents the most common problems at pickup.</p></div>
+    <ol class="numbered-list lg:col-span-6 lg:col-start-7">{mistakes.map((mistake) => <li>{mistake}</li>)}</ol>
+  </section>
+
+  <section class="border-y border-mist bg-paper py-20 md:py-24"><div class="site-wrap grid gap-10 lg:grid-cols-12"><div class="lg:col-span-4"><h2 class="section-title">Licensing, insurance and driver standards</h2></div><div class="prose-editorial lg:col-span-7 lg:col-start-6"><p>Singapore private-hire vehicles operate within the Land Transport Authority licensing framework, and drivers undertaking private-hire work hold the relevant vocational licence. Commercial vehicles are maintained and inspected for passenger service rather than treated as informal private arrangements.</p><p>For corporate, hospitality and repeat travel, the operating details matter as much as the vehicle. Journey confirmations provide a written record of the itinerary, and recurring work can be coordinated through a single contact with consolidated invoicing where account terms have been approved.</p></div></div></section>
+
+  <section class="site-wrap content-section grid gap-10 lg:grid-cols-12">
+    <div class="lg:col-span-4"><h2 class="section-title">Singapore airport transfer FAQ</h2></div>
+    <div class="divide-y divide-mist border-y border-mist lg:col-span-7 lg:col-start-6">{faq.map(([question, answer]) => <details class="disclosure"><summary>{question}</summary><div><p>{answer}</p></div></details>)}</div>
+  </section>
+
+  <section class="bg-soft py-20 md:py-24"><div class="site-wrap"><h2 class="section-title max-w-2xl">Related Singapore transport services</h2><div class="mt-10 grid border-t border-mist md:grid-cols-2">{services.map((entry) => <a class="group border-b border-mist py-7 md:px-8 md:first:pl-0" href={entry.data.slug}><h3 class="font-display text-2xl font-medium group-hover:text-brass">{entry.data.title}</h3><p class="mt-3 max-w-lg leading-7 text-muted">{entry.data.description}</p><span class="mt-5 inline-block border-b border-ink text-sm font-semibold">Explore service</span></a>)}</div></div></section>
+
+  <section class="bg-black py-16 text-white"><div class="site-wrap flex flex-col items-start justify-between gap-7 md:flex-row md:items-center"><div><h2 class="section-title">Tell us where you need to be.</h2><p class="mt-3 text-white/65">Share your flight, destination, passenger and luggage details.</p></div><a class="btn-primary border-white bg-white text-ink hover:bg-soft" href="#booking">Request a Quote</a></div></section>
+</SiteShell>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Airport Transfer Singapore - Landing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#ebe8e1",
+                        "secondary-fixed-dim": "#dfc299",
+                        "surface-dim": "#dcdad3",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e5e2db",
+                        "on-surface-variant": "#45474a",
+                        "on-primary-fixed-variant": "#464749",
+                        "on-primary-container": "#848386",
+                        "surface-bright": "#fcf9f2",
+                        "on-tertiary-fixed-variant": "#3e4851",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f3f0e9",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "tertiary-container": "#131d25",
+                        "secondary": "#715b39",
+                        "surface-container": "#f1eee7",
+                        "surface-container-low": "#f6f3ec",
+                        "on-error-container": "#93000a",
+                        "surface": "#fcf9f2",
+                        "success": "#315B45",
+                        "primary-fixed": "#e3e2e4",
+                        "on-secondary-fixed": "#281901",
+                        "on-tertiary-fixed": "#131d25",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#31312c",
+                        "secondary-container": "#fddeb3",
+                        "tertiary": "#000000",
+                        "tertiary-fixed-dim": "#bdc8d3",
+                        "surface-tint": "#5e5e60",
+                        "inverse-primary": "#c7c6c9",
+                        "outline-variant": "#c6c6ca",
+                        "on-error": "#ffffff",
+                        "paper": "#FFFFFF",
+                        "surface-container-highest": "#e5e2db",
+                        "outline": "#76777b",
+                        "mist": "#DDD8CE",
+                        "secondary-fixed": "#fddeb3",
+                        "tertiary-fixed": "#d9e4ef",
+                        "on-surface": "#1c1c18",
+                        "primary-container": "#1b1c1e",
+                        "primary": "#000000",
+                        "on-primary-fixed": "#1b1c1e",
+                        "on-tertiary-container": "#7b8590",
+                        "destructive": "#9E332D",
+                        "on-secondary-container": "#77613e",
+                        "background": "#fcf9f2",
+                        "primary-fixed-dim": "#c7c6c9",
+                        "on-secondary-fixed-variant": "#574324"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter-desktop": "64px",
+                        "base": "8px",
+                        "section-mobile": "72px",
+                        "section-desktop": "112px",
+                        "gutter-mobile": "20px",
+                        "max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "section-heading-mobile": ["Geist"],
+                        "hero-mobile": ["Geist"],
+                        "hero-desktop": ["Geist"],
+                        "eyebrow": ["Hanken Grotesk"],
+                        "body-regular": ["Hanken Grotesk"],
+                        "section-heading": ["Geist"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "section-heading-mobile": ["32px", { "lineHeight": "1.08", "fontWeight": "500" }],
+                        "hero-mobile": ["44px", { "lineHeight": "1.02", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "hero-desktop": ["72px", { "lineHeight": "1.0", "letterSpacing": "-0.035em", "fontWeight": "600" }],
+                        "eyebrow": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "600" }],
+                        "body-regular": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "section-heading": ["44px", { "lineHeight": "1.05", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.55", "fontWeight": "400" }],
+                        "label": ["14px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #F6F3EC; /* Ivory */
+        }
+        .text-brass {
+            color: #9B825D;
+        }
+        .border-brass {
+            border-color: #9B825D;
+        }
+        .bg-brass {
+            background-color: #9B825D;
+        }
+        .hero-title-clamp {
+            font-size: clamp(40px, 5vw, 64px);
+        }
+    </style>
+</head>
+<body class="font-body-regular text-on-surface antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-mist w-full sticky top-0 z-50">
+<div class="flex justify-between items-center px-gutter-desktop py-4 max-w-max-width mx-auto">
+<a class="font-section-heading text-body-lg font-bold tracking-tighter text-primary" href="/">
+                AIRPORT TRANSFER SINGAPORE
+            </a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label text-label text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#services">Services</a>
+<a class="font-label text-label text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#fleet">Fleet &amp; Rates</a>
+<a class="font-label text-label text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#about">About</a>
+<a class="font-label text-label text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#blog">Blog</a>
+<a class="font-label text-label text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#contact">Contact</a>
+</nav>
+<div class="hidden md:flex items-center gap-4">
+<button class="font-label text-label text-primary hover:text-secondary transition-colors duration-200">Book Online</button>
+<button class="bg-primary text-on-primary font-label text-label px-6 py-3 rounded hover:opacity-90 transition-opacity">Request a Quote</button>
+<button class="text-primary hover:text-secondary transition-colors duration-200">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center w-full">
+<!-- Hero Section -->
+<section class="w-full flex flex-col md:flex-row" style="min-height: 78vh;">
+<div class="w-full md:w-1/2 h-[50vh] md:h-auto relative">
+<img alt="Singapore Airport Transfer Vehicle" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0D7s9fJbiT0VmbM6sZBt-lpu1V29xOzuAWpWiS3Q_6FM6J58W1dITQ71_4bRF2K--91rRuB4C_2V8s1l4fg0Jkr388eL0AyoJ3ma_vK-xCTc-bFkqRLC41M1c6oeM7_TSVs7jwNLmd9XRi46XewbnM6-sEYf5Evn0mD6PT7D1mxOe3q70hcM_j70nYhfnUmca-K2uq341WUVMZTtHhs_3FfHnStuUXnog1pDJA7huATuvW5gDXrfDl9UnvDRW653ZP9kHES-SiYY"/>
+</div>
+<div class="w-full md:w-1/2 bg-surface-container-low flex flex-col justify-center px-gutter-mobile md:px-gutter-desktop py-12 md:py-0 relative">
+<div class="max-w-xl">
+<p class="font-eyebrow text-eyebrow text-brass uppercase tracking-widest mb-6">SINGAPORE AIRPORT &amp; CHAUFFEUR SERVICES</p>
+<h1 class="font-hero-desktop hero-title-clamp font-medium leading-none tracking-tight text-primary mb-8">
+                        Airport transfers in Singapore, handled properly.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Reliable airport transfers and hourly chauffeur services for travellers, businesses, hotels and travel partners.
+                    </p>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="bg-primary text-on-primary font-label text-label px-8 py-4 rounded hover:opacity-90 transition-opacity">Request a Quote</button>
+<button class="border border-primary text-primary font-label text-label px-8 py-4 rounded hover:bg-surface-variant transition-colors">Book Online</button>
+<button class="font-label text-label text-primary hover:text-secondary transition-colors underline underline-offset-4 decoration-1 px-4 py-4">Call Us</button>
+</div>
+</div>
+<!-- Enquiry Module integrated into Hero -->
+<div class="md:absolute bottom-0 left-0 w-full md:-mb-16 md:px-gutter-desktop z-10 mt-12 md:mt-0">
+<div class="bg-paper border border-mist shadow-sm rounded flex flex-col p-6 w-full max-w-4xl">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
+<div>
+<label class="block font-label text-xs text-on-surface-variant mb-1">Service type</label>
+<select class="w-full border-mist rounded text-sm focus:ring-brass focus:border-brass bg-surface-bright">
+<option>Airport Transfer</option>
+<option>Hourly Chauffeur</option>
+</select>
+</div>
+<div>
+<label class="block font-label text-xs text-on-surface-variant mb-1">Pickup</label>
+<input class="w-full border-mist rounded text-sm focus:ring-brass focus:border-brass bg-surface-bright" placeholder="Changi Airport (SIN)" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs text-on-surface-variant mb-1">Destination</label>
+<input class="w-full border-mist rounded text-sm focus:ring-brass focus:border-brass bg-surface-bright" placeholder="Hotel / Address" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs text-on-surface-variant mb-1">Date &amp; time</label>
+<input class="w-full border-mist rounded text-sm focus:ring-brass focus:border-brass bg-surface-bright" type="datetime-local"/>
+</div>
+<div>
+<label class="block font-label text-xs text-on-surface-variant mb-1">Passengers</label>
+<select class="w-full border-mist rounded text-sm focus:ring-brass focus:border-brass bg-surface-bright">
+<option>1-2 Passengers</option>
+<option>3-4 Passengers</option>
+<option>5-7 Passengers</option>
+</select>
+</div>
+</div>
+<div class="flex justify-between items-center mt-4">
+<p class="text-xs text-on-surface-variant">Your details are secure. We never share your information.</p>
+<button class="bg-primary text-on-primary font-label text-sm px-6 py-3 rounded hover:opacity-90 transition-opacity">Request a Quote</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Intro -->
+<section class="w-full max-w-max-width px-gutter-mobile md:px-gutter-desktop py-section-desktop mt-16 md:mt-32" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-section-heading text-section-heading text-primary mb-6">From touchdown to destination, without the guesswork.</h2>
+<p class="font-body-regular text-body-regular text-on-surface-variant mb-6">
+                         Arriving in a new city should be seamless. We provide exacting, professional chauffeur services across Singapore, ensuring your journey from Changi Airport to your final destination is comfortable, quiet, and precisely timed.
+                     </p>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+                         Our fleet is maintained to impeccable standards, and our drivers are selected for their discretion, punctuality, and deep knowledge of Singapore's roads.
+                     </p>
+</div>
+<div>
+<img alt="Chauffeur greeting passenger at airport" class="w-full h-auto rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV93spA2ND0MVBrTCZmHael6JmrSTuQxrcCqH7tRI0efKSo2PGN5xiiM9rpWfbnm7rux42F7kMPYkkG3f-PC9i2VccvTSmJMyNBb81g_1LElj_XCNMOHvxbSFrHL1fK1G6qh17he6gGWGracIqdhhQiZh2DZ75ZQeVd6mVZspq2e-4PuWYFI0L7-tpH4ADpevHYJCvX7P1D_k8un51DSoHm0eiUm7uhCnEIioF8IGMS4cpbSVw1A63vrYmTG-Aeo1o2sSEbmA7npY"/>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="w-full bg-surface py-section-desktop border-y border-mist" id="services">
+<div class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop">
+<h2 class="font-section-heading text-section-heading text-primary mb-12">Specialist Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+<div class="border-t border-mist pt-6">
+<h3 class="font-hero-mobile text-xl font-medium mb-3">Singapore Airport Transfers</h3>
+<p class="font-body-regular text-on-surface-variant text-sm">Meet and greet at Changi Airport arrivals. Flight monitoring ensures we are there exactly when you land, with 60 minutes of complimentary waiting time.</p>
+</div>
+<div class="border-t border-mist pt-6">
+<h3 class="font-hero-mobile text-xl font-medium mb-3">Hourly Chauffeur Service</h3>
+<p class="font-body-regular text-on-surface-variant text-sm">Flexible, as-directed travel for meetings, shopping, or sightseeing. Keep your car and driver on standby for as long as you need.</p>
+</div>
+<div class="border-t border-mist pt-6">
+<h3 class="font-hero-mobile text-xl font-medium mb-3">Corporate Transportation</h3>
+<p class="font-body-regular text-on-surface-variant text-sm">Reliable logistics for executives, board members, and visiting delegates. Consolidated billing and dedicated account management available.</p>
+</div>
+<div class="border-t border-mist pt-6">
+<h3 class="font-hero-mobile text-xl font-medium mb-3">Hotel &amp; City Transfers</h3>
+<p class="font-body-regular text-on-surface-variant text-sm">Point-to-point journeys between hotels, restaurants, and business districts across the island.</p>
+</div>
+<div class="border-t border-mist pt-6">
+<h3 class="font-hero-mobile text-xl font-medium mb-3">Events &amp; Group Transportation</h3>
+<p class="font-body-regular text-on-surface-variant text-sm">Coordinated multi-vehicle fleets for conferences, weddings, and major events. On-site coordinators provided for complex movements.</p>
+</div>
+<div class="border-t border-mist pt-6">
+<h3 class="font-hero-mobile text-xl font-medium mb-3">VIP Airport Assistance</h3>
+<p class="font-body-regular text-on-surface-variant text-sm">Fast-track immigration, buggy service, and lounge access coordination for an entirely frictionless arrival or departure experience.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Fleet -->
+<section class="w-full max-w-max-width px-gutter-mobile md:px-gutter-desktop py-section-desktop" id="fleet">
+<h2 class="font-section-heading text-section-heading text-primary mb-16 text-center">The Fleet</h2>
+<div class="flex flex-col border-t border-mist">
+<!-- Fleet Item -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-8 border-b border-mist items-center">
+<div class="md:col-span-4">
+<div class="bg-surface-variant aspect-video w-full rounded flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A pristine black Mercedes-Benz E-Class sedan parked outside a modern glass building in Singapore, reflecting the soft afternoon sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg_R2l9opH0IV0kobbXLoaHuW4azmG0gR-v4etqUz4WMDD4JSnCJ_A-fhAiuBBiuV8jKd2I_egKlDFua3tJX77yKnFIS2NF-YL80Z4xVLyWJ32qdWLBU0evH5D0GbaDHMtTspYoJssfIlyWvO6n6dWvvm5d03wJvdv8UB5prkCjQWWz-eh6lqDdnKAEdWXt-aKxNqPUAHFHBXPeTX0kkU_b0aq_CW3fNxQmhebDEqLEC5_Lbk2Owul1qkvn3tYR-C95ZIpEWsHavg"/>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center">
+<h3 class="font-hero-mobile text-2xl font-medium mb-2">Business Sedan</h3>
+<p class="text-sm text-on-surface-variant mb-4">Mercedes-Benz E-Class, BMW 5 Series (or equivalent)</p>
+<div class="flex gap-4 text-on-surface-variant">
+<span class="flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-base">person</span> 3</span>
+<span class="flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-base">luggage</span> 2</span>
+</div>
+</div>
+<div class="md:col-span-3 flex justify-end">
+<a class="font-label text-sm text-primary underline underline-offset-4 decoration-1 hover:text-secondary" href="#">Request current rates</a>
+</div>
+</div>
+<!-- Fleet Item -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-8 border-b border-mist items-center">
+<div class="md:col-span-4 md:order-last">
+<div class="bg-surface-variant aspect-video w-full rounded flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A sleek black Toyota Alphard premium MPV parked under a luxury hotel porte-cochere in Singapore, warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLWz8vl4403oVuTizoqpJ4FNOgbWzOLIotyprWpkjaG0M96vOmK8_PYIUYjXeZXgVKW0HnXCkxp3hBXeDDBow38CDeKtpQUzGmmurA1judG_845zop3vn9l8WUphXwUiM6L_fOoYJd6S-oSAOVbQ05BQY5gXI0VGTtKj5KdOUNaVQkIfWsv1nxappq7uo3F80UOyJyIHVI97N1NbbgUHPHZWq1ePvgHbPGrMrxRhePmKq7mWfae5iENHSbITsKp7RNXsgUMP_gc3Q"/>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center">
+<h3 class="font-hero-mobile text-2xl font-medium mb-2">Premium MPV</h3>
+<p class="text-sm text-on-surface-variant mb-4">Toyota Alphard, Vellfire (or equivalent)</p>
+<div class="flex gap-4 text-on-surface-variant">
+<span class="flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-base">person</span> 6</span>
+<span class="flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-base">luggage</span> 4</span>
+</div>
+</div>
+<div class="md:col-span-3 flex md:justify-start">
+<a class="font-label text-sm text-primary underline underline-offset-4 decoration-1 hover:text-secondary" href="#">Request current rates</a>
+</div>
+</div>
+<!-- Fleet Item -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-8 border-b border-mist items-center">
+<div class="md:col-span-4">
+<div class="bg-surface-variant aspect-video w-full rounded flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A spacious black Mercedes-Benz V-Class executive van waiting at Changi Airport arrivals, professional chauffeur standing beside." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD49oUNFeb03di5w8PbAS20ZKe7X7rUERRUDbmf9SGXaf5mZ8cbun0L-TV95QaLvOLS2LvC9frUcJ0zS6ltQZwBqfCZZE68Mv0X2Rm4m6WFRCYtO909eYbtO7EJltmt18CO3Gqo998fO_gSBojo4WsUqePinulAr5hYxX7f5Xle8Uyzyp260lcnb0EUilEJQWdI1_azqRcm8TH3EWX9pjcUUcQssYf7F68ObWbeMTt5fwtw-8OvJApWE3bKKIF7B2DQNItWzccGHQI"/>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center">
+<h3 class="font-hero-mobile text-2xl font-medium mb-2">Executive Van</h3>
+<p class="text-sm text-on-surface-variant mb-4">Mercedes-Benz V-Class (or equivalent)</p>
+<div class="flex gap-4 text-on-surface-variant">
+<span class="flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-base">person</span> 7</span>
+<span class="flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-base">luggage</span> 7</span>
+</div>
+</div>
+<div class="md:col-span-3 flex justify-end">
+<a class="font-label text-sm text-primary underline underline-offset-4 decoration-1 hover:text-secondary" href="#">Request current rates</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary border-t border-outline w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-base px-gutter-desktop py-section-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-2">
+<p class="font-section-heading text-body-lg text-surface-container-lowest mb-6">AIRPORT TRANSFER SINGAPORE</p>
+<p class="text-surface-variant opacity-70 text-sm max-w-xs mb-8">Premium chauffeur and airport transfer services in Singapore.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Services</a>
+<a class="font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Fleet &amp; Rates</a>
+<a class="font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">About</a>
+<a class="font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Blog</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Contact</a>
+<a class="font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="border-t border-on-surface-variant/20 px-gutter-desktop py-6 max-w-max-width mx-auto text-center md:text-left">
+<p class="font-body-regular text-sm text-surface-variant opacity-50">© 2024 AIRPORT TRANSFER SINGAPORE. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

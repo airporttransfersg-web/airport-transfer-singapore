@@ -1,0 +1,18 @@
+---
+import site from "../../site.config";
+import QuoteForm from "./QuoteForm.astro";
+interface Props {
+  showVerificationNote?: boolean;
+}
+
+const { showVerificationNote = true } = Astro.props;
+const booking = site.booking as { mode: "external" | "embed"; embedUrl?: string; url: string };
+const embedUrl = booking.mode === "embed" ? booking.embedUrl : undefined;
+---
+<section id="booking" class="site-wrap pb-20 md:pb-28" aria-label="Booking and quotation">
+  <div class="border border-mist bg-paper px-5 py-8 md:px-16 md:py-14">
+    <div class="mx-auto mb-9 max-w-xl text-center"><p class="eyebrow">Journey enquiry</p><h2 class="section-title mt-3">Plan your journey</h2><p class="mt-4 text-muted">Request a tailored quotation or continue to the booking application.</p></div>
+    {embedUrl ? <iframe class="h-[700px] w-full border border-mist" title="Secure booking application" src={embedUrl}></iframe> :
+      <QuoteForm showVerificationNote={showVerificationNote} />}
+  </div>
+</section>

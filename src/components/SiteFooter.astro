@@ -1,0 +1,19 @@
+---
+import site from "../../site.config";
+import { releasedRouteSet } from "../lib/content";
+const releasedRoutes = await releasedRouteSet();
+const navigation = site.navigation.filter((item) => releasedRoutes.has(item.href));
+const legal = [
+  { label: "Terms of Service", href: "/terms/" },
+  { label: "Privacy Policy", href: "/privacy/" },
+  { label: "Request a Quote", href: "/contact/" },
+].filter((item) => releasedRoutes.has(item.href));
+---
+<footer class="bg-black py-16 text-white">
+  <div class="site-wrap grid gap-12 md:grid-cols-4">
+    <div class="md:col-span-2"><a class="inline-flex min-h-11 items-center font-display text-lg font-semibold uppercase tracking-[.06em]" href="/">{site.shortName}</a><p class="mt-5 max-w-md text-sm leading-6 text-white/65">Professional airport transfer and chauffeur arrangements across Singapore. Contact us at <a class="text-white underline decoration-white/40 underline-offset-4 hover:decoration-white" href={`mailto:${site.email}`}>{site.email}</a> or <a class="text-white underline decoration-white/40 underline-offset-4 hover:decoration-white" href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a>.</p></div>
+    <nav class="grid content-start text-sm text-white/70" aria-label="Footer">{navigation.map((item) => <a class="inline-flex min-h-11 items-center hover:text-white" href={item.href}>{item.label}</a>)}</nav>
+    <nav class="grid content-start text-sm text-white/70" aria-label="Legal">{legal.map((item) => <a class="inline-flex min-h-11 items-center" href={item.href}>{item.label}</a>)}</nav>
+  </div>
+  <div class="site-wrap mt-14 border-t border-white/20 pt-6 text-xs text-white/50">© {new Date().getFullYear()} AirportTransferSingapore.com</div>
+</footer>

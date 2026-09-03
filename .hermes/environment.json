@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "recipe": {
+    "name": "Astro",
+    "kind": "astro",
+    "bootstrap": [
+      "npm install"
+    ],
+    "build": [
+      "npm run build"
+    ],
+    "test": [
+      "npm run check"
+    ],
+    "start": "npm run dev",
+    "port": 4321,
+    "readinessPath": "/",
+    "evidence": [
+      "Detected package.json",
+      "Scripts: dev, build, preview, check"
+    ]
+  },
+  "updatedAt": "2026-08-27T15:02:20.748175+00:00"
+}

@@ -1,0 +1,61 @@
+---
+import site from "../../site.config";
+
+interface Props {
+  heading?: string;
+  body?: string;
+  /** `dark` uses the charcoal band with dotted champagne texture; `light` the skyline-overlay band. */
+  variant?: "dark" | "light";
+  image?: string;
+  label?: string;
+}
+
+const {
+  heading = "Elevate Your Next Journey",
+  body = "Connect with our concierge team to discuss your bespoke transportation requirements.",
+  variant = "light",
+  image = "/images/stitch/service-skyline.jpg",
+  label = "Enquire Now",
+} = Astro.props;
+
+const bookingHref = site.booking.url ?? "#booking";
+---
+
+<section class:list={["relative overflow-hidden", variant === "light" ? "border-t border-champagne-gold/30 py-section-gap" : "py-12 md:py-20"]}>
+  {
+    variant === "light" && (
+      <>
+        <div class="absolute inset-0 h-full w-full bg-cover bg-center opacity-20" style={`background-image: url('${image}')`} aria-hidden="true" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface to-surface/80" aria-hidden="true" />
+      </>
+    )
+  }
+  {
+    variant === "dark" && (
+      <div
+        class="absolute inset-0 opacity-10 pointer-events-none"
+        style="background-image: radial-gradient(circle at center, #C5A059 1px, transparent 1px); background-size: 24px 24px;"
+        aria-hidden="true"
+      />
+    )
+  }
+  <div class="relative z-10 mx-auto max-w-3xl px-margin-mobile text-center md:px-margin-desktop">
+    <h2 class:list={["mb-6 font-display", variant === "light" ? "text-display-lg text-primary" : "text-display-lg-mobile text-paper-white md:text-display-lg"]}>
+      {heading}
+    </h2>
+    <p class:list={["mb-10 font-body text-body-lg", variant === "light" ? "text-on-surface-variant" : "text-primary-fixed-dim"]}>
+      {body}
+    </p>
+    <a
+      class:list={[
+        "inline-flex items-center justify-center px-10 py-4 font-body text-label-caps uppercase tracking-widest transition-colors duration-300",
+        variant === "light"
+          ? "bg-deep-charcoal text-paper-white shadow-sm hover:bg-slate-blue"
+          : "bg-champagne-gold font-bold text-deep-charcoal hover:bg-paper-white active:scale-95",
+      ]}
+      href={bookingHref}
+    >
+      {label}
+    </a>
+  </div>
+</section>

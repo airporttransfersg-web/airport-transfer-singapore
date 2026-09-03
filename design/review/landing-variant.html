@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Airport Transfers in Singapore - Canonical Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c7c6c9",
+                        "on-secondary-container": "#77613e",
+                        "on-secondary": "#ffffff",
+                        "outline": "#76777b",
+                        "surface-container": "#f1eee7",
+                        "on-primary-fixed": "#1b1c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3e4851",
+                        "secondary-container": "#fddeb3",
+                        "outline-variant": "#c6c6ca",
+                        "on-primary-fixed-variant": "#464749",
+                        "secondary-fixed-dim": "#dfc299",
+                        "inverse-on-surface": "#f3f0e9",
+                        "destructive": "#9E332D",
+                        "on-secondary-fixed": "#281901",
+                        "surface": "#fcf9f2",
+                        "background": "#fcf9f2",
+                        "inverse-surface": "#31312c",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#131d25",
+                        "primary": "#000000",
+                        "on-primary-container": "#848386",
+                        "surface-bright": "#fcf9f2",
+                        "on-secondary-fixed-variant": "#574324",
+                        "on-error": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "surface-dim": "#dcdad3",
+                        "secondary-fixed": "#fddeb3",
+                        "inverse-primary": "#c7c6c9",
+                        "error": "#ba1a1a",
+                        "paper": "#FFFFFF",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e5e2db",
+                        "on-tertiary-container": "#7b8590",
+                        "mist": "#DDD8CE",
+                        "surface-tint": "#5e5e60",
+                        "success": "#315B45",
+                        "surface-container-highest": "#e5e2db",
+                        "tertiary": "#000000",
+                        "primary-fixed": "#e3e2e4",
+                        "primary-container": "#1b1c1e",
+                        "on-tertiary-fixed": "#131d25",
+                        "tertiary-fixed-dim": "#bdc8d3",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f6f3ec",
+                        "secondary": "#715b39",
+                        "on-surface-variant": "#45474a",
+                        "on-surface": "#1c1c18",
+                        "tertiary-fixed": "#d9e4ef",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#ebe8e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter-mobile": "20px",
+                        "gutter-desktop": "64px",
+                        "section-desktop": "112px",
+                        "section-mobile": "72px",
+                        "base": "8px",
+                        "max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "label": ["Hanken Grotesk"],
+                        "hero-desktop": ["Geist"],
+                        "body-regular": ["Hanken Grotesk"],
+                        "section-heading-mobile": ["Geist"],
+                        "hero-mobile": ["Geist"],
+                        "eyebrow": ["Hanken Grotesk"],
+                        "section-heading": ["Geist"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "label": ["14px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "hero-desktop": ["72px", { "lineHeight": "1.0", "letterSpacing": "-0.035em", "fontWeight": "600" }],
+                        "body-regular": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "section-heading-mobile": ["32px", { "lineHeight": "1.08", "fontWeight": "500" }],
+                        "hero-mobile": ["44px", { "lineHeight": "1.02", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "eyebrow": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.12em", "fontWeight": "600" }],
+                        "section-heading": ["44px", { "lineHeight": "1.05", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.55", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #F6F3EC; /* Ivory base */
+            color: #1c1c18;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .focus-ring:focus-visible {
+            outline: 2px solid #77613e; /* Brass */
+            outline-offset: 2px;
+        }
+        .hairline-b {
+            border-bottom: 1px solid #DDD8CE; /* Mist */
+        }
+        .hairline-t {
+            border-top: 1px solid #DDD8CE;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-low min-h-screen flex flex-col">
+<!-- TopNavBar Shared Component -->
+<header class="bg-background dark:bg-background text-primary dark:text-primary docked full-width top-0 border-b border-mist dark:border-on-tertiary-container flat no shadows flex justify-between items-center w-full px-gutter-desktop py-4 max-w-max-width mx-auto">
+<div class="font-hero-desktop text-label font-bold tracking-widest text-primary dark:text-primary uppercase">
+            AIRPORT TRANSFER SINGAPORE
+        </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label text-label text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Fleet &amp; Rates</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Blog</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contact</a>
+</nav>
+<div class="hidden md:flex gap-4 items-center">
+<button class="font-label text-label text-primary hover:text-secondary transition-colors duration-200 bg-transparent border border-primary px-6 py-3 rounded-DEFAULT focus-ring">Book Online</button>
+<button class="font-label text-label text-on-primary bg-primary hover:bg-surface-tint transition-colors duration-200 px-6 py-3 rounded-DEFAULT focus-ring">Request a Quote</button>
+<button aria-label="call" class="text-primary hover:text-secondary transition-colors duration-200 focus-ring">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+<button class="md:hidden text-primary focus-ring">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pt-16 md:pt-24 pb-section-mobile md:pb-section-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start">
+<!-- Left: Typography & Inquiry Module -->
+<div class="flex flex-col space-y-8 md:space-y-12">
+<div class="space-y-6">
+<h1 class="font-hero-mobile text-hero-mobile md:font-hero-desktop md:text-hero-desktop text-primary leading-tight">
+                            Airport transfers in Singapore, handled properly.
+                        </h1>
+<p class="font-body-regular text-body-lg text-on-surface-variant max-w-md">
+                            Reliable, discreet, and comfortable chauffeured transfers for discerning travellers, businesses, hotels, and partners. We manage the logistics so you don't have to.
+                        </p>
+</div>
+<!-- Compact Inquiry Module -->
+<div class="bg-paper p-6 md:p-8 rounded-DEFAULT border border-mist shadow-sm">
+<form class="space-y-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface block">Service Type</label>
+<select class="w-full bg-paper border border-mist rounded-DEFAULT px-4 py-3 font-body-regular text-body-regular text-on-surface focus-ring appearance-none">
+<option>Airport Transfer</option>
+<option>Hourly Chauffeur</option>
+<option>Point to Point</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface block">Date &amp; Time</label>
+<input class="w-full bg-paper border border-mist rounded-DEFAULT px-4 py-3 font-body-regular text-body-regular text-on-surface focus-ring" type="datetime-local"/>
+</div>
+<div class="space-y-1 sm:col-span-2">
+<label class="font-label text-label text-on-surface block">Pickup Location</label>
+<input class="w-full bg-paper border border-mist rounded-DEFAULT px-4 py-3 font-body-regular text-body-regular text-on-surface focus-ring" placeholder="e.g. Changi Airport T1" type="text"/>
+</div>
+<div class="space-y-1 sm:col-span-2">
+<label class="font-label text-label text-on-surface block">Destination</label>
+<input class="w-full bg-paper border border-mist rounded-DEFAULT px-4 py-3 font-body-regular text-body-regular text-on-surface focus-ring" placeholder="e.g. Marina Bay Sands" type="text"/>
+</div>
+</div>
+<button class="w-full font-label text-label text-on-primary bg-primary hover:bg-surface-tint transition-colors duration-200 px-6 py-4 rounded-DEFAULT mt-6 focus-ring" type="button">
+                                Submit Inquiry
+                            </button>
+</form>
+</div>
+</div>
+<!-- Right: Decisive Photograph -->
+<div class="relative h-[500px] md:h-full min-h-[600px] w-full bg-surface-variant overflow-hidden rounded-DEFAULT">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sleek black luxury sedan parked outside a modern glass-fronted corporate building in Singapore, with the Marina Bay Sands structure subtly visible in the background under soft, natural daylight. The composition is highly architectural and professional, conveying a sense of quiet luxury, reliability, and executive service. The lighting highlights the clean lines of the vehicle and the crisp reflections on the building facade, aligning with a premium, minimalist visual style." src="https://lh3.googleusercontent.com/aida/AP1WRLtffp4lL5OA2urXCIldBASFPcpc2aOQz8mSjwlta5hjab7-HVKL6XmVVzMzOIv8qEIwS_HcpDdJTUoXAplDxr5mol32I243eANaiogstGzhqidDKM6YFPNeko4GmqMpdkXWHmVltC3JxOC_cAI9LhRLJLnAY0SeExOTwNuspb2-jcXjpZyiehIC9Dww7xHeORdmXYarOji6-HkfwJp8C3BgfAu0FVQMX28h7wK98-mpfn81OY5NEgLBtDI"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-primary-container dark:bg-tertiary-container text-on-primary-fixed dark:text-on-tertiary-fixed full-width bottom-0 border-t border-on-tertiary-container flat no shadows w-full px-gutter-desktop py-section-desktop max-w-max-width mx-auto flex flex-col md:flex-row justify-between gap-12 md:gap-8">
+<div class="space-y-6 max-w-xs">
+<div class="font-hero-desktop text-label font-bold tracking-widest text-on-primary-fixed dark:text-on-tertiary-fixed uppercase">
+                AIRPORT TRANSFER SINGAPORE
+            </div>
+<p class="font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container">
+                Quiet luxury and pragmatic reliability for discerning travellers in Singapore.
+            </p>
+<p class="font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container mt-8">
+                © 2026 AIRPORT TRANSFER SINGAPORE. All rights reserved.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-8 md:gap-16">
+<div class="space-y-4">
+<a class="block font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Services</a>
+<a class="block font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Fleet &amp; Rates</a>
+<a class="block font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Corporate Accounts</a>
+</div>
+<div class="space-y-4">
+<a class="block font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Terms of Service</a>
+<a class="block font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="block font-body-regular text-body-regular text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed dark:hover:text-secondary-fixed-dim transition-colors duration-200" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

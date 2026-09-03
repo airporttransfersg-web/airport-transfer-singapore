@@ -1,0 +1,32 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const items = Astro.props.headings.filter((heading) => heading.depth === 2);
+---
+
+{
+  items.length > 0 && (
+    <aside class="hidden md:col-span-3 md:block">
+      <nav class="sticky top-32 rounded border border-champagne-gold/30 bg-surface-container-low p-6" aria-label="Table of contents">
+        <h3 class="mb-4 font-body text-label-caps uppercase tracking-widest text-primary">Table of Contents</h3>
+        <ul class="space-y-3 font-body text-body-md text-on-surface-variant">
+          {items.map((heading, index) => (
+            <li>
+              <a class="block transition-colors hover:text-champagne-gold" href={`#${heading.slug}`}>
+                {index + 1}. {heading.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
+  )
+}

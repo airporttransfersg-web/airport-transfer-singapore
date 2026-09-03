@@ -1,0 +1,29 @@
+---
+/**
+ * Two-column editorial block: prose on the left, photography on the right
+ * ("The Luxury of Time" pattern from the approved service screens). The prose
+ * — including the section heading — comes from the MDX slot so copy stays in
+ * content files, not component props.
+ */
+interface Props {
+  image: string;
+  imageAlt: string;
+  /** Reverse to image-left / prose-right. */
+  reversed?: boolean;
+}
+
+const { image, imageAlt, reversed = false } = Astro.props;
+---
+
+<section class="mx-auto max-w-site px-margin-mobile pb-section-gap md:px-margin-desktop">
+  <div class="grid grid-cols-1 items-center gap-gutter lg:grid-cols-12">
+    <div class:list={["lg:col-span-5", reversed ? "lg:col-start-8 lg:order-2" : "lg:col-start-2"]}>
+      <slot />
+    </div>
+    <div class:list={["lg:col-span-5", reversed ? "lg:col-start-1 lg:order-1" : "lg:col-start-8"]}>
+      <div class="relative h-[300px] w-full overflow-hidden rounded-xl border border-champagne-gold/20 md:h-[400px]">
+        <img class="absolute inset-0 h-full w-full object-cover" src={image} alt={imageAlt} loading="lazy" width={960} height={640} />
+      </div>
+    </div>
+  </div>
+</section>

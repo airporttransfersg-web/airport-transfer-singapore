@@ -1,0 +1,21 @@
+---
+interface Props {
+  name: string;
+  bio: string;
+  image?: string;
+}
+
+const { name, bio, image = "/images/stitch/author-editorial.jpg" } = Astro.props;
+---
+
+<div class="mx-auto mt-16 max-w-3xl border-t border-champagne-gold/30 px-margin-mobile pt-12 md:px-margin-desktop">
+  <div class="flex items-center gap-6 rounded bg-surface-container-low p-6">
+    <div class="h-20 w-20 shrink-0 overflow-hidden rounded-full border border-champagne-gold/50">
+      <img class="h-full w-full object-cover" src={image} alt={name} loading="lazy" width={80} height={80} />
+    </div>
+    <div>
+      <h4 class="mb-1 font-display text-2xl leading-8 text-primary">{name}</h4>
+      <p class="m-0 font-body text-body-md text-on-surface-variant">{bio}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+---
+import FeatureCards from "./FeatureCards.astro";
+import CtaBand from "./CtaBand.astro";
+import ArticleCard from "./ArticleCard.astro";
+import type { PageEntry, SectionConfig } from "../lib/content";
+
+interface Props {
+  section: SectionConfig;
+  /** Current entry, used to exclude self from related content. */
+  entry: PageEntry;
+  /** Siblings of the same pageType for related-content fallback. */
+  siblings: PageEntry[];
+}
+
+const { section, entry, siblings } = Astro.props;
+
+const related =
+  section.type === "related-content"
+    ? siblings.filter((candidate) => candidate.id !== entry.id).slice(0, 3)
+    : [];
+---
+
+{
+  section.type === "feature-grid" && section.items && (
+    <FeatureCards
+      heading={section.heading ?? "Tailored to Your Itinerary"}
+      cards={section.items.map((item) => ({
+        icon: item.icon ?? "explore",
+        title: item.title,
+        body: item.body ?? "",
+        bullets: item.bullets ?? [],
+      }))}
+    />
+  )
+}
+
+{
+  section.type === "faq" &&
+    entry.data.faq && (
+      <section class="mx-auto max-w-3xl px-margin-mobile pb-section-gap md:px-margin-desktop">
+        <h2 class="mb-8 font-display text-headline-lg text-primary">{section.heading ?? "Frequently Asked Questions"}</h2>
+        <div class="grid gap-4">
+          {entry.data.faq.map((item) => (
+            <details class="rounded border border-champagne-gold/30 bg-surface-container-lowest p-6">
+              <summary class="cursor-pointer font-display text-headline-md text-primary">{item.question}</summary>
+              <p class="mt-4 font-body text-body-md text-on-surface-variant">{item.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )
+}
+
+{
+  section.type === "related-content" &&
+    related.length > 0 && (
+      <section class="mx-auto max-w-site px-margin-mobile pb-section-gap md:px-margin-desktop">
+        <h2 class="mb-10 font-display text-headline-lg text-primary">{section.heading ?? "Read Next"}</h2>
+        <div class="grid grid-cols-1 gap-gutter md:grid-cols-3">
+          {related.map((candidate) => (
+            <ArticleCard
+              title={candidate.data.title.split(":")[0]}
+              description={candidate.data.description}
+              href={candidate.data.slug}
+              image={candidate.data.image ?? "/images/stitch/blog-feature-jewel.jpg"}
+              imageAlt={candidate.data.imageAlt ?? candidate.data.title}
+              category={candidate.data.pageType === "service" ? "Services" : "Guides"}
+            />
+          ))}
+        </div>
+      </section>
+    )
+}
+
+{
+  section.type === "call-to-action" && (
+    <CtaBand
+      variant={section.variant === "primary" ? "dark" : "light"}
+      heading={section.heading ?? "Elevate Your Next Journey"}
+    />
+  )
+}

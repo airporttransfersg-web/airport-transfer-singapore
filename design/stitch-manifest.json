@@ -1,0 +1,43 @@
+{
+  "projectId": "4080690054998981034",
+  "projectTitle": "Airport Transfer Singapore — Editorial Chauffeur Website",
+  "designSystemAssetId": "f6c6a823a3e6485ab6d1e2feda726e17",
+  "designSystemName": "Atelier Transport Singapore",
+  "status": "IMPLEMENTED_AND_BUILD_VERIFIED",
+  "screens": [
+    {"role": "landing-desktop", "screenId": "562df4f08826417e941ac85f971b0e50", "title": "Airport Transfer Singapore — Landing Desktop Refined Hero", "width": 2560, "height": 15214, "export": "design/screens/landing-desktop.html"},
+    {"role": "landing-mobile", "screenId": "b45c94e6db0443c3a0b164d819e0d711", "title": "Airport Transfer Singapore — Landing Mobile", "width": 780, "height": 15980, "export": "design/screens/landing-mobile.html"},
+    {"role": "service-desktop", "screenId": null, "title": "Production-derived service template", "implementationDerived": true, "basis": ["booking-focused-service-desktop", "landing-desktop"]},
+    {"role": "service-mobile", "screenId": null, "title": "Production-derived responsive service template", "implementationDerived": true, "basis": ["booking-focused-service-desktop", "landing-mobile"]},
+    {"role": "blog-index-desktop", "screenId": "95aa048918e34fc0805ffdf008fde0bb", "title": "Airport Transfer Singapore — Blog Index Desktop", "width": 2560, "height": 6586, "export": "design/screens/blog-index-desktop.html"},
+    {"role": "blog-article-desktop", "screenId": "d8c7d4d232fe4c9a91b2745e13367f14", "title": "A Practical Guide to Changi Airport Transfers — Article Desktop", "width": 2560, "height": 12158, "export": "design/screens/blog-article-desktop.html"},
+    {"role": "blog-article-mobile", "screenId": "3845ef7028924b409fec773b459b082f", "title": "A Practical Guide to Changi Airport Transfers — Article Mobile", "width": 780, "height": 14372, "export": "design/screens/blog-article-mobile.html"},
+    {"role": "services-index-desktop", "screenId": "a9694253b4a94e109bc65f39bfcf3c21", "title": "Airport Transfer Singapore — Services Index Desktop Final", "width": 2560, "height": 13890, "export": "design/screens/services-index-desktop.html"},
+    {"role": "booking-focused-service-desktop", "screenId": "24449d90e287455f8e09c5f6830a2404", "title": "Hourly Chauffeur Service — Booking Focused Desktop Final", "width": 2560, "height": 12538, "export": "design/screens/hourly-service-desktop.html"}
+  ],
+  "tokens": {
+    "colors": {"ink": "#121315", "ivory": "#F6F3EC", "paper": "#FFFFFF", "brass": "#9B825D", "slate": "#56606A", "mist": "#DDD8CE", "success": "#315B45", "destructive": "#9E332D"},
+    "typography": {"heading": "Geist", "body": "Hanken Grotesk", "label": "Hanken Grotesk", "heroDesktop": "72px / 1.0", "heroMobile": "44px / 1.02", "sectionDesktop": "44px / 1.05", "sectionMobile": "32px / 1.08"},
+    "radius": {"control": "2px", "containerMax": "4px"},
+    "spacing": {"base": "8px", "desktopGutter": "64px", "mobileGutter": "20px", "desktopSection": "112px", "mobileSection": "72px", "contentMaxWidth": "1280px"}
+  },
+  "componentMap": {
+    "siteHeader": "shared navigation with Request a Quote, Book Online and Call Us; no WhatsApp",
+    "siteFooter": "shared services, fleet, editorial, contract/contact and legal navigation",
+    "compactQuoteForm": "homepage email enquiry module",
+    "serviceHero": "shared service introduction with breadcrumbs and three-action CTA hierarchy",
+    "bookingFrame": "provider-neutral booking/quote placeholder directly after service hero",
+    "serviceList": "reusable editorial rows for six provisional services",
+    "fleetRows": "six vehicle classes with model-or-equivalent language and current-rate CTA",
+    "articleCard": "reusable editorial preview",
+    "articleLayout": "long-form content with contents rail, tables, checklist and related reading",
+    "faq": "accessible disclosure list; unconfirmed answers marked VERIFY",
+    "ctaBand": "shared final Request a Quote / Book Online / Call Us action"
+  },
+  "bookingIframe": {"requiredOn": ["service-desktop", "service-mobile", "booking-focused-service-desktop"], "placement": "Immediately after the service hero", "desktopMinHeight": "650px", "recommendedHeight": "700px", "provider": "VERIFY", "src": "VERIFY"},
+  "imagery": {"status": "PLATE_SAFE_FLEET_DERIVATIVES_READY", "referenceRoot": "design/assets/fleet-reference", "publicSafeRoot": "design/assets/fleet-public-safe", "catalogue": "design/assets/fleet-reference/ASSET-CATALOG.md", "confirmedMappings": {"firstClass": ["fleet-lineup-s-class-v-class-wide-plate-safe.png", "mercedes-s-class-portrait-plate-safe.png"], "premiumMpv": ["toyota-alphard-plate-safe.png"], "executiveVan": ["mercedes-v-class-pair-plate-safe.png", "mercedes-v-class-hotel-plate-safe.png"], "minibusGroup": ["mercedes-sprinter-pair-plate-safe.png"], "fleetOperations": ["van-fleet-city-plate-safe.png"]}, "stillRequired": ["dedicated Business Sedan", "wheelchair-accessible vehicle", "full-size coach", "interiors and luggage", "chauffeur and meet-and-greet"], "productionNote": "Never use the unedited fleet-reference originals in public website components. Use only fleet-public-safe derivatives, which contain no readable registration numbers. Before launch, also confirm publishing rights and review third-party logos, incidental people, permits and signage. Generated lifestyle imagery remains placeholder-only."},
+  "contentSafety": {"status": "VERIFY", "items": ["vehicle models and capacities", "rates and surcharges", "waiting time, cancellation and child-seat policies", "accessibility arrangements", "contact details and booking provider", "reviews, partner logos, credentials and response-time claims"]},
+  "implementation": {"framework": "Astro 5 + Tailwind CSS 4", "routesBuilt": 18, "check": "PASS", "build": "PASS", "sourceRoot": "sites/airport-transfer-singapore", "outputRoot": "sites/airport-transfer-singapore/dist"},
+  "rejectedScreens": [{"screenId": "e4b1a2283ab44baf9e5350c23ff8a059", "title": "Singapore Airport Transfers — Service Desktop", "decisionDate": "2026-08-22", "reason": "User requested this incomplete desktop service concept be scrapped", "action": "Exclude from export and implementation"}],
+  "intermediateScreens": ["718802394921418739", "da5fb81dcf7c4a2dafbb8ac77d77dd38", "01939ae99f144ce28d7df68c5c4bc73f", "e4b1a2283ab44baf9e5350c23ff8a059", "8e1c829417fc4018a5f39f68eb9d8015", "b9e4340240a248a1a5f7a44823ea9b2c", "699a5569f9124aff8f3baf62482ffaec", "f1d57fc4e1154067bdf4466de2645845", "98a7ab60170c459f977f58612f522da5"]
+}

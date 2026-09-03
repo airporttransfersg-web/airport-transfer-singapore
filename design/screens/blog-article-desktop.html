@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A practical guide to Changi Airport transfers | Airport Transfer Singapore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-low": "#f6f3ec",
+                        "secondary-fixed-dim": "#dfc299",
+                        "mist": "#DDD8CE",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1c1c18",
+                        "paper": "#FFFFFF",
+                        "tertiary-fixed": "#d9e4ef",
+                        "tertiary-fixed-dim": "#bdc8d3",
+                        "primary-fixed": "#e3e2e4",
+                        "primary-fixed-dim": "#c7c6c9",
+                        "surface-container": "#f1eee7",
+                        "outline": "#76777b",
+                        "surface-dim": "#dcdad3",
+                        "on-tertiary-container": "#7b8590",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#1b1c1e",
+                        "inverse-primary": "#c7c6c9",
+                        "on-primary-container": "#848386",
+                        "inverse-surface": "#31312c",
+                        "on-secondary-container": "#77613e",
+                        "surface-tint": "#5e5e60",
+                        "tertiary": "#000000",
+                        "surface-container-lowest": "#ffffff",
+                        "success": "#315B45",
+                        "tertiary-container": "#131d25",
+                        "secondary-container": "#fddeb3",
+                        "on-secondary-fixed-variant": "#574324",
+                        "surface": "#fcf9f2",
+                        "primary-container": "#1b1c1e",
+                        "on-primary-fixed-variant": "#464749",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fcf9f2",
+                        "on-tertiary-fixed-variant": "#3e4851",
+                        "on-surface-variant": "#45474a",
+                        "on-background": "#1c1c18",
+                        "inverse-on-surface": "#f3f0e9",
+                        "destructive": "#9E332D",
+                        "background": "#fcf9f2",
+                        "primary": "#000000",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e5e2db",
+                        "secondary-fixed": "#fddeb3",
+                        "surface-container-highest": "#e5e2db",
+                        "on-tertiary-fixed": "#131d25",
+                        "on-secondary-fixed": "#281901",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c6c6ca",
+                        "surface-container-high": "#ebe8e1",
+                        "secondary": "#715b39"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "gutter-mobile": "20px",
+                        "section-desktop": "112px",
+                        "base": "8px",
+                        "max-width": "1280px",
+                        "gutter-desktop": "64px",
+                        "section-mobile": "72px"
+                    },
+                    fontFamily: {
+                        "hero-mobile": ["Geist"],
+                        "eyebrow": ["Hanken Grotesk"],
+                        "section-heading-mobile": ["Geist"],
+                        "body-regular": ["Hanken Grotesk"],
+                        "section-heading": ["Geist"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "hero-desktop": ["Geist"],
+                        "label": ["Hanken Grotesk"]
+                    },
+                    fontSize: {
+                        "hero-mobile": ["44px", { lineHeight: "1.02", letterSpacing: "-0.02em", fontWeight: "600" }],
+                        "eyebrow": ["12px", { lineHeight: "1.2", letterSpacing: "0.12em", fontWeight: "600" }],
+                        "section-heading-mobile": ["32px", { lineHeight: "1.08", fontWeight: "500" }],
+                        "body-regular": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "section-heading": ["44px", { lineHeight: "1.05", letterSpacing: "-0.01em", fontWeight: "500" }],
+                        "body-lg": ["18px", { lineHeight: "1.55", fontWeight: "400" }],
+                        "hero-desktop": ["72px", { lineHeight: "1.0", letterSpacing: "-0.035em", fontWeight: "600" }],
+                        "label": ["14px", { lineHeight: "1.4", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .prose-custom p { margin-bottom: 1.5em; font-family: 'Hanken Grotesk', sans-serif; font-size: 18px; line-height: 1.65; color: #1c1c18; }
+        .prose-custom h2 { font-family: 'Geist', sans-serif; font-size: 32px; font-weight: 500; margin-top: 2em; margin-bottom: 1em; color: #000000; letter-spacing: -0.01em; }
+        .prose-custom ul { margin-bottom: 1.5em; padding-left: 1.5em; list-style-type: disc; }
+        .prose-custom li { margin-bottom: 0.5em; font-family: 'Hanken Grotesk', sans-serif; font-size: 18px; color: #1c1c18; }
+        .toc-link.active { color: #715b39; border-left-color: #715b39; font-weight: 600; }
+        .editorial-rule { border-top: 1px solid #DDD8CE; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-regular antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface border-b border-mist dark:border-outline-variant full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center px-gutter-desktop py-4 max-w-max-width mx-auto hidden md:flex">
+<a class="font-section-heading text-body-lg font-bold tracking-tighter text-primary dark:text-primary-fixed uppercase" href="#">
+                AIRPORT TRANSFER SINGAPORE
+            </a>
+<ul class="flex space-x-8 font-label text-label">
+<li><a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="#">Services</a></li>
+<li><a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="#">Fleet &amp; Rates</a></li>
+<li><a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="#">About</a></li>
+<li><a class="text-primary dark:text-primary-fixed border-b-2 border-secondary pb-1 opacity-80" href="#">Blog</a></li>
+<li><a class="text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="#">Contact</a></li>
+</ul>
+<div class="flex items-center space-x-4">
+<a class="flex items-center text-on-surface hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined mr-2" style="font-variation-settings: 'FILL' 0;">call</span>
+<span class="font-label text-label">Call Us</span>
+</a>
+<a class="font-label text-label text-on-surface border border-mist px-6 py-3 rounded hover:border-secondary transition-colors" href="#">Book Online</a>
+<a class="font-label text-label bg-primary text-paper px-6 py-3 rounded hover:bg-surface-tint transition-colors" href="#">Request a Quote</a>
+</div>
+</div>
+<!-- Mobile Nav Placeholder (Simplified) -->
+<div class="flex justify-between items-center px-gutter-mobile py-4 md:hidden">
+<a class="font-section-heading text-body-lg font-bold tracking-tighter text-primary uppercase" href="#">
+                AIRPORT TRANSFER SG
+            </a>
+<button class="material-symbols-outlined">menu</button>
+</div>
+</nav>
+<main>
+<!-- Breadcrumb & Hero -->
+<article class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pt-12 pb-section-desktop">
+<div class="mb-12">
+<nav class="font-label text-xs text-on-surface-variant mb-8 uppercase tracking-widest">
+<a class="hover:text-secondary transition-colors" href="#">Home</a> <span class="mx-2 text-mist">/</span>
+<a class="hover:text-secondary transition-colors" href="#">Blog</a> <span class="mx-2 text-mist">/</span>
+<span class="text-on-surface">Changi Airport Transfer Guide</span>
+</nav>
+<div class="max-w-4xl">
+<span class="font-eyebrow text-eyebrow text-secondary uppercase block mb-6">AIRPORT GUIDES</span>
+<h1 class="font-section-heading text-[56px] leading-[1.05] tracking-tight text-primary mb-6">
+                        A practical guide to Changi Airport transfers
+                    </h1>
+<p class="font-body-lg text-[22px] leading-relaxed text-on-surface-variant mb-8 max-w-3xl">
+                        The journey is easier to arrange when passenger, flight, luggage and destination details are clear before booking.
+                    </p>
+<div class="flex flex-wrap items-center gap-6 font-label text-[13px] text-on-surface-variant uppercase tracking-wider editorial-rule pt-4">
+<span>DATE — VERIFY</span>
+<span class="text-mist">|</span>
+<span>AUTHOR — VERIFY</span>
+<span class="text-mist">|</span>
+<span>READ TIME — VERIFY</span>
+</div>
+</div>
+</div>
+<!-- Main Image -->
+<div class="mb-16 w-full relative">
+<img alt="A documentary-style, wide-angle photograph of the arrival hall at Singapore Changi Airport. The scene is bright and spacious, characterized by modern architecture, high ceilings, and natural light flooding in. Passengers with luggage trolleys navigate the clean, polished floors. The mood is calm, efficient, and premium, reflecting the airport's high-quality environment. Clear signage is subtly visible in the background." class="w-full h-auto object-cover max-h-[600px] bg-surface-variant" src="https://lh3.googleusercontent.com/aida/AP1WRLs1OuyGbvcQIIZFMajCBMjQcpnG6UiJb8UT8RAhZWKvOqIAzx48kG3-34o9-6L2m5mtHoLywmaVBg7Wam5nN-vN5o0OETZPWqJP48yHDP5cX4yKOtR7H6PxbFytEOmKStoCBAoLi9WY6zOkbUAJ5dJZ0xt7lNMHqJ8z0JRowkLjnhKUddQDN6q5I5Ex8TTanbbIwo6IqEXQw8MXhFlXywbp5b5aNDMnNZnkCykU_sBn8L0MQqR82otXwQ"/>
+<p class="font-label text-xs text-on-surface-variant mt-3 text-right">Singapore Changi Airport Arrival Hall</p>
+</div>
+<!-- Article Body Layout -->
+<div class="flex flex-col lg:flex-row gap-16 relative">
+<!-- Sticky TOC (Desktop) -->
+<aside class="hidden lg:block w-64 flex-shrink-0">
+<div class="sticky top-32">
+<h3 class="font-eyebrow text-eyebrow text-on-surface uppercase mb-6">Contents</h3>
+<nav class="flex flex-col space-y-4 font-label text-[14px] text-on-surface-variant border-l border-mist pl-4" id="toc">
+<a class="toc-link hover:text-secondary transition-colors" href="#prep">Information to prepare</a>
+<a class="toc-link hover:text-secondary transition-colors" href="#vehicle">Choosing a vehicle</a>
+<a class="toc-link hover:text-secondary transition-colors" href="#arrival">Planning an arrival</a>
+<a class="toc-link hover:text-secondary transition-colors" href="#departure">Planning a departure</a>
+<a class="toc-link hover:text-secondary transition-colors" href="#accessibility">Child seats &amp; accessibility</a>
+<a class="toc-link hover:text-secondary transition-colors" href="#questions">Questions to confirm</a>
+<a class="toc-link hover:text-secondary transition-colors" href="#checklist">Booking checklist</a>
+</nav>
+</div>
+</aside>
+<!-- Content Column -->
+<div class="max-w-[760px] w-full prose-custom">
+<div class="p-8 border border-secondary/30 bg-secondary-container/10 mb-12">
+<p class="m-0 font-medium"><strong>Summary:</strong> Arranging a premium transfer from Changi Airport requires more than just a destination address. Providing exact flight numbers, accurate luggage counts, and specific passenger requirements ensures a seamless meet-and-greet experience and the allocation of the appropriate vehicle class.</p>
+</div>
+<h2 id="prep">Information to prepare before requesting a quote</h2>
+<p>Before contacting a specialized transport provider, gathering the precise details of your journey will significantly expedite the booking process and ensure an accurate quotation. Premium services operate on precision; ambiguity regarding timelines or capacity often leads to operational friction.</p>
+<p>At a minimum, ensure you have the exact date and estimated time of service, the complete flight number (which dictates terminal allocation at Changi), and the full drop-off address. VERIFY — policy details to be confirmed regarding multi-stop journey requirements before booking.</p>
+<h2 id="vehicle">Choosing a vehicle for passengers and luggage</h2>
+<p>Vehicle capacity is governed by strict regulations and safety standards. When assessing your requirements, consider both passenger count and the total volume of luggage. A standard executive sedan, while comfortable for three adults, typically accommodates only two large check-in suitcases alongside cabin baggage.</p>
+<p>For groups or those traveling with extensive equipment, an MPV or luxury van is usually mandated. Oversized items such as golf clubs, surfboards, or oversized boxes must be declared during the inquiry stage to avoid boarding refusal at the terminal. VERIFY — luggage dimension policies to be confirmed with the operator.</p>
+<h2 id="arrival">Planning an airport arrival transfer</h2>
+<p>An arrival transfer centers on the meet-and-greet protocol. Your chauffeur will typically monitor your flight status using the provided flight number, adjusting their arrival time to account for early landings or delays. Upon exiting the baggage claim area, you will be met at the designated arrival hall with a personalized placard.</p>
+<p>Changi Airport operates across four main terminals, each with specific pickup zones. Ensure your provider details the exact meeting point procedure for your specific terminal. VERIFY — complimentary waiting time policy post-flight landing to be confirmed.</p>
+<h2 id="departure">Planning an airport departure transfer</h2>
+<p>Departures demand a different rhythm, focused on punctuality and traffic management. Industry standard recommends arriving at Changi Airport at least two hours prior to departure for regional flights, and three hours for international long-haul.</p>
+<p>When booking a departure transfer, the requested pickup time should factor in estimated travel time from your location, potential peak-hour traffic conditions on the ECP or PIE, and your preferred pre-flight buffer at the airport. VERIFY — midnight surcharge or peak hour pricing policies to be confirmed.</p>
+<!-- Data Table -->
+<div class="my-12 overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-mist font-label text-xs uppercase tracking-wider text-on-surface-variant">
+<th class="py-4 pr-4 font-semibold">Topic</th>
+<th class="py-4 px-4 font-semibold">Information to provide</th>
+<th class="py-4 pl-4 font-semibold">Detail to confirm</th>
+</tr>
+</thead>
+<tbody class="font-body-regular text-[15px]">
+<tr class="border-b border-mist/50">
+<td class="py-4 pr-4 font-medium text-on-surface">Flight</td>
+<td class="py-4 px-4 text-on-surface-variant">Airline and exact flight number</td>
+<td class="py-4 pl-4 text-on-surface-variant">Flight monitoring inclusion</td>
+</tr>
+<tr class="border-b border-mist/50">
+<td class="py-4 pr-4 font-medium text-on-surface">Pickup</td>
+<td class="py-4 px-4 text-on-surface-variant">Date and precise requested time</td>
+<td class="py-4 pl-4 text-on-surface-variant">Grace waiting period limits</td>
+</tr>
+<tr class="border-b border-mist/50">
+<td class="py-4 pr-4 font-medium text-on-surface">Destination</td>
+<td class="py-4 px-4 text-on-surface-variant">Full address including postal code</td>
+<td class="py-4 pl-4 text-on-surface-variant">Multi-stop routing fees</td>
+</tr>
+<tr class="border-b border-mist/50">
+<td class="py-4 pr-4 font-medium text-on-surface">Passengers</td>
+<td class="py-4 px-4 text-on-surface-variant">Total count including infants</td>
+<td class="py-4 pl-4 text-on-surface-variant">Vehicle max capacity limits</td>
+</tr>
+<tr class="border-b border-mist/50">
+<td class="py-4 pr-4 font-medium text-on-surface">Luggage</td>
+<td class="py-4 px-4 text-on-surface-variant">Count of check-in &amp; cabin bags</td>
+<td class="py-4 pl-4 text-on-surface-variant">Oversized item surcharges</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="accessibility">Child seats and accessibility requirements</h2>
+<p>Singapore law mandates the use of appropriate child restraints for passengers under a specific height. When traveling with children, you must indicate the requirement for a child seat or infant carrier during the booking process. Not all vehicles are equipped with these by default, and they often incur an additional setup fee.</p>
+<p>For passengers with mobility requirements, including the need for foldable wheelchair storage or specific boarding assistance, proactive communication is essential. VERIFY — child seat availability and exact regulatory compliance requirements to be confirmed.</p>
+<h2 id="questions">Questions to confirm before paying</h2>
+<p>Clarity prior to payment prevents disputes on the day of service. Ensure the quoted price is comprehensive. Ask specifically if the rate includes Electronic Road Pricing (ERP) tolls, airport parking fees incurred during the meet-and-greet, and all applicable taxes.</p>
+<p>Furthermore, request the cancellation and amendment policy in writing. Travel plans are subject to change, and understanding the financial implications of a delayed flight or altered itinerary is crucial. VERIFY — comprehensive inclusion list and refund policies to be confirmed.</p>
+<h2 id="checklist">Airport transfer booking checklist</h2>
+<div class="border-l-2 border-secondary pl-6 py-2 my-8">
+<p class="font-medium text-on-surface mb-4">Complete this checklist before submitting your inquiry to ensure a swift and accurate response:</p>
+<ul class="space-y-3 m-0 p-0 list-none font-body-regular text-on-surface-variant">
+<li class="flex items-start"><span class="material-symbols-outlined text-secondary mr-3 text-[20px]">check_box_outline_blank</span> <span>Exact travel date and requested pickup time identified.</span></li>
+<li class="flex items-start"><span class="material-symbols-outlined text-secondary mr-3 text-[20px]">check_box_outline_blank</span> <span>Full flight number ready (e.g., SQ322).</span></li>
+<li class="flex items-start"><span class="material-symbols-outlined text-secondary mr-3 text-[20px]">check_box_outline_blank</span> <span>Complete pickup/drop-off addresses confirmed.</span></li>
+<li class="flex items-start"><span class="material-symbols-outlined text-secondary mr-3 text-[20px]">check_box_outline_blank</span> <span>Accurate headcount (adults, children, infants) tallied.</span></li>
+<li class="flex items-start"><span class="material-symbols-outlined text-secondary mr-3 text-[20px]">check_box_outline_blank</span> <span>Total luggage count (large vs. cabin) and oversized items listed.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+<!-- Related Reading & Author -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-desktop">
+<div class="editorial-rule pt-12 flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<h4 class="font-eyebrow text-eyebrow text-on-surface uppercase mb-4">About the Author</h4>
+<p class="font-label text-base text-primary mb-2">Airport Transfer Singapore Editorial Team</p>
+<p class="font-body-regular text-[15px] text-on-surface-variant mb-4">Specialists in corporate and premium transport logistics across Singapore and the broader Southeast Asian business hubs. VERIFY author details.</p>
+<a class="font-label text-sm text-secondary hover:text-primary transition-colors border-b border-secondary/30 pb-0.5" href="#">View all articles</a>
+</div>
+<div class="md:w-2/3">
+<h4 class="font-eyebrow text-eyebrow text-on-surface uppercase mb-6">Related Reading</h4>
+<div class="flex flex-col">
+<a class="py-6 border-t border-mist/50 group flex justify-between items-center" href="#">
+<span class="font-section-heading text-[22px] text-primary group-hover:text-secondary transition-colors">Navigating Changi Airport's JetQuay CIP Terminal</span>
+<span class="material-symbols-outlined text-mist group-hover:text-secondary transition-colors">arrow_forward</span>
+</a>
+<a class="py-6 border-t border-mist/50 group flex justify-between items-center" href="#">
+<span class="font-section-heading text-[22px] text-primary group-hover:text-secondary transition-colors">Corporate travel: Managing multi-vehicle itineraries</span>
+<span class="material-symbols-outlined text-mist group-hover:text-secondary transition-colors">arrow_forward</span>
+</a>
+<a class="py-6 border-t border-mist/50 border-b group flex justify-between items-center" href="#">
+<span class="font-section-heading text-[22px] text-primary group-hover:text-secondary transition-colors">Understanding Singapore's road pricing (ERP) for visitors</span>
+<span class="material-symbols-outlined text-mist group-hover:text-secondary transition-colors">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="bg-primary text-paper py-section-desktop px-gutter-mobile md:px-gutter-desktop text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-section-heading text-[40px] md:text-[56px] leading-tight mb-8">Planning an airport journey?</h2>
+<p class="font-body-lg text-[18px] text-surface-variant opacity-90 mb-10">Ensure a seamless arrival or departure with our specialized fleet and professional chauffeurs.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<a class="w-full sm:w-auto font-label text-label bg-paper text-primary px-8 py-4 rounded hover:bg-surface-variant transition-colors" href="#">Request a Quote</a>
+<a class="w-full sm:w-auto font-label text-label bg-transparent text-paper border border-outline px-8 py-4 rounded hover:border-paper transition-colors" href="#">Book Online</a>
+<a class="w-full sm:w-auto font-label text-label flex items-center justify-center text-paper hover:text-secondary-fixed transition-colors py-4 px-4" href="#">
+<span class="material-symbols-outlined mr-2">call</span> Call Us
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container full-width border-t border-outline dark:border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-base px-gutter-desktop py-section-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<div class="font-section-heading text-body-lg text-surface-container-lowest font-bold tracking-tighter uppercase mb-6">
+                    AIRPORT TRANSFER SINGAPORE
+                </div>
+<p class="font-body-regular text-[14px] text-surface-variant opacity-70 mt-auto">
+                    © 2026 AIRPORT TRANSFER SINGAPORE. All rights reserved.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label text-surface-container-lowest mb-4 uppercase tracking-widest text-xs opacity-50">Navigation</h4>
+<ul class="space-y-3 font-body-regular text-body-regular">
+<li><a class="text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Services</a></li>
+<li><a class="text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Fleet &amp; Rates</a></li>
+<li><a class="text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">About</a></li>
+<li><a class="text-surface-container-lowest hover:text-secondary-fixed transition-colors" href="#">Blog</a></li>
+<li><a class="text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label text-surface-container-lowest mb-4 uppercase tracking-widest text-xs opacity-50">Legal</h4>
+<ul class="space-y-3 font-body-regular text-body-regular">
+<li><a class="text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<!-- Empty column for grid structure based on JSON md:grid-cols-4 -->
+</div>
+</div>
+</footer>
+<script>
+        // Simple script to highlight active TOC link based on scroll position
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelectorAll('.toc-link').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        const activeLink = document.querySelector(`.toc-link[href="#${id}"]`);
+                        if (activeLink) activeLink.classList.add('active');
+                    }
+                });
+            }, { rootMargin: '-100px 0px -60% 0px' });
+
+            document.querySelectorAll('h2[id]').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>

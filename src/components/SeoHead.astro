@@ -1,0 +1,68 @@
+---
+import site from "../../site.config";
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  pageType?: string;
+  noindex?: boolean;
+  image?: string;
+  breadcrumbs?: Array<{ label: string; href: string | null }>;
+}
+
+const {
+  title,
+  description,
+  path,
+  pageType = "WebPage",
+  noindex = false,
+  image,
+  breadcrumbs,
+} = Astro.props;
+
+const canonical = new URL(path, site.url).toString();
+const ogImage = image ? new URL(image, site.url).toString() : undefined;
+const isArticle = ["article", "guide", "blog"].includes(pageType);
+
+const jsonLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": isArticle ? "Article" : pageType === "service" ? "Service" : "WebPage",
+  name: title,
+  description,
+  url: canonical,
+  isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
+};
+if (ogImage) jsonLd.image = ogImage;
+
+const breadcrumbLd =
+  breadcrumbs && breadcrumbs.length > 1
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbs.map((crumb, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: crumb.label,
+          ...(crumb.href ? { item: new URL(crumb.href, site.url).toString() } : {}),
+        })),
+      }
+    : undefined;
+---
+
+<title>{title} | {site.shortName}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:type" content={isArticle ? "article" : "website"} />
+{ogImage && <meta property="og:image" content={ogImage} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{ogImage && <meta name="twitter:image" content={ogImage} />}
+<script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+{breadcrumbLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />}

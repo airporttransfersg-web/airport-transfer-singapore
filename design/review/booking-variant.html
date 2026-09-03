@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hourly Chauffeur Service | Airport Transfer Singapore</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e5e2db",
+                      "on-secondary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#3e4851",
+                      "tertiary-container": "#131d25",
+                      "surface-container-high": "#ebe8e1",
+                      "tertiary-fixed-dim": "#bdc8d3",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-container": "#848386",
+                      "mist": "#DDD8CE",
+                      "primary-fixed-dim": "#c7c6c9",
+                      "inverse-surface": "#31312c",
+                      "paper": "#FFFFFF",
+                      "secondary-container": "#fddeb3",
+                      "background": "#fcf9f2",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#f1eee7",
+                      "secondary-fixed": "#fddeb3",
+                      "on-secondary-container": "#77613e",
+                      "on-surface-variant": "#45474a",
+                      "on-secondary-fixed-variant": "#574324",
+                      "surface-container-highest": "#e5e2db",
+                      "outline-variant": "#c6c6ca",
+                      "error-container": "#ffdad6",
+                      "destructive": "#9E332D",
+                      "primary-container": "#1b1c1e",
+                      "success": "#315B45",
+                      "surface-bright": "#fcf9f2",
+                      "secondary-fixed-dim": "#dfc299",
+                      "inverse-primary": "#c7c6c9",
+                      "on-tertiary-fixed": "#131d25",
+                      "on-tertiary-container": "#7b8590",
+                      "inverse-on-surface": "#f3f0e9",
+                      "surface-container-low": "#f6f3ec",
+                      "secondary": "#715b39",
+                      "primary": "#000000",
+                      "on-secondary-fixed": "#281901",
+                      "primary-fixed": "#e3e2e4",
+                      "on-primary-fixed": "#1b1c1e",
+                      "tertiary": "#000000",
+                      "surface-dim": "#dcdad3",
+                      "on-error": "#ffffff",
+                      "outline": "#76777b",
+                      "on-surface": "#1c1c18",
+                      "surface": "#fcf9f2",
+                      "on-primary-fixed-variant": "#464749",
+                      "error": "#ba1a1a",
+                      "surface-tint": "#5e5e60",
+                      "on-background": "#1c1c18",
+                      "tertiary-fixed": "#d9e4ef",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter-desktop": "64px",
+                      "max-width": "1280px",
+                      "gutter-mobile": "20px",
+                      "base": "8px",
+                      "section-mobile": "72px",
+                      "section-desktop": "112px"
+              },
+              "fontFamily": {
+                      "label": [
+                              "Hanken Grotesk"
+                      ],
+                      "section-heading-mobile": [
+                              "Geist"
+                      ],
+                      "hero-mobile": [
+                              "Geist"
+                      ],
+                      "body-regular": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "section-heading": [
+                              "Geist"
+                      ],
+                      "hero-desktop": [
+                              "Geist"
+                      ],
+                      "eyebrow": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "section-heading-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.08",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "hero-mobile": [
+                              "44px",
+                              {
+                                      "lineHeight": "1.02",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-regular": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.55",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "section-heading": [
+                              "44px",
+                              {
+                                      "lineHeight": "1.05",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "hero-desktop": [
+                              "54px", // Adjusted to ~64px scale (54px is closer to 72 * 0.75)
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "-0.035em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "eyebrow": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.12em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-regular antialiased selection:bg-secondary-container selection:text-on-surface">
+<!-- Header Component -->
+<header class="bg-surface dark:bg-surface border-b border-mist dark:border-outline-variant docked full-width top-0 z-50 sticky transition-all duration-300">
+<div class="flex justify-between items-center px-gutter-desktop py-4 max-w-max-width mx-auto">
+<!-- Brand -->
+<a class="font-section-heading text-body-lg font-bold tracking-tighter text-primary dark:text-primary-fixed uppercase tracking-wider text-xl" href="/">
+                AIRPORT TRANSFER SINGAPORE
+            </a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label text-label text-primary dark:text-primary-fixed border-b-2 border-secondary pb-1 transition-colors duration-200" href="/services">Services</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors duration-200" href="/fleet">Fleet &amp; Rates</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors duration-200" href="/about">About</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors duration-200" href="/blog">Blog</a>
+<a class="font-label text-label text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors duration-200" href="/contact">Contact</a>
+</nav>
+<!-- Actions -->
+<div class="hidden md:flex items-center gap-6">
+<a class="flex items-center gap-2 font-label text-label text-on-surface hover:text-secondary transition-colors duration-200" href="tel:+6500000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                    Call Us
+                </a>
+<a class="font-label text-label text-on-surface hover:text-secondary transition-colors duration-200" href="/book">
+                    Book Online
+                </a>
+<a class="inline-flex items-center justify-center px-6 h-[52px] bg-primary text-on-primary font-label text-label rounded hover:bg-surface-tint transition-colors duration-200" href="/quote">
+                    Request a Quote
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle menu" class="md:hidden flex items-center text-primary">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Breadcrumb -->
+<div class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop py-8">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="/">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="/services">Services</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span aria-current="page" class="text-primary">Hourly Chauffeur Service</span>
+</nav>
+</div>
+<!-- Service Hero -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-mobile md:pb-section-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+<div class="space-y-8">
+<div class="space-y-4">
+<span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest block">HOURLY CHAUFFEUR SERVICE</span>
+<h1 class="font-hero-mobile md:font-hero-desktop text-hero-mobile md:text-[64px] text-primary">
+                            A chauffeur and vehicle for the time your itinerary requires.
+                        </h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Plan your flexible transportation with a chauffeur and vehicle suited to your itinerary. VERIFY — details to be confirmed.
+                    </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 h-[52px] bg-primary text-on-primary font-label text-label rounded hover:bg-surface-tint transition-colors duration-200" href="#quote">
+                            Request a Quote
+                        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 h-[52px] border border-primary text-primary font-label text-label rounded hover:bg-surface-variant transition-colors duration-200" href="#book">
+                            Book Online
+                        </a>
+<a class="hidden sm:inline-flex items-center gap-2 font-label text-label text-primary hover:text-secondary transition-colors duration-200 ml-4" href="tel:+6500000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                            Call Us
+                        </a>
+</div>
+</div>
+<div class="relative aspect-[4/3] lg:aspect-square w-full rounded overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sleek black Mercedes V-Class luxury passenger van parked elegantly under the modern, architectural glass and steel canopy of Singapore Changi Airport Terminal 4. The warm, golden hour light reflects off the pristine exterior of the vehicle and the terminal's glass facade, creating a premium, calm, and professional atmosphere. The scene embodies quiet luxury and structured efficiency, typical of high-end specialized transport operators." src="https://lh3.googleusercontent.com/aida/AP1WRLuSxOonbUinBMlcppk6vsNaokZlvd3vJBfCFGF8H39mDA05gjx2ZJojNpj8Cr0q3Ky1sibWolpRzeFI7CECmz8ciL4QJ64OHuh_JdgD0RJ0rZgrAm4ovot4cX_VhQmP-TsGxYo1LdUJ-_G-pAC8RLPHN9_f_rnrLSaLI59rqS3G483fmT9uuX-jp6mBe-RFRwkpfek92jYtrCTQkdvn4GidH-nJXv-D5yLbHOUJTo5Bc1UHzc-RMvvp-t4"/>
+</div>
+</div>
+</section>
+<!-- Booking Iframe Placeholder -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-mobile md:pb-section-desktop" id="book">
+<div class="bg-paper p-8 md:p-16 border border-mist rounded min-h-[700px] flex flex-col items-center justify-center relative">
+<div class="text-center space-y-6 w-full max-w-2xl">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary">Plan your hourly chauffeur service</h2>
+<p class="font-body-regular text-body-regular text-on-surface-variant border border-mist py-3 px-4 rounded bg-surface">
+                        Secure booking application or quote form — VERIFY provider and source.
+                    </p>
+<!-- Booking Form Structure -->
+<form class="w-full mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Date</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="date"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Start Time</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="time"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Duration (hours)</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" placeholder="e.g. 4" type="number"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Pickup Location</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" placeholder="Hotel or Address" type="text"/>
+</div>
+<div class="space-y-1 md:col-span-2">
+<label class="font-label text-label text-on-surface">Itinerary/Stops</label>
+<textarea class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" placeholder="List your planned stops" rows="2"></textarea>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Passengers</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="number"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Luggage</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="number"/>
+</div>
+<div class="space-y-1 md:col-span-2">
+<label class="font-label text-label text-on-surface">Vehicle Preference</label>
+<select class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface">
+<option>Business Sedan</option>
+<option>Premium MPV</option>
+<option>Executive Van</option>
+<option>First Class</option>
+<option>Accessible Vehicle</option>
+<option>Minibus &amp; Coach</option>
+</select>
+</div>
+<!-- Contact Info -->
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Contact Name</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Email</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Telephone</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="tel"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-label text-on-surface">Notes</label>
+<input class="w-full bg-surface-container-low border border-mist rounded p-3 text-body-regular text-on-surface" type="text"/>
+</div>
+<div class="md:col-span-2 mt-4">
+<button class="w-full bg-primary text-on-primary font-label text-label rounded py-4 hover:bg-surface-tint transition-colors" type="button">Submit Request</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- A clear route from airport to destination -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-mobile md:pb-section-desktop">
+<div class="max-w-3xl space-y-6">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary">Flexible transportation for your itinerary</h2>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+            Describe the adaptable, hourly nature of the service. VERIFY — details to be confirmed.
+        </p>
+</div>
+</section>
+<!-- Arrivals and Departures -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-mobile md:pb-section-desktop">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary mb-12">Business Roadshows &amp; Sightseeing</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-surface-container-low p-8 rounded border border-mist space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">Business Roadshows</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+                Details regarding business itineraries and multi-stop requirements. VERIFY — details to be confirmed.
+            </p>
+</div>
+<div class="bg-surface-container-low p-8 rounded border border-mist space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">Sightseeing &amp; Leisure</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+                Details regarding flexible sightseeing tours. VERIFY — details to be confirmed.
+            </p>
+</div>
+</div>
+</section>
+<!-- What we need from you -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-mobile md:pb-section-desktop">
+<div class="bg-paper border border-mist p-8 md:p-12 rounded">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary mb-8">What we need from you</h2>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<li class="flex items-center gap-4 text-on-surface-variant font-body-regular text-body-regular">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                Date &amp; Start Time
+            </li>
+<li class="flex items-center gap-4 text-on-surface-variant font-body-regular text-body-regular">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                Duration (hours)
+            </li>
+<li class="flex items-center gap-4 text-on-surface-variant font-body-regular text-body-regular">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                Pickup Location
+            </li>
+<li class="flex items-center gap-4 text-on-surface-variant font-body-regular text-body-regular">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                Itinerary/Stops
+            </li>
+<li class="flex items-center gap-4 text-on-surface-variant font-body-regular text-body-regular">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                Passengers &amp; Luggage
+            </li>
+<li class="flex items-center gap-4 text-on-surface-variant font-body-regular text-body-regular">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                Vehicle Preference
+            </li>
+</ul>
+</div>
+</section>
+<!-- Select your vehicle -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-mobile md:pb-section-desktop">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary mb-12">Select your vehicle</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Vehicle 1 -->
+<div class="bg-surface border border-mist rounded p-6 space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">Business Sedan</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Up to 3 passengers</p>
+<p class="font-body-regular text-body-regular text-on-surface-variant italic">Model or equivalent</p>
+<a class="text-secondary font-label text-label hover:underline" href="/quote">Request current rates</a>
+</div>
+<!-- Vehicle 2 -->
+<div class="bg-surface border border-mist rounded p-6 space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">Premium MPV</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Up to 6 passengers</p>
+<p class="font-body-regular text-body-regular text-on-surface-variant italic">Model or equivalent</p>
+<a class="text-secondary font-label text-label hover:underline" href="/quote">Request current rates</a>
+</div>
+<!-- Vehicle 3 -->
+<div class="bg-surface border border-mist rounded p-6 space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">Executive Van</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Up to 7 passengers</p>
+<p class="font-body-regular text-body-regular text-on-surface-variant italic">Model or equivalent</p>
+<a class="text-secondary font-label text-label hover:underline" href="/quote">Request current rates</a>
+</div>
+<!-- Vehicle 4 -->
+<div class="bg-surface border border-mist rounded p-6 space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">First Class</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Luxury sedans, MPVs and vans</p>
+<p class="font-body-regular text-body-regular text-on-surface-variant italic">Model or equivalent</p>
+<a class="text-secondary font-label text-label hover:underline" href="/quote">Request current rates</a>
+</div>
+<!-- Vehicle 5 -->
+<div class="bg-surface border border-mist rounded p-6 space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">Accessible Vehicles</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Wheelchair-adapted options</p>
+<p class="font-body-regular text-body-regular text-on-surface-variant italic">Model or equivalent</p>
+<a class="text-secondary font-label text-label hover:underline" href="/quote">Request current rates</a>
+</div>
+<!-- Vehicle 6 -->
+<div class="bg-surface border border-mist rounded p-6 space-y-4">
+<h3 class="font-label text-label text-primary uppercase tracking-wider">Minibus &amp; Coach</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Approx. 9–40 passengers</p>
+<p class="font-body-regular text-body-regular text-on-surface-variant italic">Model or equivalent</p>
+<a class="text-secondary font-label text-label hover:underline" href="/quote">Request current rates</a>
+</div>
+</div>
+</section>
+<!-- How it works -->
+<section class="bg-surface-container-low py-section-mobile md:py-section-desktop border-y border-mist">
+<div class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary mb-12 text-center">How it works</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="space-y-4">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto font-section-heading text-2xl">1</div>
+<h3 class="font-label text-label text-primary uppercase">Share journey details</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Provide the necessary information. VERIFY — details to be confirmed.</p>
+</div>
+<div class="space-y-4">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto font-section-heading text-2xl">2</div>
+<h3 class="font-label text-label text-primary uppercase">Confirm vehicle &amp; quotation</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Review and confirm. VERIFY — details to be confirmed.</p>
+</div>
+<div class="space-y-4">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto font-section-heading text-2xl">3</div>
+<h3 class="font-label text-label text-primary uppercase">Meet your chauffeur</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Meet your driver at the airport. VERIFY — details to be confirmed.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Information Band -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop py-12">
+<div class="flex flex-wrap justify-center gap-8 text-on-surface-variant font-label text-label text-sm uppercase tracking-wider">
+<span>Luggage (VERIFY)</span>
+<span class="text-mist">•</span>
+<span>Child Seats (VERIFY)</span>
+<span class="text-mist">•</span>
+<span>Accessible Vehicles (VERIFY)</span>
+<span class="text-mist">•</span>
+<span>Porter/VIP Assistance (VERIFY)</span>
+<span class="text-mist">•</span>
+<span>Waiting and Surcharges (VERIFY)</span>
+</div>
+</section>
+<!-- Frequently Asked Questions -->
+<section class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop pb-section-mobile md:pb-section-desktop">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary mb-12">Frequently Asked Questions</h2>
+<div class="space-y-4 max-w-4xl">
+<!-- FAQ 1 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">What is the minimum booking duration for hourly service?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+<!-- FAQ 2 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">Can I modify my itinerary during the booking?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+<!-- FAQ 3 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">Are additional stops included in the hourly rate?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+<!-- FAQ 4 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">What if I exceed the booked duration?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+<!-- FAQ 5 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">Does the hourly rate cover parking and tolls?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+<!-- FAQ 6 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">Can I book an hourly chauffeur for trips outside the city?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+<!-- FAQ 7 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">How far in advance should I book the hourly service?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+<!-- FAQ 8 -->
+<div class="border-b border-mist pb-4">
+<h3 class="font-label text-label text-primary mb-2">Can I request a specific chauffeur for my booking?</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">VERIFY — policy details to be confirmed.</p>
+</div>
+</div>
+</section>
+<!-- Related Services -->
+<section class="bg-surface-container-low py-section-mobile md:py-section-desktop border-t border-mist">
+<div class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-primary mb-12">Related Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<a class="block bg-paper p-8 border border-mist rounded hover:border-secondary transition-colors" href="/airport-transfers">
+<h3 class="font-label text-label text-primary uppercase tracking-wider mb-2">Airport Transfers</h3>
+<span class="text-secondary text-sm font-label flex items-center gap-1">Learn more <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</a>
+<a class="block bg-paper p-8 border border-mist rounded hover:border-secondary transition-colors" href="/corporate">
+<h3 class="font-label text-label text-primary uppercase tracking-wider mb-2">Corporate Transportation</h3>
+<span class="text-secondary text-sm font-label flex items-center gap-1">Learn more <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</a>
+<a class="block bg-paper p-8 border border-mist rounded hover:border-secondary transition-colors" href="/hotel-transfers">
+<h3 class="font-label text-label text-primary uppercase tracking-wider mb-2">Hotel &amp; City Transfers</h3>
+<span class="text-secondary text-sm font-label flex items-center gap-1">Learn more <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</a>
+</div>
+</div>
+</section>
+<!-- Dark CTA -->
+<section class="bg-primary text-surface py-section-mobile md:py-section-desktop">
+<div class="max-w-max-width mx-auto px-gutter-mobile md:px-gutter-desktop text-center space-y-8">
+<h2 class="font-section-heading text-section-heading-mobile md:text-section-heading text-surface max-w-2xl mx-auto">Tell us about your itinerary.</h2>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 h-[52px] bg-secondary text-on-secondary font-label text-label rounded hover:bg-secondary-fixed-dim transition-colors duration-200" href="/quote">
+                Request a Quote
+            </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 h-[52px] bg-paper text-primary font-label text-label rounded hover:bg-surface-variant transition-colors duration-200" href="/book">
+                Book Online
+            </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 h-[52px] border border-surface text-surface font-label text-label rounded hover:bg-surface-variant hover:text-primary transition-colors duration-200" href="tel:+6500000000">
+                Call Us
+            </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-primary dark:bg-tertiary-container text-surface dark:text-surface-variant full-width border-t border-outline dark:border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-base px-gutter-desktop py-section-desktop max-w-max-width mx-auto">
+<!-- Brand & Copyright -->
+<div class="space-y-6 md:col-span-1">
+<div class="font-section-heading text-body-lg text-surface-container-lowest font-bold tracking-tighter uppercase">
+                    AIRPORT TRANSFER SINGAPORE
+                </div>
+<p class="font-body-regular text-body-regular text-surface-variant opacity-70 text-sm">
+                    © 2026 AIRPORT TRANSFER SINGAPORE. All rights reserved. VERIFY — legal details.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="space-y-4">
+<a class="block font-body-regular text-body-regular text-surface-container-lowest hover:text-secondary-fixed transition-colors" href="/services">Services</a>
+<a class="block font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="/fleet">Fleet &amp; Rates</a>
+<a class="block font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="/about">About</a>
+</div>
+<!-- Links Column 2 -->
+<div class="space-y-4">
+<a class="block font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="/blog">Blog</a>
+<a class="block font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="/contact">Contact</a>
+</div>
+<!-- Legal Links -->
+<div class="space-y-4">
+<a class="block font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="/terms">Terms of Service</a>
+<a class="block font-body-regular text-body-regular text-surface-variant opacity-70 hover:text-secondary-fixed transition-colors" href="/privacy">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

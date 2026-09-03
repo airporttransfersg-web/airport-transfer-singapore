@@ -1,0 +1,41 @@
+---
+interface Value {
+  icon: string;
+  title: string;
+  body: string;
+}
+
+interface Props {
+  values?: Value[];
+}
+
+const {
+  values = [
+    { icon: "schedule", title: "Punctuality", body: "Meticulous timing, ensuring you arrive precisely when needed." },
+    { icon: "visibility_off", title: "Discretion", body: "Absolute privacy and confidentiality for discerning clients." },
+    { icon: "verified_user", title: "Professionalism", body: "Impeccably presented chauffeurs delivering elevated service." },
+  ],
+} = Astro.props;
+---
+
+<section class="mb-section-gap border-y border-champagne-gold/30 bg-surface-container py-16">
+  <div class="mx-auto max-w-site px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-1 gap-12 divide-y divide-champagne-gold/30 text-center md:grid-cols-3 md:divide-x md:divide-y-0">
+      {
+        values.map((value) => (
+          <div class="flex flex-col items-center py-6 md:py-0">
+            <span
+              class="material-symbols-outlined mb-4 text-4xl text-champagne-gold"
+              style="font-variation-settings: 'FILL' 0, 'wght' 200;"
+              aria-hidden="true"
+            >
+              {value.icon}
+            </span>
+            <h4 class="mb-2 font-display text-2xl leading-8 text-primary">{value.title}</h4>
+            <p class="font-body text-body-md text-on-surface-variant">{value.body}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

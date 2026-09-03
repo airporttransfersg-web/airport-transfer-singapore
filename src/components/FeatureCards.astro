@@ -1,0 +1,48 @@
+---
+/**
+ * "Tailored to Your Itinerary" card pair from the approved service screens.
+ * Content comes from MDX slot fragments so copy stays in content files.
+ */
+interface Props {
+  cards: Array<{
+    icon: string;
+    title: string;
+    body: string;
+    bullets: string[];
+  }>;
+  heading?: string;
+}
+
+const { cards, heading = "Tailored to Your Itinerary" } = Astro.props;
+---
+
+<section class="border-y border-champagne-gold/10 bg-surface-container-low py-section-gap">
+  <div class="mx-auto max-w-site px-margin-mobile md:px-margin-desktop">
+    <h2 class="mb-16 text-center font-display text-headline-lg text-primary">{heading}</h2>
+    <div class="mx-auto grid max-w-4xl grid-cols-1 gap-gutter md:grid-cols-2">
+      {
+        cards.map((card) => (
+          <div class="rounded-xl border border-champagne-gold/30 bg-surface-container-lowest p-8 transition-shadow duration-300 hover:shadow-sm md:p-10">
+            <span
+              class="material-symbols-outlined mb-6 block text-3xl text-champagne-gold"
+              style="font-variation-settings: 'FILL' 0;"
+              aria-hidden="true"
+            >
+              {card.icon}
+            </span>
+            <h3 class="mb-4 font-display text-headline-md text-primary">{card.title}</h3>
+            <p class="mb-6 font-body text-body-md text-on-surface-variant">{card.body}</p>
+            <ul class="space-y-3 font-body text-body-md text-on-surface-variant">
+              {card.bullets.map((bullet) => (
+                <li class="flex items-start">
+                  <span class="mr-2 text-champagne-gold" aria-hidden="true">•</span>
+                  {bullet}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

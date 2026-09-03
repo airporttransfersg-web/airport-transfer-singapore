@@ -1,0 +1,47 @@
+---
+import { render } from "astro:content";
+import SiteShell from "../layouts/SiteShell.astro";
+import ServiceTemplate from "../templates/ServiceTemplate.astro";
+import ArticleTemplate from "../templates/ArticleTemplate.astro";
+import SalesTemplate from "../templates/SalesTemplate.astro";
+import { publishedPages, buildRouteTable, breadcrumbFor, optimizedImage } from "../lib/content";
+
+export async function getStaticPaths() {
+  const entries = await publishedPages();
+  const table = buildRouteTable(entries);
+  return [...table.entries()].map(([slug, entry]) => ({
+    params: { slug },
+    props: { entryId: entry.id },
+  }));
+}
+
+const { entryId } = Astro.props;
+const all = await publishedPages();
+const entry = all.find((candidate) => candidate.id === entryId);
+if (!entry) throw new Error(`Entry ${entryId} disappeared before render.`);
+
+const { Content, headings } = await render(entry);
+const { data } = entry;
+const template = data.template ?? (data.pageType === "service" ? "service" : "article");
+const siblings = all.filter((candidate) => candidate.data.pageType === data.pageType);
+---
+
+<SiteShell
+  title={data.title}
+  description={data.description}
+  path={data.slug}
+  pageType={data.pageType}
+  noindex={data.noindex}
+  image={optimizedImage(data.image)}
+  breadcrumbs={breadcrumbFor(entry)}
+>
+  {
+    template === "sales" ? (
+      <SalesTemplate entry={entry} Content={Content} headings={headings} />
+    ) : template === "service" ? (
+      <ServiceTemplate entry={entry} Content={Content} siblings={siblings} />
+    ) : (
+      <ArticleTemplate entry={entry} Content={Content} headings={headings} siblings={siblings} />
+    )
+  }
+</SiteShell>

@@ -1,0 +1,115 @@
+---
+interface Props {
+  showVerificationNote?: boolean;
+  includeConsent?: boolean;
+}
+
+import { releasedRouteSet } from "../lib/content";
+
+const { showVerificationNote = false, includeConsent = false } = Astro.props;
+const privacyReleased = (await releasedRouteSet()).has("/privacy/");
+const fieldClass = "h-11 w-full border border-mist bg-ivory px-3 text-sm font-normal focus:border-brass focus:outline-none focus:ring-1 focus:ring-brass";
+const labelClass = "grid gap-1.5 text-sm font-semibold";
+---
+
+<form class="quote-form mx-auto grid max-w-4xl gap-4" action="/api/enquiry" method="post" data-quote-form>
+  <div class="grid gap-4 md:grid-cols-2">
+    <label class={labelClass}>Name <span class="text-brass" aria-hidden="true">*</span><input class={fieldClass} name="name" autocomplete="name" maxlength="100" required /></label>
+    <label class={labelClass}>Email <span class="text-brass" aria-hidden="true">*</span><input class={fieldClass} type="email" name="email" autocomplete="email" maxlength="254" required /></label>
+  </div>
+  <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <label class={labelClass}>Contact number <span class="text-brass" aria-hidden="true">*</span><input class={fieldClass} type="tel" name="phone" autocomplete="tel" placeholder="+65 8123 4567" maxlength="40" required /></label>
+    <label class={labelClass}>Date of transport <span class="text-brass" aria-hidden="true">*</span><input class={fieldClass} type="date" name="transport_date" required /></label>
+    <label class={labelClass}>Time of transport <span class="font-normal text-muted">(optional)</span><input class={fieldClass} type="time" name="transport_time" /></label>
+  </div>
+  <fieldset class="grid gap-2">
+    <legend class="text-sm font-semibold">Service type <span class="text-brass" aria-hidden="true">*</span></legend>
+    <div class="grid gap-2 sm:grid-cols-2">
+      <label class="flex min-h-11 cursor-pointer items-center gap-2 border border-mist bg-ivory px-3 text-sm font-normal"><input type="radio" name="service_type" value="point-to-point" required /> Transfer (point-to-point)</label>
+      <label class="flex min-h-11 cursor-pointer items-center gap-2 border border-mist bg-ivory px-3 text-sm font-normal"><input type="radio" name="service_type" value="hourly" /> By the hour</label>
+    </div>
+  </fieldset>
+  <div class="grid gap-4 md:grid-cols-2">
+    <label class={labelClass}>Pick-up location <span class="text-brass" aria-hidden="true">*</span><input class={fieldClass} name="pickup" autocomplete="street-address" maxlength="200" required /></label>
+    <label class={labelClass}>Drop-off location <span class="font-normal text-muted">(optional)</span><input class={fieldClass} name="dropoff" maxlength="200" /></label>
+  </div>
+  <div class="grid gap-4 md:grid-cols-3">
+    <label class={labelClass}>Flight details <span class="font-normal text-muted">(optional)</span><input class={fieldClass} name="flight" placeholder="e.g. SQ 12" maxlength="80" /></label>
+    <label class={labelClass}>Passengers <span class="text-brass" aria-hidden="true">*</span><input class={fieldClass} type="number" name="passengers" min="1" max="99" inputmode="numeric" required /></label>
+    <label class={labelClass}>Large luggage <span class="text-brass" aria-hidden="true">*</span><input class={fieldClass} type="number" name="luggage" min="0" max="99" inputmode="numeric" required /></label>
+  </div>
+  <label class={labelClass}>Additional information <span class="font-normal text-muted">(optional)</span><textarea class="min-h-20 w-full border border-mist bg-ivory p-3 text-sm font-normal focus:border-brass focus:outline-none focus:ring-1 focus:ring-brass" name="additional_information" maxlength="2000" placeholder="Child seats, accessibility, extra stops or anything else we should know"></textarea></label>
+  <div class="quote-form-trap" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off" /></label></div>
+  {includeConsent && <label class="flex items-start gap-3 text-sm text-muted"><input class="mt-1" type="checkbox" name="consent" required />I agree to the {privacyReleased ? <a class="underline underline-offset-2" href="/privacy/">privacy policy</a> : <span>privacy policy</span>}.</label>}
+  {showVerificationNote && <p class="text-xs text-muted">Form delivery and booking provider — VERIFY before launch.</p>}
+  <div class="flex flex-wrap items-center gap-4 pt-1">
+    <button class="btn-primary" type="submit" data-submit-button>Request a Quote</button>
+    <p class="min-h-6 text-sm text-muted" role="status" aria-live="polite" data-form-status></p>
+  </div>
+</form>
+
+<script>
+  const forms = document.querySelectorAll<HTMLFormElement>("[data-quote-form]");
+
+  for (const form of forms) {
+    if (form.dataset.enhanced === "true") continue;
+    form.dataset.enhanced = "true";
+
+    const dateInput = form.querySelector<HTMLInputElement>('input[name="transport_date"]');
+    if (dateInput) dateInput.min = new Date().toISOString().slice(0, 10);
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const button = form.querySelector<HTMLButtonElement>("[data-submit-button]");
+      const status = form.querySelector<HTMLElement>("[data-form-status]");
+      if (!button || !status) return;
+
+      button.disabled = true;
+      button.textContent = "Sending enquiry…";
+      status.className = "min-h-6 text-sm text-muted";
+      status.textContent = "Please wait while we send your details.";
+
+      try {
+        const payload = Object.fromEntries(new FormData(form).entries());
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) throw new Error(result?.message || "We could not send your enquiry.");
+
+        form.reset();
+        status.className = "min-h-6 text-sm font-semibold text-ink";
+        status.textContent = result?.message || "Thank you. Your enquiry has been received.";
+      } catch (error) {
+        status.className = "min-h-6 text-sm font-semibold text-red-700";
+        status.textContent = error instanceof Error
+          ? `${error.message} Please try again or email booking@airporttransfersingapore.com.`
+          : "We could not send your enquiry. Please try again or email booking@airporttransfersingapore.com.";
+      } finally {
+        button.disabled = false;
+        button.textContent = "Request a Quote";
+      }
+    });
+  }
+</script>
+
+<style>
+  .quote-form-trap {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  [data-submit-button]:disabled {
+    cursor: wait;
+    opacity: 0.62;
+  }
+</style>
