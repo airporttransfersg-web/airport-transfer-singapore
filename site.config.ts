@@ -6,6 +6,7 @@ const site = {
   locale: "en-SG",
   phone: "+65 8081 6218",
   email: "booking@airporttransfersingapore.com",
+  address: "Block 730, Tampines Street 71, Singapore 520730",
   booking: { mode: "external" as const, url: "/contact/", provider: "VERIFY", label: "Book Online" },
   theme: { ink: "#121315" },
   trustSignals: ["Airport transfers", "Hourly chauffeur", "Corporate travel", "Group transportation"],
