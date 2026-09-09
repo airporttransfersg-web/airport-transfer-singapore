@@ -2,6 +2,8 @@ const site = {
   name: "Airport Transfer Singapore",
   shortName: "Airport Transfer Singapore",
   url: "https://airporttransfersingapore.com",
+  logo: "/images/ats-logo.png",
+  favicon: "/favicon.png",
   description: "Airport transfers and professional chauffeur services for travellers, companies, hotels and travel partners in Singapore.",
   locale: "en-SG",
   phone: "+65 8081 6218",

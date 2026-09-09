@@ -4,6 +4,7 @@ const BRAND = {
   sender: "booking@airporttransfersingapore.com",
   operations: "hello@mysingaporedriver.com",
   phone: "+65 8081 6218",
+  logoUrl: "https://airporttransfersingapore.com/images/ats-logo.png",
 };
 
 const LIMITS = {
@@ -101,8 +102,7 @@ function enquiryEmail(data) {
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f4f2ec;"><tr><td align="center" style="padding:28px 12px;">
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;background:#ffffff;border:1px solid #dedbd3;">
       <tr><td align="center" style="padding:34px 24px 28px;border-bottom:3px solid #171819;">
-        <div style="font-size:28px;font-weight:800;letter-spacing:.055em;line-height:1.08;text-transform:uppercase;color:#171819;">Airport Transfer</div>
-        <div style="margin-top:4px;font-size:28px;font-weight:800;letter-spacing:.055em;line-height:1.08;text-transform:uppercase;color:#171819;">Singapore</div>
+        <img src="${BRAND.logoUrl}" alt="${BRAND.name}" width="360" style="display:block;width:100%;max-width:360px;height:auto;margin:0 auto;" />
         <div style="margin-top:10px;color:#77746e;font-size:11px;letter-spacing:.11em;text-transform:uppercase;">${BRAND.domain}</div>
         <div style="margin-top:6px;color:#9a9790;font-size:10px;letter-spacing:.04em;">A MySingaporeDriver brand</div>
       </td></tr>
