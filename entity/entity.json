@@ -1,0 +1,54 @@
+{
+  "$schema": "../tools/entity-kit/schemas/entity.schema.json",
+  "schema_version": 1,
+  "site": {
+    "domain": "airporttransfersingapore.com",
+    "url": "https://airporttransfersingapore.com",
+    "market": "Singapore",
+    "country_code": "SG"
+  },
+  "entity": {
+    "canonical_name": "Airport Transfer Singapore",
+    "alternate_name": "ATS Transfers",
+    "legal_name": "airporttransfersingapore.com",
+    "founding_year": null
+  },
+  "contact": {
+    "phone": "+65 8081 6218",
+    "email": "booking@airporttransfersingapore.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Block 730, Tampines Street 71",
+      "addressLocality": "Singapore",
+      "postalCode": "520730",
+      "addressCountry": "SG"
+    }
+  },
+  "branding": {
+    "preferred_handle": "airporttransfersg",
+    "logo": "/images/brand/ats-logo.png"
+  },
+  "category": {
+    "primary": "Airport transfer service",
+    "secondary": ["Ground transportation", "Chauffeur service"]
+  },
+  "services": [
+    "Changi Airport transfers",
+    "Seletar Airport transfers",
+    "Meet and greet",
+    "Hourly chauffeur",
+    "Corporate transportation",
+    "Group transportation"
+  ],
+  "descriptions": {
+    "short": "Private airport transfers and chauffeur services in Singapore.",
+    "medium": "Airport Transfer Singapore arranges private Changi and Seletar airport transfers, hourly chauffeur hire, corporate travel and group transportation across Singapore.",
+    "long": "Airport Transfer Singapore is a booking and enquiry site for private ground transportation in Singapore. Services include Changi and Seletar airport transfers, meet-and-greet, hourly chauffeur hire, corporate travel and coordinated group transportation. Vehicle, itinerary and fare details are confirmed before travel."
+  },
+  "claims": {
+    "fixed_fare": true,
+    "flight_tracking": true,
+    "arrival_grace_period_minutes": 60
+  },
+  "profiles": {}
+}

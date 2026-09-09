@@ -1,5 +1,6 @@
 ---
 import site from "../../site.config";
+import entity from "../../entity/entity.json";
 
 interface Props {
   title: string;
@@ -47,7 +48,26 @@ const breadcrumbLd =
           ...(crumb.href ? { item: new URL(crumb.href, site.url).toString() } : {}),
         })),
       }
-    : undefined;
+      : undefined;
+
+const organizationLd = path === "/"
+  ? {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": `${site.url}/#organization`,
+      name: entity.entity.canonical_name,
+      ...(entity.entity.alternate_name ? { alternateName: entity.entity.alternate_name } : {}),
+      url: site.url,
+      email: entity.contact.email,
+      telephone: entity.contact.phone,
+      ...(entity.contact.address ? { address: entity.contact.address } : {}),
+      ...(entity.branding.logo ? { logo: new URL(entity.branding.logo, site.url).toString() } : {}),
+      description: entity.descriptions.medium,
+      ...(entity.profiles && Object.keys(entity.profiles).length
+        ? { sameAs: Object.values(entity.profiles) }
+        : {}),
+    }
+  : undefined;
 
 ---
 
@@ -68,3 +88,4 @@ const breadcrumbLd =
 {ogImage && <meta name="twitter:image" content={ogImage} />}
 <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 {breadcrumbLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />}
+{organizationLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(organizationLd)} />}
