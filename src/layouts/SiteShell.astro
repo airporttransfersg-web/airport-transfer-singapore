@@ -4,6 +4,7 @@ import SeoHead from "../components/SeoHead.astro";
 import SiteNav from "../components/SiteNav.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import "../styles/global.css";
+import { IS_STAGING } from "../lib/env";
 
 interface Props {
   title: string;
@@ -17,7 +18,7 @@ interface Props {
 
 const { title, description, path, pageType, noindex, image, breadcrumbs } =
   Astro.props;
-const stagingNoindex = import.meta.env.PUBLIC_SITE_NOINDEX === "true";
+const stagingNoindex = IS_STAGING;
 ---
 
 <!doctype html>
