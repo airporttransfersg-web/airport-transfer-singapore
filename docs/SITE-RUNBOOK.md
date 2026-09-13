@@ -324,7 +324,7 @@ Order
 
   1. **Nobody hand-edits`robots.txt` or `_headers`.** `scripts/prepare-env.mjs` writes both from `SITE_ENV` on every build, and the default is staging. A missing or misspelled flag can only fail toward _less_ exposed — never toward an accidental launch, and never toward a live site that quietly kept its `noindex`.
   2. **Point the domain at the production Pages project** and confirm the staging project keeps its own hostname, its Access rule and its `Disallow: /`. Two projects, two environments — never one project reused, or the staging URL ends up indexed alongside the real one.
-  3. **Verify before you announce:** `curl -sI https://<domain>/ | grep -i x-robots-tag` returns nothing, `/robots.txt` reads `Allow: /`, and a page held back by `publishAt` returns 404 rather than rendering.
+  3. **Verify before you announce:** `curl -sI https://<domain>/ | grep -i x-robots-tag` returns nothing, `/robots.txt` reads `Allow: /`, and a page held back by `publishAt` returns 404 rather than rendering. The production workflow also runs `scripts/verify-production-seo.mjs`, which fails the deployment if `/`, `/about/`, or `/contact/` contains a `noindex` meta tag.
   4. **Then the discovery files, in this order:** sitemap generated and reachable → `Sitemap:` line present in `robots.txt` → sitemap submitted in Search Console → `llms.txt` published. Submitting a sitemap that lists pages which aren't live yet is the one own-goal available on launch day.
   5. **Generate`llms.txt` with the `llms-txt-generator` skill,** after the URL set is final. It lists the pages that exist now — regenerate it at the end of each wave rather than pre-listing pages that haven't been released.
 
@@ -335,6 +335,17 @@ Gate 4C → live
   * Sitemap contains only released pages
   * Held-back pages 404 in production and render on staging
   * Search Console property verified for the live domain, sitemap submitted
+
+### Indexability troubleshooting checklist
+
+`pnpm dev` is a staging preview and must not be used to decide whether the live site is indexable. Check the deployed custom domain and its deployment URL separately:
+
+```bash
+curl -I https://<domain>/
+curl https://<domain>/robots.txt
+```
+
+Production must report no `X-Robots-Tag: noindex`, and `robots.txt` must contain `Allow: /`. A `pages.dev` preview may still report `X-Robots-Tag: noindex` by design; that does not override the custom production domain. If `robots.txt` says `SITE_ENV=staging`, the uploaded artifact was built with the wrong environment and must not be submitted for indexing.
 
 STAGE 4D
 

@@ -43,6 +43,11 @@ jobs:
           ASTRO_TELEMETRY_DISABLED: "1"
         run: pnpm build
 
+      - name: Verify production SEO directives
+        env:
+          SITE_ENV: production
+        run: node scripts/verify-production-seo.mjs
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
@@ -50,4 +55,3 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=airport-transfer-singapore --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-
