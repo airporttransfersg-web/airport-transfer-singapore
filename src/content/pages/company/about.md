@@ -6,7 +6,7 @@ pageType: guide
 template: article
 published: true
 publishAt: 2026-09-01
-noindex: true
+noindex: false
 image: /images/fleet/webp/fleet-lineup-s-class-v-class-wide-plate-safe.webp
 imageAlt: Singapore chauffeur fleet lineup, with registration plates removed
 ---
