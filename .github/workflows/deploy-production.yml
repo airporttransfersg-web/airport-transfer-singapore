@@ -2,9 +2,19 @@ name: Deploy production site
 
 on:
   workflow_dispatch:
+    inputs:
+      indexchex_url_limit:
+        description: "Set to 1 for a one-URL test, or leave at 0 for all new URLs."
+        required: false
+        default: "0"
+        type: string
   push:
     branches:
       - main
+    paths-ignore:
+      - .github/workflows/deploy-production.yml
+      - scripts/submit-indexchex.mjs
+      - INDEXCHEX-SETUP.md
   schedule:
     # GitHub cron is UTC. 00:10 UTC is 08:10 in Singapore (GMT+8).
     - cron: "10 0 * * *"
@@ -55,3 +65,34 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=airport-transfer-singapore --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check IndexChex configuration
+        id: indexchex
+        env:
+          INDEXCHEX_API_KEY: ${{ secrets.INDEXCHEX_API_KEY }}
+        shell: bash
+        run: |
+          if [[ -n "$INDEXCHEX_API_KEY" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "INDEXCHEX_API_KEY is not configured; IndexChex submission is skipped."
+          fi
+
+      - name: Restore IndexChex submission history
+        if: steps.indexchex.outputs.configured == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .indexchex-submitted-urls
+          key: ats-indexchex-submitted-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: ats-indexchex-submitted-
+
+      - name: Submit newly live URLs to IndexChex
+        if: steps.indexchex.outputs.configured == 'true'
+        env:
+          INDEXCHEX_API_KEY: ${{ secrets.INDEXCHEX_API_KEY }}
+          INDEXCHEX_SITE_URL: https://airporttransfersingapore.com
+          INDEXCHEX_SITEMAP_URL: https://airporttransfersingapore.com/sitemap-index.xml
+          INDEXCHEX_LOCAL_SITEMAP: dist/sitemap-index.xml
+          INDEXCHEX_URL_LIMIT: ${{ inputs.indexchex_url_limit || '0' }}
+        run: node scripts/submit-indexchex.mjs
