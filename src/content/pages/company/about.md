@@ -1,6 +1,7 @@
 ---
-title: About Airport Transfer Singapore | Who We Are
-description: Airport Transfer Singapore is a dedicated booking site for Changi Airport transfers, hourly chauffeur hire and group transport, built so travellers can book a car without working through a full chauffeur menu.
+title: "About Airport Transfer Singapore: how a Changi pickup is run"
+heading: About Airport Transfer Singapore
+description: Who runs Airport Transfer Singapore, and what happens between the flight number you send and the car door at Changi or Seletar.
 slug: /about/
 pageType: guide
 template: article
@@ -10,44 +11,43 @@ noindex: false
 image: /images/fleet/webp/fleet-lineup-s-class-v-class-wide-plate-safe.webp
 imageAlt: Singapore chauffeur fleet lineup, with registration plates removed
 ---
-## Ground transportation with a clear brief
 
-Airport Transfer Singapore is a booking and enquiry site built around one job: getting you from Changi Airport to your door, and back again, in a car that fits your party and your luggage. We arrange airport transfers, hourly chauffeur hire, corporate travel and group transportation, quoted flat, confirmed in writing and driven by professional chauffeurs.
+*Written by Alvin, who runs airport dispatch.*
 
-## Why this site exists
+Airport Transfer Singapore books private cars to and from Changi and Seletar. I assign those cars. Rather than list what we value, this page follows one booking from the enquiry to the car door.
 
-Most of our work has always been airport runs. A 6am arrival at Terminal 1. A family of five with four large cases. A midnight departure out of the East Coast. Those bookings used to come through a general chauffeur menu, alongside city tours, cross-border runs to Malaysia and full-day charters. A traveller who has just landed does not want a menu. They want to know which vehicle takes five people and four bags, what it costs and where the driver will be standing.
+## It starts with a flight number
 
-So we split the airport work out and gave it its own site.
+We ask for your flight number, not only a landing time. Dispatch tracks the flight, so if it lands late, the pickup moves with it. Before a car and chauffeur are assigned, we check the flight details and that the vehicle fits your party and your bags.
 
-The service is organised around the practical details that affect a transfer: the flight, the vehicle, the luggage, the fare and the meeting point. Rates are published where possible, vehicles are described by what actually fits, and every arrival includes a 60-minute grace period from the moment the wheels touch down. The booking route is clearer, even when the journey itself is simple.
+Most enquiries get a reply within 15 minutes during operating hours.
 
-This site keeps the airport-transfer brief focused for travellers, assistants, hotels and travel partners.
+## Before you fly
 
-## Who we serve
+You get written confirmation with the pickup details. Your chauffeur's name and mobile number are sent in advance. Changes to short and single bookings need 24 hours' notice, and they aren't confirmed until we accept them in writing.
 
-**Tourists and families.** Arrivals with real luggage. We size the vehicle to bags as well as seats, and can arrange child seats when requested at booking.
+## When you land
 
-**Business travellers and executive assistants.** Fixed pickup times, a named chauffeur and a car that can be held on standby by the hour between meetings.
+The first 60 minutes after landing are free. That covers immigration, the baggage belt and a stop for a SIM card. Your chauffeur waits outside the arrival hall exit, at the glass doors nearest your belt, holding a board with your name.
 
-**Corporate travel managers.** Repeat bookings across a team, consolidated billing and one dispatch contact instead of a trail of rideshare receipts.
+After 60 minutes, waiting is charged. The standard is S$20 per 15 minutes, and it varies by vehicle.
 
-**Hotels, travel agents and destination partners.** Arrival handling for guests you have already sold to, including meet-and-greet at the terminal and coach capacity for groups.
+## Departures and city pickups
 
-## What matters in every enquiry
+These carry 15 minutes of free waiting. If you're running late, message your chauffeur directly; the number is in your confirmation.
 
-Four things decide whether an airport transfer goes well. The flight details are right. The vehicle fits the party and the luggage. The confirmation says what was agreed. Someone answers when plans change.
+## If you booked VIP arrival
 
-That last one is why we ask for a flight number and not just a time. Dispatch can track the arrival, so a delay can move the pickup instead of turning into a missed meeting point.
+You're met in the private terminal instead of the public hall. Staff take you through arrival formalities and hand you to your chauffeur at the vehicle.
 
-What you can expect:
+## What we don't do
 
-- Flat published rates where available, with the confirmed fare agreed before travel.
-- Meet-and-greet at the terminal, with bottled water and Wi-Fi included where specified in the booking.
-- 60 minutes of complimentary waiting on arrivals, and 15 minutes on departures and city pickups.
-- Written confirmation before the trip, with pickup details and the chauffeur’s contact information.
-- Straightforward bookings can be cancelled without charge with at least 24 hours’ notice; special and group bookings follow their confirmation terms.
+We don't carry pets. A no-show is charged: the [terms](/terms/) allow up to the confirmed fare, and that is what we apply.
 
-## Tell us the flight, we’ll handle the ground
+## About the author
 
-Send the flight number, date, passenger count and number of bags. We’ll come back with the suitable vehicle and fare. Compare the [vehicles and rates](/fleet-rates/), or learn more about [hourly chauffeur hire](/services/hourly-chauffeur/) for a day with several stops. For airport meeting points and destination routes, see the [Changi Airport transfer service](/services/changi-airport-transfers/).
+Alvin runs airport dispatch for Airport Transfer Singapore.
+
+## Company details
+
+Airport Transfer Singapore is operated by airporttransfersingapore.com, Block 730, Tampines Street 71, Singapore 520730. Call [+65 8081 6218](tel:+6580816218).

@@ -4,7 +4,7 @@ export const quickFacts = [
   ["Flight monitoring", "Every arrival is tracked by flight number; pickup follows the landed time."],
   ["Free waiting", "60 minutes for arrivals and 15 minutes for city pickups."],
   ["Passengers and luggage", "Options range from private cars and MPVs to vans, minibuses and coaches."],
-  ["Meet and greet", "Driver waits inside arrivals with a name board at the terminal exit gate."],
+  ["Meet and greet", "Driver waits outside the arrival hall exit with a name board, at the glass doors nearest your baggage belt."],
   ["Coverage", "Changi Terminals 1–4, Jewel, Seletar Airport and all Singapore addresses."],
   ["Included in the fare", "Tolls, ERP, airport entry, parking, fuel and GST."],
   ["Payment", "Card, PayNow, bank transfer or an approved corporate account."],
@@ -60,7 +60,7 @@ export const audience = [
 ];
 
 export const comparisons = [
-  ["Private transfer", "Fixed at booking", "Driver already waiting", "Inside arrivals", "Sized at booking", "Pickup follows flight", "Available by arrangement", "Monthly account available", "LTA private hire / PDVL"],
+  ["Private transfer", "Fixed at booking", "Driver already waiting", "Arrival hall exit", "Sized at booking", "Pickup follows flight", "Available by arrangement", "Monthly account available", "LTA private hire / PDVL"],
   ["Grab or Gojek", "Quoted at request", "5–25+ min", "Kerbside pickup bay", "Assigned on acceptance", "Rebook after landing", "Supply can thin overnight", "Business-profile receipts", "LTA private hire / PDVL"],
   ["Metered taxi", "Meter plus surcharges", "Rank queue", "Taxi rank", "Usually sedan", "Not applicable", "Late-night surcharge", "Individual receipts", "LTA taxi / TDVL"],
   ["MRT", "Lowest cost", "Walk and train change", "Stations at T2/T3", "Limited with large cases", "Not applicable", "Last-train cutoff", "No", "Public transport"],
@@ -68,7 +68,7 @@ export const comparisons = [
 ];
 
 export const travelNotes = [
-  ["Where does the driver meet me at Changi?", "Inside the terminal at the arrival hall exit gate for your flight, holding a name board. Terminal 1, Terminal 2, Terminal 3 and Terminal 4 arrivals are on Level 1. The exact meeting point and contact instructions are confirmed before travel so you do not have to negotiate a pickup point in the baggage hall."],
+  ["Where does the driver meet me at Changi?", "Outside the arrival hall exit, at the glass doors nearest your flight's baggage belt, holding a name board. Terminal 1, Terminal 2, Terminal 3 and Terminal 4 arrivals are on Level 1. The exact meeting point and contact instructions are confirmed before travel."],
   ["Are ERP charges and tolls included?", "Yes. Singapore’s Electronic Road Pricing charges, airport entry and parking are included in the quoted fare rather than added as separate lines at the end of the journey."],
   ["Which road will we take and how long does it take?", "Most city-bound journeys use the East Coast Parkway, reaching Marina Bay and the CBD in about 20 to 30 minutes outside peak periods. Destinations to the west and north may use the Pan Island Expressway or Kallang–Paya Lebar Expressway. Allow additional time during weekday morning and evening peaks."],
   ["Are the drivers licensed?", "Vehicles are arranged through the Singapore private-hire framework and drivers hold the appropriate vocational licence for the work. This is different from accepting an informal kerbside offer from an unlicensed driver."],
@@ -111,7 +111,7 @@ export const faq = [
   ["How much is a private transfer from Changi to the city?", "Rates start at S$90 for a Premium MPV as a fixed vehicle fare. The final figure depends on the vehicle, destination, timing and any additional itinerary requirements."],
   ["Is the price fixed or metered?", "Fixed. The fare is quoted before booking and does not change for traffic or waiting inside the agreed free window."],
   ["What if my flight is delayed?", "Pickup follows the flight number at no extra charge for a routine delay. Tell us if the flight is cancelled or diverted, because that requires a new operating plan."],
-  ["Where will the driver meet me?", "Inside the arrival hall at the confirmed exit gate, holding a name board. Meeting instructions are included in the booking confirmation."],
+  ["Where will the driver meet me?", "Outside the arrival hall exit at the glass doors nearest your baggage belt, holding a name board. Meeting instructions are included in the booking confirmation."],
   ["How long is the free waiting time?", "The current rate structure allows 60 minutes from touchdown for airport arrivals and 15 minutes from the booked time for city or hotel pickups. Additional waiting starts from S$20 per 15 minutes and may vary by vehicle type."],
   ["How far in advance should I book?", "Allow 24 hours for a standard weekday transfer, 48 hours for larger vehicles or child seats, 72 hours for cruise days, and longer for major events or multi-vehicle work."],
   ["Do you provide child seats?", "Child seats can be requested with advance notice. Share the child’s age and approximate weight so the suitable restraint can be planned before the vehicle leaves."],

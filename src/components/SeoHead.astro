@@ -23,6 +23,7 @@ const {
 } = Astro.props;
 
 const canonical = new URL(path, site.url).toString();
+const documentTitle = title.includes(site.shortName) ? title : `${title} | ${site.shortName}`;
 const ogImage = image ? new URL(image, site.url).toString() : undefined;
 const isArticle = ["article", "guide", "blog"].includes(pageType);
 
@@ -71,7 +72,7 @@ const organizationLd = path === "/"
 
 ---
 
-<title>{title} | {site.shortName}</title>
+<title>{documentTitle}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
 <link rel="icon" href={site.favicon} type="image/png" sizes="1254x1254" />
