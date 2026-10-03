@@ -111,11 +111,10 @@ function enquiryEmail(data) {
         <p style="margin:0 0 14px;color:#55534f;font-size:15px;line-height:1.7;">Hi ${escapeHtml(firstName)},</p>
         <p style="margin:0 0 14px;color:#55534f;font-size:15px;line-height:1.7;">We’ve received your enquiry regarding <strong style="color:#171819;">Airport Transfer Services</strong>.</p>
         <p style="margin:0 0 24px;color:#55534f;font-size:15px;line-height:1.7;">Our representative will review your requirements and contact you within 1–2 business days.</p>
-        <p style="margin:0 0 14px;color:#55534f;font:15px/1.7 Arial,sans-serif;"><a href="https://mysingaporedriver.com/msd-booking-form/" style="color:#171819;font-weight:700;text-decoration:underline;">➡ Book Now</a> – Book your service online in just a few steps.</p>
         <table role="presentation" cellspacing="0" cellpadding="0" style="margin:0 0 24px;"><tr><td align="center" bgcolor="#171819" style="border-radius:4px;background:#171819;mso-padding-alt:14px 24px;">
           <a href="https://mysingaporedriver.com/msd-booking-form/" style="display:inline-block;border:1px solid #171819;border-radius:4px;padding:14px 24px;color:#ffffff;font:700 15px/1.2 Arial,sans-serif;text-align:center;text-decoration:none;mso-padding-alt:0;">Book a Service</a>
         </td></tr></table>
-        <p style="margin:0 0 24px;padding:14px 16px;background:#f4f2ec;color:#55534f;font-size:13px;line-height:1.6;"><strong style="color:#171819;">Please note:</strong> this email acknowledges your enquiry; it is not a booking confirmation. Your vehicle, fare and pickup arrangements will be confirmed separately.</p>
+        <p style="margin:0 0 24px;padding:14px 16px;background:#f4f2ec;color:#55534f;font-size:13px;line-height:1.6;"><strong style="color:#171819;">Please note:</strong> this email acknowledges your enquiry; it is not a booking confirmation. Your enquiry is with our team, so there is no need to submit it again. Your vehicle, fare and pickup arrangements will be confirmed separately.</p>
         <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #dedbd3;border-bottom:0;">${detailsTable(data)}</table>
         <p style="margin:24px 0 0;color:#55534f;font-size:14px;line-height:1.65;">Need to add something? Reply to this email and include reference <strong style="color:#171819;">${escapeHtml(data.reference)}</strong>.</p>
       </td></tr>
@@ -128,7 +127,7 @@ function enquiryEmail(data) {
   </td></tr></table>
 </body></html>`;
 
-  const text = `${title}\n\nHi ${firstName},\n\nWe’ve received your enquiry regarding Airport Transfer Services.\n\nOur representative will review your requirements and contact you within 1–2 business days.\n\n➡ Book Now – Book your service online in just a few steps.\nBook a Service: https://mysingaporedriver.com/msd-booking-form/\n\nPlease note: this email acknowledges your enquiry; it is not a booking confirmation. Your vehicle, fare and pickup arrangements will be confirmed separately.\n\n${textDetails(data)}\n\nReply to this email if you need to add anything.\n\n${BRAND.name}\n${BRAND.sender}\n${BRAND.phone}\n${BRAND.domain}\nA MySingaporeDriver brand`;
+  const text = `${title}\n\nHi ${firstName},\n\nWe’ve received your enquiry regarding Airport Transfer Services.\n\nOur representative will review your requirements and contact you within 1–2 business days.\n\nBook a Service: https://mysingaporedriver.com/msd-booking-form/\n\nPlease note: this email acknowledges your enquiry; it is not a booking confirmation. Your enquiry is with our team, so there is no need to submit it again. Your vehicle, fare and pickup arrangements will be confirmed separately.\n\n${textDetails(data)}\n\nReply to this email if you need to add anything.\n\n${BRAND.name}\n${BRAND.sender}\n${BRAND.phone}\n${BRAND.domain}\nA MySingaporeDriver brand`;
   return { html, text };
 }
 
