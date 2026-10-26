@@ -1,0 +1,31 @@
+{
+  "site": "ATS",
+  "url": "https://airporttransfersingapore.com",
+  "path": "/fleet-rates/",
+  "rows": [
+    [
+      "Business Van",
+      [
+        115,
+        105,
+        92
+      ]
+    ],
+    [
+      "Minibus",
+      [
+        130,
+        110,
+        98
+      ]
+    ],
+    [
+      "40-seater coach",
+      [
+        220,
+        200,
+        165
+      ]
+    ]
+  ]
+}

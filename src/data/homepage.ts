@@ -14,9 +14,9 @@ export const quickFacts = [
 export const vehicleRates = [
   ["Premium MPV", "3 passengers + 3 large cases", "S$90", "S$80", "S$85/hr"],
   ["Executive MPV", "4 passengers + 4 large cases", "S$105", "S$95", "S$95/hr"],
-  ["Business Van", "6 passengers + 6 large cases", "S$115", "S$105", "S$100/hr"],
-  ["Minibus", "8 passengers + 8 large cases", "S$130", "S$110", "S$110/hr"],
-  ["40-seater coach", "40 passengers + 35 large cases", "S$220", "S$200", "S$180/hr"],
+  ["Business Van", "6 passengers + 6 large cases", "S$115", "S$105", "S$92/hr"],
+  ["Minibus", "8 passengers + 8 large cases", "S$130", "S$110", "S$98/hr"],
+  ["40-seater coach", "40 passengers + 35 large cases", "S$220", "S$200", "S$165/hr"],
 ];
 
 export const bookingExamples = [

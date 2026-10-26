@@ -61,9 +61,9 @@ The following rates are per vehicle. Airport rates are shown for arrival and dep
 | --- | ---: | ---: | ---: |
 | Premium MPV | S$90 | S$80 | S$85/hr |
 | Executive MPV | S$105 | S$95 | S$95/hr |
-| Business Van | S$115 | S$105 | S$100/hr |
-| Minibus | S$130 | S$110 | S$110/hr |
-| 40-seater coach | S$220 | S$200 | S$180/hr |
+| Business Van | S$115 | S$105 | S$92/hr |
+| Minibus | S$130 | S$110 | S$98/hr |
+| 40-seater coach | S$220 | S$200 | S$165/hr |
 
 </div>
 

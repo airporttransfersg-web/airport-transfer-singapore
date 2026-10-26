@@ -1,0 +1,43 @@
+name: Approved October rate-card release
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/task0-rate-release.yml', 'scripts/october-rate-targets.json']
+permissions:
+  contents: write
+concurrency:
+  group: october-rate-card-release
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.event.head_commit.message == 'Apply approved October 2026 rate card (ATS)'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install standalone site dependencies
+        run: npm install --no-package-lock
+      - name: Code and SEO gates
+        id: gates
+        run: npm run check && npm run build:production && node scripts/verify-october-rates.mjs
+      - name: Existing ATS push workflow deploys this revision
+        run: echo "Waiting for the existing Deploy production site workflow."
+      - name: Verify updated live rates
+        id: live
+        run: node scripts/verify-october-rates.mjs live
+      - name: Record release result without credentials
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GATES: ${{ steps.gates.outcome }}
+          LIVE: ${{ steps.live.outcome }}
+          INDEXCHEX_CONFIGURED: ${{ secrets.INDEXCHEX_API_KEY != '' || secrets.INDEXCHECKR_API_TOKEN != '' }}
+        run: |
+          node --input-type=module - <<'JS'
+          import {readFile,writeFile} from 'node:fs/promises';
+          const optional=async path=>JSON.parse(await readFile(path,'utf8').catch(()=>'null'));
+          await writeFile('release-evidence.json',JSON.stringify({site:"ATS",revision:process.env.GITHUB_SHA,run:`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,gates:process.env.GATES,live:process.env.LIVE,indexchexConfigured:process.env.INDEXCHEX_CONFIGURED==='true',deploy:await optional('deploy-result.json'),verification:await optional('rate-live-result.json'),recordedAt:new Date().toISOString()},null,2));
+          JS
+          node scripts/record-release-evidence.mjs release-evidence.json
