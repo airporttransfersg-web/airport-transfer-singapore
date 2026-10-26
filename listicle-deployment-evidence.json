@@ -1,0 +1,15 @@
+{
+  "site": "ATS",
+  "revision": "1fa9c56cce67eee912b78c39e579645ec56b286c",
+  "run": "https://github.com/airporttransfersg-web/airport-transfer-singapore/actions/runs/40339928718",
+  "gates": "success",
+  "live": "success",
+  "indexchexConfigured": true,
+  "deploy": null,
+  "verification": {
+    "success": true,
+    "url": "https://airporttransfersingapore.com/fleet-rates/",
+    "checkedAt": "2026-10-26T14:29:15.838Z"
+  },
+  "recordedAt": "2026-10-26T14:29:15.894Z"
+}
