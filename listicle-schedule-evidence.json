@@ -1,0 +1,33 @@
+{
+  "schedule": {
+    "postId": "APT01",
+    "site": "airport-transfer-singapore",
+    "path": "/blog/changi-airport-transfer-options-compared/",
+    "port": 4330,
+    "proposedPublishAt": "2026-10-30T07:38:00+08:00",
+    "dailyRunSGT": "08:10",
+    "siteUrl": "https://airporttransfersingapore.com",
+    "publishAt": "2026-10-30T07:38:00+08:00",
+    "approvedForProduction": true,
+    "contentPath": "src/content/listicle-reviews/APT01/index.mdx",
+    "indexPath": "/blog/"
+  },
+  "build": {
+    "postId": "APT01",
+    "publishAt": "2026-10-30T07:38:00+08:00",
+    "normalProductionBuild": "passed",
+    "releaseBoundaryBuild": "passed",
+    "releaseClock": "2026-10-29T23:38:01.000Z",
+    "verifiedAt": "2026-10-27T05:31:17.323Z"
+  },
+  "deployConfigured": true,
+  "site": "ATS",
+  "revision": "20cdcc37bc08ddaeb082746ef16864f409c25864",
+  "run": "https://github.com/airporttransfersg-web/airport-transfer-singapore/actions/runs/40455703203",
+  "gates": "success",
+  "live": "skipped",
+  "indexchexConfigured": true,
+  "deploy": null,
+  "verification": null,
+  "recordedAt": "2026-10-27T05:31:17.506Z"
+}
