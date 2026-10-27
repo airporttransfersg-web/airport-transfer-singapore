@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "source": "https://mysingaporedriver.com/",
+    "image": "/images/listicles/APT01/mysingaporedriver-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z",
+    "status": "captured"
+  },
+  {
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "source": "https://airporttransfersingapore.com/",
+    "image": "/images/listicles/APT01/airport-transfer-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z",
+    "status": "captured"
+  },
+  {
+    "rank": 3,
+    "provider": "Limousine Service Singapore",
+    "source": "https://www.limousineservicesingapore.com/",
+    "image": "/images/listicles/APT01/limousine-service-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z",
+    "status": "captured"
+  },
+  {
+    "rank": 4,
+    "provider": "Singapore Chauffeur Service",
+    "source": "https://singaporechauffeurservice.com/",
+    "image": "/images/listicles/APT01/singapore-chauffeur-service-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z",
+    "status": "captured"
+  },
+  {
+    "rank": 5,
+    "provider": "Hourly Chauffeur Singapore",
+    "source": "https://www.hourlychauffeursingapore.com/",
+    "image": "/images/listicles/APT01/hourly-chauffeur-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z",
+    "status": "captured"
+  },
+  {
+    "rank": 6,
+    "provider": "Car Tour Singapore",
+    "source": "https://cartoursingapore.com/",
+    "image": "/images/listicles/APT01/car-tour-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z",
+    "status": "captured"
+  },
+  {
+    "rank": 7,
+    "provider": "Singapore F1 Chauffeur",
+    "source": "https://singaporef1chauffeur.com/",
+    "image": "/images/listicles/APT01/singapore-f1-chauffeur-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z",
+    "status": "captured"
+  },
+  {
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "source": "https://sgluxurytransport.com/",
+    "image": "/images/listicles/APT01/sgluxury-transport-home-20261026.webp",
+    "capturedAt": "2026-10-26T15:02:00.072Z",
+    "status": "captured"
+  },
+  {
+    "rank": 9,
+    "provider": "Changi Airport Transport",
+    "source": "https://www.changiairporttransport.com/",
+    "image": null,
+    "capturedAt": null,
+    "status": "omitted; see capture-report.md"
+  },
+  {
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "source": "https://singaporelimoservice.com.sg/",
+    "image": "/images/listicles/APT01/singapore-limo-services-home-20261026.webp",
+    "capturedAt": "2026-10-26T15:02:00.072Z",
+    "status": "captured"
+  }
+]

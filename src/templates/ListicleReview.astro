@@ -1,0 +1,21 @@
+---
+import {IS_PRODUCTION} from "../lib/env";
+import {render} from 'astro:content';
+import SiteShell from '../layouts/SiteShell.astro';
+import {reviewTitle,type ReviewEntry} from '../lib/listicle-reviews';
+import {formatReviewDate} from '../components/listicles/post-date';
+import providers from '../content/listicle-reviews/APT01/sources.json';
+import site from '../../site.config';
+import '../styles/listicle-review.css';
+interface Props {entry:ReviewEntry}
+const {entry}=Astro.props;const {Content}=await render(entry);const title=reviewTitle(entry);
+const dateLabel=formatReviewDate(entry.data.updatedAt,entry.data.postId==='LIM01');
+const schema={'@context':'https://schema.org','@graph':[{'@type':'Article','@id':new URL(entry.data.slug,site.url).href+'#article',headline:title,datePublished:entry.data.publishedAt.toISOString(),dateModified:entry.data.updatedAt.toISOString()},{'@type':'ItemList',itemListElement:providers.map(p=>({'@type':'ListItem',position:p.rank,name:p.name}))}]};
+---
+<SiteShell title={title} description={entry.data.description} path={entry.data.slug} noindex={!IS_PRODUCTION}>
+ <article class="listicle-review review-APT01">
+  <header class="review-heading"><a class="review-back" href="/blog/">All Blog</a><h1>{title}</h1><p class="review-byline">{entry.data.authorLabel} · {entry.data.datePrefix} <time datetime={entry.data.updatedAt.toISOString()}>{dateLabel}</time></p></header>
+  <div class="review-copy"><Content/></div>
+ </article>
+ <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)}/>
+</SiteShell>

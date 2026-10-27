@@ -3,6 +3,10 @@ name: Deploy production site
 on:
   workflow_dispatch:
     inputs:
+      indexchex_resubmit_urls:
+        description: "Released canonical URLs to resubmit, one per line."
+        required: false
+        type: string
       indexchex_url_limit:
         description: "Set to 1 for a one-URL test, or leave at 0 for all new URLs."
         required: false
@@ -66,6 +70,9 @@ jobs:
           command: pages deploy dist --project-name=airport-transfer-singapore --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Verify due listicle before any indexing
+        run: node scripts/verify-scheduled-listicles-live.mjs
+
       - name: Check IndexChex configuration
         id: indexchex
         env:
@@ -91,6 +98,7 @@ jobs:
         if: steps.indexchex.outputs.configured == 'true'
         env:
           INDEXCHEX_API_KEY: ${{ secrets.INDEXCHEX_API_KEY }}
+          INDEXCHEX_RESUBMIT_URLS: ${{ inputs.indexchex_resubmit_urls || '' }}
           INDEXCHEX_SITE_URL: https://airporttransfersingapore.com
           INDEXCHEX_SITEMAP_URL: https://airporttransfersingapore.com/sitemap-index.xml
           INDEXCHEX_LOCAL_SITEMAP: dist/sitemap-index.xml

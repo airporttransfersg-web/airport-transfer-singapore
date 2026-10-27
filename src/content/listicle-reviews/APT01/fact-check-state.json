@@ -1,0 +1,13 @@
+{
+  "postId": "APT01",
+  "baseline": "Supplied verified drafts, rate card and first-party snapshots. Match score selects excerpts; it is not independent semantic verification.",
+  "issues": [
+    {
+      "rank": 8,
+      "provider": "SGLuxury Transport",
+      "issue": "Live source unavailable; preserve last verified draft facts, do not invent replacement evidence."
+    }
+  ],
+  "rateCard": "rate-card.md",
+  "automaticRefreshImplemented": false
+}

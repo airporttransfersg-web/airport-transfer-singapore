@@ -1,0 +1,13 @@
+{
+  "postId": "APT01",
+  "site": "airport-transfer-singapore",
+  "path": "/blog/changi-airport-transfer-options-compared/",
+  "port": 4330,
+  "proposedPublishAt": "2026-10-30T07:38:00+08:00",
+  "dailyRunSGT": "08:10",
+  "siteUrl": "https://airporttransfersingapore.com",
+  "publishAt": "2026-10-30T07:38:00+08:00",
+  "approvedForProduction": true,
+  "contentPath": "src/content/listicle-reviews/APT01/index.mdx",
+  "indexPath": "/blog/"
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "rank": 1,
+    "name": "MySingaporeDriver",
+    "home": "https://mysingaporedriver.com/",
+    "slug": "mysingaporedriver",
+    "pages": [
+      "https://mysingaporedriver.com/",
+      "https://mysingaporedriver.com/services/chauffeur/",
+      "https://mysingaporedriver.com/services/hourly-charter/",
+      "https://mysingaporedriver.com/about/",
+      "https://mysingaporedriver.com/terms/",
+      "https://mysingaporedriver.com/services/f1-event-transportation/",
+      "https://mysingaporedriver.com/services/festive-season-visitation-chauffeur"
+    ],
+    "image": "/images/listicles/APT01/mysingaporedriver-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z"
+  },
+  {
+    "rank": 2,
+    "name": "Airport Transfer Singapore",
+    "home": "https://airporttransfersingapore.com/",
+    "host": true,
+    "slug": "airport-transfer-singapore",
+    "pages": [
+      "https://airporttransfersingapore.com/",
+      "https://airporttransfersingapore.com/rates/",
+      "https://airporttransfersingapore.com/fleet-rates/",
+      "https://airporttransfersingapore.com/services/hourly-chauffeur/"
+    ],
+    "image": "/images/listicles/APT01/airport-transfer-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z"
+  },
+  {
+    "rank": 3,
+    "name": "Limousine Service Singapore",
+    "home": "https://www.limousineservicesingapore.com/",
+    "slug": "limousine-service-singapore",
+    "pages": [
+      "https://www.limousineservicesingapore.com/",
+      "https://www.limousineservicesingapore.com/rates/",
+      "https://www.limousineservicesingapore.com/terms/",
+      "https://www.limousineservicesingapore.com/f1-grand-prix-limousine-service/",
+      "https://www.limousineservicesingapore.com/private-tour-limousine-service/"
+    ],
+    "image": "/images/listicles/APT01/limousine-service-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z"
+  },
+  {
+    "rank": 4,
+    "name": "Singapore Chauffeur Service",
+    "home": "https://singaporechauffeurservice.com/",
+    "slug": "singapore-chauffeur-service",
+    "pages": [
+      "https://singaporechauffeurservice.com/",
+      "https://singaporechauffeurservice.com/rates/",
+      "https://singaporechauffeurservice.com/fleet/",
+      "https://singaporechauffeurservice.com/airport-chauffeur/",
+      "https://singaporechauffeurservice.com/hourly-chauffeur/",
+      "https://singaporechauffeurservice.com/monthly-chauffeur-service/",
+      "https://singaporechauffeurservice.com/wedding-chauffeur-service/",
+      "https://singaporechauffeurservice.com/corporate-chauffeur-service/"
+    ],
+    "image": "/images/listicles/APT01/singapore-chauffeur-service-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z"
+  },
+  {
+    "rank": 5,
+    "name": "Hourly Chauffeur Singapore",
+    "home": "https://www.hourlychauffeursingapore.com/",
+    "slug": "hourly-chauffeur-singapore",
+    "pages": [
+      "https://www.hourlychauffeursingapore.com/",
+      "https://www.hourlychauffeursingapore.com/rates/",
+      "https://www.hourlychauffeursingapore.com/terms/",
+      "https://www.hourlychauffeursingapore.com/how-it-works/",
+      "https://www.hourlychauffeursingapore.com/f1-chauffeur/",
+      "https://www.hourlychauffeursingapore.com/singapore-airshow-chauffeur/",
+      "https://www.hourlychauffeursingapore.com/wedding-chauffeur/",
+      "https://www.hourlychauffeursingapore.com/delegation-chauffeur/"
+    ],
+    "image": "/images/listicles/APT01/hourly-chauffeur-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z"
+  },
+  {
+    "rank": 6,
+    "name": "Car Tour Singapore",
+    "home": "https://cartoursingapore.com/",
+    "slug": "car-tour-singapore",
+    "pages": [
+      "https://cartoursingapore.com/",
+      "https://cartoursingapore.com/rates/",
+      "https://cartoursingapore.com/terms/",
+      "https://cartoursingapore.com/tour-guide-service/",
+      "https://cartoursingapore.com/fleet/"
+    ],
+    "image": "/images/listicles/APT01/car-tour-singapore-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z"
+  },
+  {
+    "rank": 7,
+    "name": "Singapore F1 Chauffeur",
+    "home": "https://singaporef1chauffeur.com/",
+    "slug": "singapore-f1-chauffeur",
+    "pages": [
+      "https://singaporef1chauffeur.com/",
+      "https://singaporef1chauffeur.com/rates/",
+      "https://singaporef1chauffeur.com/hourly-chauffeur-service/",
+      "https://singaporef1chauffeur.com/terms/",
+      "https://singaporef1chauffeur.com/f1-race-day-transport/",
+      "https://singaporef1chauffeur.com/f1-airport-transfer/",
+      "https://singaporef1chauffeur.com/f1-corporate-transport/",
+      "https://singaporef1chauffeur.com/f1-hourly-chauffeur/",
+      "https://singaporef1chauffeur.com/corporate-chauffeur-service/"
+    ],
+    "image": "/images/listicles/APT01/singapore-f1-chauffeur-home-20261026.webp",
+    "capturedAt": "2026-10-26T14:34:48.328Z"
+  },
+  {
+    "rank": 8,
+    "name": "SGLuxury Transport",
+    "home": "https://sgluxurytransport.com/",
+    "slug": "sgluxury-transport",
+    "pages": [
+      "https://sgluxurytransport.com/",
+      "https://www.sgluxurytransport.com/en"
+    ],
+    "image": "/images/listicles/APT01/sgluxury-transport-home-20261026.webp",
+    "capturedAt": "2026-10-26T15:02:00.072Z"
+  },
+  {
+    "rank": 9,
+    "name": "Changi Airport Transport",
+    "home": "https://www.changiairporttransport.com/",
+    "slug": "changi-airport-transport",
+    "pages": [
+      "https://www.changiairporttransport.com/"
+    ],
+    "image": null
+  },
+  {
+    "rank": 10,
+    "name": "Singapore Limo Services",
+    "home": "https://singaporelimoservice.com.sg/",
+    "slug": "singapore-limo-services",
+    "pages": [
+      "https://singaporelimoservice.com.sg/",
+      "https://singaporelimoservice.com.sg/fleet-and-rates/",
+      "https://singaporelimoservice.com.sg/luxury-private-tour-limousine-service/",
+      "https://singaporelimoservice.com.sg/fleet-and-rates"
+    ],
+    "image": "/images/listicles/APT01/singapore-limo-services-home-20261026.webp",
+    "capturedAt": "2026-10-26T15:02:00.072Z"
+  }
+]

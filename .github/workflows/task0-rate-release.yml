@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   release:
-    if: github.event.head_commit.message == 'Apply approved October 2026 rate card (ATS)'
+    if: github.event.head_commit.message == 'Apply approved October 2026 rate card (ATS)' || github.event.head_commit.message == 'Activate approved APT01 publication schedule'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,23 +21,27 @@ jobs:
         run: npm install --no-package-lock
       - name: Code and SEO gates
         id: gates
-        run: npm run check && npm run build:production && node scripts/verify-october-rates.mjs
+        run: npm run check && npm run test:listicles && node scripts/verify-listicle-release-builds.mjs && node scripts/verify-october-rates.mjs
       - name: Existing ATS push workflow deploys this revision
         run: echo "Waiting for the existing Deploy production site workflow."
       - name: Verify updated live rates
+        if: github.event.head_commit.message != 'Activate approved APT01 publication schedule'
         id: live
         run: node scripts/verify-october-rates.mjs live
       - name: Record release result without credentials
         if: always()
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          DEPLOY_CONFIGURED: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
           GATES: ${{ steps.gates.outcome }}
           LIVE: ${{ steps.live.outcome }}
           INDEXCHEX_CONFIGURED: ${{ secrets.INDEXCHEX_API_KEY != '' || secrets.INDEXCHECKR_API_TOKEN != '' }}
         run: |
           node --input-type=module - <<'JS'
           import {readFile,writeFile} from 'node:fs/promises';
+          const schedule=JSON.parse(await readFile('scripts/listicle-schedule.json','utf8'));
+          const build=JSON.parse(await readFile('listicle-build-verification.json','utf8').catch(()=>'null'));
           const optional=async path=>JSON.parse(await readFile(path,'utf8').catch(()=>'null'));
-          await writeFile('release-evidence.json',JSON.stringify({site:"ATS",revision:process.env.GITHUB_SHA,run:`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,gates:process.env.GATES,live:process.env.LIVE,indexchexConfigured:process.env.INDEXCHEX_CONFIGURED==='true',deploy:await optional('deploy-result.json'),verification:await optional('rate-live-result.json'),recordedAt:new Date().toISOString()},null,2));
+          await writeFile('release-evidence.json',JSON.stringify({schedule,build,deployConfigured:process.env.DEPLOY_CONFIGURED==='true',site:"ATS",revision:process.env.GITHUB_SHA,run:`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,gates:process.env.GATES,live:process.env.LIVE,indexchexConfigured:process.env.INDEXCHEX_CONFIGURED==='true',deploy:await optional('deploy-result.json'),verification:await optional('rate-live-result.json'),recordedAt:new Date().toISOString()},null,2));
           JS
-          node scripts/record-release-evidence.mjs release-evidence.json
+          node scripts/record-schedule-evidence.mjs release-evidence.json

@@ -100,7 +100,9 @@ try {
   if (error?.code !== "ENOENT") throw error;
 }
 
-const eligibleUrls = expectedUrls.filter((url) => !submittedUrls.has(url));
+const resubmitUrls=new Set((process.env.INDEXCHEX_RESUBMIT_URLS??"").split(/\r?\n/).map(x=>x.trim()).filter(Boolean));
+for(const url of resubmitUrls)if(!expectedUrls.includes(url))throw Error("Resubmission URL is not in the released canonical sitemap: "+url);
+const eligibleUrls = expectedUrls.filter((url) => !submittedUrls.has(url)||resubmitUrls.has(url));
 const newUrls = urlLimit === 0 ? eligibleUrls : eligibleUrls.slice(0, urlLimit);
 if (newUrls.length === 0) {
   console.log(`IndexChex: all ${expectedUrls.length} live ATS URL(s) were already submitted; nothing to do.`);

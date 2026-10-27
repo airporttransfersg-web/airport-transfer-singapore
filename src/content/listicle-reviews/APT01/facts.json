@@ -1,0 +1,868 @@
+[
+  {
+    "id": "apt01-mysingaporedriver-001",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "terms",
+    "value": "MySingaporeDriver covers Changi T1 to T4, the VIP Complex, CIP terminal and Seletar, with a name sign in the arrival hall or a driver waiting at the private-terminal driveway.",
+    "url": "https://mysingaporedriver.com/",
+    "snippet": "XSP Transfer Private Jet transfer VIP Arrival and",
+    "sentences": [
+      "MySingaporeDriver covers Changi T1 to T4, the VIP Complex, CIP terminal and Seletar, with a name sign in the arrival hall or a driver waiting at the private-terminal driveway."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.436Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.625
+  },
+  {
+    "id": "apt01-mysingaporedriver-002",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "service",
+    "value": "Flights are tracked, child seats are fitted on request, and wheelchair-accessible vehicles are available if you say whether the chair folds.",
+    "url": "https://mysingaporedriver.com/",
+    "snippet": "child seat, wheelchair features) aren\u2019t always available on",
+    "sentences": [
+      "Flights are tracked, child seats are fitted on request, and wheelchair-accessible vehicles are available if you say whether the chair folds."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.436Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.286
+  },
+  {
+    "id": "apt01-mysingaporedriver-003",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "service",
+    "value": "Drivers hold a PDVL, and the company says its vehicles carry comprehensive private-hire insurance.",
+    "url": "https://mysingaporedriver.com/",
+    "snippet": "our private drivers operate vehicles regulated by the",
+    "sentences": [
+      "Drivers hold a PDVL, and the company says its vehicles carry comprehensive private-hire insurance."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.436Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.545
+  },
+  {
+    "id": "apt01-mysingaporedriver-004",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "service",
+    "value": "What works: one operator for a family on a commercial flight and an executive landing at Seletar in the same week.",
+    "url": "https://mysingaporedriver.com/",
+    "snippet": "Services Drink Drive Services Elderly Transport Services Executive",
+    "sentences": [
+      "What works: one operator for a family on a commercial flight and an executive landing at Seletar in the same week."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.436Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.25
+  },
+  {
+    "id": "apt01-mysingaporedriver-005",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "service",
+    "value": "Drivers hold an LTA Private Hire Car Driver's Vocational Licence (PDVL), and the company says its vehicles carry comprehensive private-hire insurance.",
+    "url": "https://mysingaporedriver.com/",
+    "snippet": "and must hold a valid Private Hire Car",
+    "sentences": [
+      "Drivers hold an LTA Private Hire Car Driver's Vocational Licence (PDVL), and the company says its vehicles carry comprehensive private-hire insurance."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.436Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.625
+  },
+  {
+    "id": "apt01-mysingaporedriver-006",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "service",
+    "value": "Since starting in 2023 it says it has run more than 6,000 trips.",
+    "url": "https://mysingaporedriver.com/",
+    "snippet": "Since then we\u2019ve completed 6,000+ trips for more",
+    "sentences": [
+      "Since starting in 2023 it says it has run more than 6,000 trips."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.436Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.556
+  },
+  {
+    "id": "apt01-mysingaporedriver-007",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "service",
+    "value": "What to check: the fare depends on vehicle class, route and pickup time, so get the total in writing.",
+    "url": "https://mysingaporedriver.com/services/chauffeur/",
+    "snippet": "Final pricing depends on the vehicle class, route,",
+    "sentences": [
+      "What to check: the fare depends on vehicle class, route and pickup time, so get the total in writing."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.469Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.333
+  },
+  {
+    "id": "apt01-mysingaporedriver-008",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "terms",
+    "value": "Standard rates don't apply in F1 week, Airshow week or on national holidays, and the airport page has no cancellation terms.",
+    "url": "https://mysingaporedriver.com/services/hourly-charter/",
+    "snippet": "Note: Rates apply only during standard time, not",
+    "sentences": [
+      "Standard rates don't apply in F1 week, Airshow week or on national holidays, and the airport page has no cancellation terms."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.505Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.364
+  },
+  {
+    "id": "apt01-mysingaporedriver-009",
+    "rank": 1,
+    "provider": "MySingaporeDriver",
+    "type": "service",
+    "value": "Book 24 to 48 hours ahead.",
+    "url": "https://mysingaporedriver.com/services/chauffeur/",
+    "snippet": "ensure our chauffeurs arrive ahead of schedule to",
+    "sentences": [
+      "Book 24 to 48 hours ahead."
+    ],
+    "checkedAt": "2026-10-27T05:11:37.469Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 1.0
+  },
+  {
+    "id": "apt01-airport-transfer-singapore-001",
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "type": "service",
+    "value": "Fares by bag count, with GST already in the price. Airport Transfer Singapore covers all four Changi terminals plus Jewel, Changi Business Park, the Changi Exhibition Centre and Seletar, and runs to Marina Bay Cruise Centre, Singapore Cruise Centre and Tanah Merah Ferry Terminal.",
+    "url": "https://airporttransfersingapore.com/",
+    "snippet": "Cruise and ferry Marina Bay Cruise Centre, Singapore",
+    "sentences": [
+      "*Fares by bag count, with GST already in the price.* Airport Transfer Singapore covers all four Changi terminals plus Jewel, Changi Business Park, the Changi Exhibition Centre and Seletar, and runs to Marina Bay Cruise Centre, Singapore Cruise Centre and Tanah Merah Ferry Terminal."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.411Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.643
+  },
+  {
+    "id": "apt01-airport-transfer-singapore-003",
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "type": "service",
+    "value": "Short stops on the way can be added if you arrange them when booking.",
+    "url": "https://airporttransfersingapore.com/",
+    "snippet": "A short on-route stop can be included when",
+    "sentences": [
+      "Short stops on the way can be added if you arrange them when booking."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.411Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.375
+  },
+  {
+    "id": "apt01-airport-transfer-singapore-006",
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "type": "service",
+    "value": "What works: a family can pick the car by bag count before landing, and the fare is the full price.",
+    "url": "https://airporttransfersingapore.com/",
+    "snippet": "own licence When a private transfer is the",
+    "sentences": [
+      "What works: a family can pick the car by bag count before landing, and the fare is the full price."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.411Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.308
+  },
+  {
+    "id": "apt01-airport-transfer-singapore-007",
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "type": "service",
+    "value": "Payment by card, PayNow, bank transfer or approved corporate account.",
+    "url": "https://airporttransfersingapore.com/",
+    "snippet": "Payment Card, PayNow, bank transfer or an approved",
+    "sentences": [
+      "Payment by card, PayNow, bank transfer or approved corporate account."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.411Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 1.0
+  },
+  {
+    "id": "apt01-airport-transfer-singapore-008",
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "type": "terms",
+    "value": "What to check: cancellation fees aren't set out on the page, so get them in writing.",
+    "url": "https://airporttransfersingapore.com/services/hourly-chauffeur/",
+    "snippet": "(optional) Service type * Transfer (point-to-point) By the",
+    "sentences": [
+      "What to check: cancellation fees aren't set out on the page, so get them in writing."
+    ],
+    "checkedAt": "2026-10-27T05:11:45.960Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.182
+  },
+  {
+    "id": "apt01-airport-transfer-singapore-009",
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "type": "service",
+    "value": "There is no published Business Sedan fare.",
+    "url": "https://airporttransfersingapore.com/",
+    "snippet": "plus surcharges Rank queue Taxi rank Usually sedan",
+    "sentences": [
+      "There is no published Business Sedan fare."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.411Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.6
+  },
+  {
+    "id": "apt01-airport-transfer-singapore-010",
+    "rank": 2,
+    "provider": "Airport Transfer Singapore",
+    "type": "service",
+    "value": "Book on our Changi airport transfer page or see every vehicle on fleet and rates.",
+    "url": "https://airporttransfersingapore.com/fleet-rates/",
+    "snippet": "Airport Transfer Singapore Skip to content Services Fleet",
+    "sentences": [
+      "Book on our [Changi airport transfer page](/services/changi-airport-transfers/) or see every vehicle on [fleet and rates](/fleet-rates/)."
+    ],
+    "checkedAt": "2026-10-27T05:11:41.051Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.556
+  },
+  {
+    "id": "apt01-limousine-service-singapore-001",
+    "rank": 3,
+    "provider": "Limousine Service Singapore",
+    "type": "terms",
+    "value": "Every surcharge listed before you book, and free cancellation up to three days out. Limousine Service Singapore covers airport and cruise runs, point-to-point trips and cross-border transfers, and sends the chauffeur's details before the job.",
+    "url": "https://www.limousineservicesingapore.com/",
+    "snippet": "Airport & transfers Airport Cruise terminal Point-to-point Cross-border",
+    "sentences": [
+      "*Every surcharge listed before you book, and free cancellation up to three days out.* Limousine Service Singapore covers airport and cruise runs, point-to-point trips and cross-border transfers, and sends the chauffeur's details before the job."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.274Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.375
+  },
+  {
+    "id": "apt01-limousine-service-singapore-003",
+    "rank": 3,
+    "provider": "Limousine Service Singapore",
+    "type": "terms",
+    "value": "Fares sit a little above Airport Transfer Singapore's, and cancellation is free up to three days before.",
+    "url": "https://www.limousineservicesingapore.com/rates/",
+    "snippet": "a booking Cancellation: free up to 3 days",
+    "sentences": [
+      "Fares sit a little above Airport Transfer Singapore's, and cancellation is free up to three days before."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.718Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.455
+  },
+  {
+    "id": "apt01-limousine-service-singapore-006",
+    "rank": 3,
+    "provider": "Limousine Service Singapore",
+    "type": "service",
+    "value": "What works: no surprise extras, because each one is priced on the rates page.",
+    "url": "https://www.limousineservicesingapore.com/",
+    "snippet": "Our Limousine Services Each service has its own",
+    "sentences": [
+      "What works: no surprise extras, because each one is priced on the rates page."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.274Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.333
+  },
+  {
+    "id": "apt01-limousine-service-singapore-007",
+    "rank": 3,
+    "provider": "Limousine Service Singapore",
+    "type": "terms",
+    "value": "What to check: quotes take up to one working day, the office answers Monday to Friday 09:00 to 17:00, and three days' notice is recommended.",
+    "url": "https://www.limousineservicesingapore.com/",
+    "snippet": "Our office is open Monday to Friday, 09:00",
+    "sentences": [
+      "What to check: quotes take up to one working day, the office answers Monday to Friday 09:00 to 17:00, and three days' notice is recommended."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.274Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.333
+  },
+  {
+    "id": "apt01-singapore-chauffeur-service-001",
+    "rank": 4,
+    "provider": "Singapore Chauffeur Service",
+    "type": "service",
+    "value": "A sedan airport run for one or two business travellers. Singapore Chauffeur Service quotes fixed fares rather than metered ones and usually replies within 10 minutes during sales hours.",
+    "url": "https://singaporechauffeurservice.com/",
+    "snippet": "private-hire and taxi in Singapore A chauffeur service",
+    "sentences": [
+      "*A sedan airport run for one or two business travellers.* Singapore Chauffeur Service quotes fixed fares rather than metered ones and usually replies within 10 minutes during sales hours."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.830Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.409
+  },
+  {
+    "id": "apt01-singapore-chauffeur-service-002",
+    "rank": 4,
+    "provider": "Singapore Chauffeur Service",
+    "type": "service",
+    "value": "There is no public-holiday loading, and late-night trips carry 20% to 25% depending on the car.",
+    "url": "https://singaporechauffeurservice.com/",
+    "snippet": "and waiting Late-night loading (23:00\u201306:59) 20\u201325%, depending on",
+    "sentences": [
+      "There is no public-holiday loading, and late-night trips carry 20% to 25% depending on the car."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.830Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.6
+  },
+  {
+    "id": "apt01-singapore-chauffeur-service-003",
+    "rank": 4,
+    "provider": "Singapore Chauffeur Service",
+    "type": "service",
+    "value": "Payment by Mastercard, Maestro, American Express, Apple Pay or Google Pay suits travellers settling on a corporate card.",
+    "url": "https://singaporechauffeurservice.com/corporate-chauffeur-service/",
+    "snippet": "class Payment Mastercard, Maestro, American Express, Apple Pay",
+    "sentences": [
+      "Payment by Mastercard, Maestro, American Express, Apple Pay or Google Pay suits travellers settling on a corporate card."
+    ],
+    "checkedAt": "2026-10-27T05:11:46.590Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.692
+  },
+  {
+    "id": "apt01-singapore-chauffeur-service-005",
+    "rank": 4,
+    "provider": "Singapore Chauffeur Service",
+    "type": "terms",
+    "value": "What works: a published sedan fare with flight monitoring included, plus one free amendment and a 48-hour free-cancellation window.",
+    "url": "https://singaporechauffeurservice.com/",
+    "snippet": "Free waiting time 60 minutes on airport and",
+    "sentences": [
+      "What works: a published sedan fare with flight monitoring included, plus one free amendment and a 48-hour free-cancellation window."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.830Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.571
+  },
+  {
+    "id": "apt01-singapore-chauffeur-service-006",
+    "rank": 4,
+    "provider": "Singapore Chauffeur Service",
+    "type": "service",
+    "value": "What to check: GST isn't stated; confirmations come by email, not WhatsApp.",
+    "url": "https://singaporechauffeurservice.com/",
+    "snippet": "\u00b7 PHONE \u00b7 CONFIRMED BOOKING Tell us what",
+    "sentences": [
+      "What to check: GST isn't stated; confirmations come by email, not WhatsApp."
+    ],
+    "checkedAt": "2026-10-27T05:11:38.830Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.222
+  },
+  {
+    "id": "apt01-hourly-chauffeur-singapore-001",
+    "rank": 5,
+    "provider": "Hourly Chauffeur Singapore",
+    "type": "service",
+    "value": "Landing, then a half-day of meetings in the same car. The same company handles property viewings, golf days and cruise stopovers, so the car that collects you can stay on for the rest of the day without a second booking.",
+    "url": "https://www.hourlychauffeursingapore.com/",
+    "snippet": "A wedding chauffeur for the bridal car and",
+    "sentences": [
+      "*Landing, then a half-day of meetings in the same car.* The same company handles property viewings, golf days and cruise stopovers, so the car that collects you can stay on for the rest of the day without a second booking."
+    ],
+    "checkedAt": "2026-10-27T05:11:39.244Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.429
+  },
+  {
+    "id": "apt01-hourly-chauffeur-singapore-005",
+    "rank": 5,
+    "provider": "Hourly Chauffeur Singapore",
+    "type": "service",
+    "value": "What to check: it's priced by the hour, so a straight hotel drop costs more than a transfer fare elsewhere.",
+    "url": "https://www.hourlychauffeursingapore.com/",
+    "snippet": "choice Hotel to the airport, one trip Transfer",
+    "sentences": [
+      "What to check: it's priced by the hour, so a straight hotel drop costs more than a transfer fare elsewhere."
+    ],
+    "checkedAt": "2026-10-27T05:11:39.244Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.25
+  },
+  {
+    "id": "apt01-hourly-chauffeur-singapore-006",
+    "rank": 5,
+    "provider": "Hourly Chauffeur Singapore",
+    "type": "terms",
+    "value": "Needs 48 hours' notice; cancellation inside 12 hours is charged in full.",
+    "url": "https://www.hourlychauffeursingapore.com/",
+    "snippet": "12 hours before the booking are charged in",
+    "sentences": [
+      "Needs 48 hours' notice; cancellation inside 12 hours is charged in full."
+    ],
+    "checkedAt": "2026-10-27T05:11:39.244Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.5
+  },
+  {
+    "id": "apt01-car-tour-singapore-001",
+    "rank": 6,
+    "provider": "Car Tour Singapore",
+    "type": "service",
+    "value": "A city tour between flights, starting and ending at Changi. Car Tour Singapore built a tour for transit passengers: pickup at Changi, a loop through the city and back to the airport for the next flight.",
+    "url": "https://cartoursingapore.com/",
+    "snippet": "Airport layover car tours from Changi, for transit",
+    "sentences": [
+      "*A city tour between flights, starting and ending at Changi.* Car Tour Singapore built a tour for transit passengers: pickup at Changi, a loop through the city and back to the airport for the next flight."
+    ],
+    "checkedAt": "2026-10-27T05:11:39.979Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.444
+  },
+  {
+    "id": "apt01-car-tour-singapore-002",
+    "rank": 6,
+    "provider": "Car Tour Singapore",
+    "type": "service",
+    "value": "Heritage, night and countryside routes are also bookable, and an STB-licensed guide can join in English, Chinese, Japanese, Korean, Arabic, Spanish or German.",
+    "url": "https://cartoursingapore.com/tour-guide-service/",
+    "snippet": "in English, Chinese, Japanese, Korean, Arabic, Spanish and",
+    "sentences": [
+      "Heritage, night and countryside routes are also bookable, and an STB-licensed guide can join in English, Chinese, Japanese, Korean, Arabic, Spanish or German."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.822Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.556
+  },
+  {
+    "id": "apt01-car-tour-singapore-004",
+    "rank": 6,
+    "provider": "Car Tour Singapore",
+    "type": "service",
+    "value": "What works: the airport pickup becomes a tour, with an optional STB-licensed guide.",
+    "url": "https://cartoursingapore.com/",
+    "snippet": "Singapore at your own pace, with an STB-licensed",
+    "sentences": [
+      "What works: the airport pickup becomes a tour, with an optional STB-licensed guide."
+    ],
+    "checkedAt": "2026-10-27T05:11:39.979Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.5
+  },
+  {
+    "id": "apt01-car-tour-singapore-005",
+    "rank": 6,
+    "provider": "Car Tour Singapore",
+    "type": "service",
+    "value": "What to check: it isn't a hotel transfer service.",
+    "url": "https://cartoursingapore.com/",
+    "snippet": "If you want someone to explain what you",
+    "sentences": [
+      "What to check: it isn't a hotel transfer service."
+    ],
+    "checkedAt": "2026-10-27T05:11:39.979Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.167,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-singapore-f1-chauffeur-001",
+    "rank": 7,
+    "provider": "Singapore F1 Chauffeur",
+    "type": "terms",
+    "value": "Arrivals during Grand Prix week. Singapore F1 Chauffeur tracks your flight, has the driver waiting inside the arrival hall, and sends the chauffeur's name and number before the first pickup.",
+    "url": "https://singaporef1chauffeur.com/",
+    "snippet": "arrival and departure, flight tracked, driver inside the",
+    "sentences": [
+      "*Arrivals during Grand Prix week.* Singapore F1 Chauffeur tracks your flight, has the driver waiting inside the arrival hall, and sends the chauffeur's name and number before the first pickup."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.289Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.526
+  },
+  {
+    "id": "apt01-singapore-f1-chauffeur-002",
+    "rank": 7,
+    "provider": "Singapore F1 Chauffeur",
+    "type": "service",
+    "value": "In race week the same car can carry on to hotel-to-circuit runs with the driver on standby, which saves rebooking once the roads around Marina Bay close.",
+    "url": "https://singaporef1chauffeur.com/",
+    "snippet": "driver inside the arrival hall 02 F1 race",
+    "sentences": [
+      "In race week the same car can carry on to hotel-to-circuit runs with the driver on standby, which saves rebooking once the roads around Marina Bay close."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.289Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.35
+  },
+  {
+    "id": "apt01-singapore-f1-chauffeur-003",
+    "rank": 7,
+    "provider": "Singapore F1 Chauffeur",
+    "type": "service",
+    "value": "What works: one operator for the arrival and the race days.",
+    "url": "https://singaporef1chauffeur.com/",
+    "snippet": "arrival and departure, flight tracked, driver inside the",
+    "sentences": [
+      "What works: one operator for the arrival and the race days."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.289Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.571
+  },
+  {
+    "id": "apt01-singapore-f1-chauffeur-004",
+    "rank": 7,
+    "provider": "Singapore F1 Chauffeur",
+    "type": "service",
+    "value": "What to check: outside race week, the operators above cost less.",
+    "url": "https://singaporef1chauffeur.com/terms/",
+    "snippet": "Cancellations and no-shows Outside race week, cancellations made",
+    "sentences": [
+      "What to check: outside race week, the operators above cost less."
+    ],
+    "checkedAt": "2026-10-27T05:11:41.073Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.444
+  },
+  {
+    "id": "apt01-sgluxury-transport-001",
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "type": "price",
+    "value": "SGLuxury Transport sells arrival and departure transfers, city transfers and hourly hire from S$60 an hour on a 3-hour minimum.",
+    "url": "https://sgluxurytransport.com/",
+    "snippet": "",
+    "sentences": [
+      "SGLuxury Transport sells arrival and departure transfers, city transfers and hourly hire from S$60 an hour on a 3-hour minimum."
+    ],
+    "checkedAt": "2026-10-26",
+    "verificationBasis": "supplied verified draft (26 Oct); live recheck unavailable",
+    "sourceMatchScore": 0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-sgluxury-transport-002",
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "type": "service",
+    "value": "Its arrival list includes a Toyota Noah, Alphard and 13-seat Hiace, and luggage help is listed on departures.",
+    "url": "https://sgluxurytransport.com/",
+    "snippet": "",
+    "sentences": [
+      "Its arrival list includes a Toyota Noah, Alphard and 13-seat Hiace, and luggage help is listed on departures."
+    ],
+    "checkedAt": "2026-10-26",
+    "verificationBasis": "supplied verified draft (26 Oct); live recheck unavailable",
+    "sourceMatchScore": 0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-sgluxury-transport-003",
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "type": "price",
+    "value": "S-Class arrivals were priced from S$140 when checked; confirm the current quote.",
+    "url": "https://sgluxurytransport.com/",
+    "snippet": "",
+    "sentences": [
+      "S-Class arrivals were priced from S$140 when checked; confirm the current quote."
+    ],
+    "checkedAt": "2026-10-26",
+    "verificationBasis": "supplied verified draft (26 Oct); live recheck unavailable",
+    "sourceMatchScore": 0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-sgluxury-transport-004",
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "type": "price",
+    "value": "| Arrival fares (from) | Toyota Noah S$80, Alphard S$90, Hiace 13-seater S$90, Mercedes S-Class S$140 |",
+    "url": "https://sgluxurytransport.com/",
+    "snippet": "",
+    "sentences": [
+      "| Arrival fares (from) | Toyota Noah S$80, Alphard S$90, Hiace 13-seater S$90, Mercedes S-Class S$140 |"
+    ],
+    "checkedAt": "2026-10-26",
+    "verificationBasis": "supplied verified draft (26 Oct); live recheck unavailable",
+    "sourceMatchScore": 0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-sgluxury-transport-005",
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "type": "terms",
+    "value": "What works: up to 75 minutes of free waiting on arrivals.",
+    "url": "https://sgluxurytransport.com/",
+    "snippet": "",
+    "sentences": [
+      "What works: up to 75 minutes of free waiting on arrivals."
+    ],
+    "checkedAt": "2026-10-26",
+    "verificationBasis": "supplied verified draft (26 Oct); live recheck unavailable",
+    "sourceMatchScore": 0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-sgluxury-transport-006",
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "type": "terms",
+    "value": "What to check: one part of the site says 45 minutes instead, so get the waiting window in writing; seat and bag counts aren't given except for the Hiace, and no company registration, address or cancellation policy appears on the pages checked.",
+    "url": "https://sgluxurytransport.com/",
+    "snippet": "",
+    "sentences": [
+      "What to check: one part of the site says 45 minutes instead, so get the waiting window in writing; seat and bag counts aren't given except for the Hiace, and no company registration, address or cancellation policy appears on the pages checked."
+    ],
+    "checkedAt": "2026-10-26",
+    "verificationBasis": "supplied verified draft (26 Oct); live recheck unavailable",
+    "sourceMatchScore": 0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-sgluxury-transport-007",
+    "rank": 8,
+    "provider": "SGLuxury Transport",
+    "type": "service",
+    "value": "Website: sgluxurytransport.com.",
+    "url": "https://sgluxurytransport.com/",
+    "snippet": "",
+    "sentences": [
+      "Website: sgluxurytransport.com."
+    ],
+    "checkedAt": "2026-10-26",
+    "verificationBasis": "supplied verified draft (26 Oct); live recheck unavailable",
+    "sourceMatchScore": 0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-changi-airport-transport-001",
+    "rank": 9,
+    "provider": "Changi Airport Transport",
+    "type": "service",
+    "value": "Changi Airport Transport, which also trades as Comfort Maxi Cab, runs vans, minibuses and coaches up to 40 seats alongside sedans, and lists trips into Malaysia and school and worker transport among its services.",
+    "url": "https://www.changiairporttransport.com/",
+    "snippet": "CONTACT US Search Changi Airport Transport & Comfort",
+    "sentences": [
+      "Changi Airport Transport, which also trades as Comfort Maxi Cab, runs vans, minibuses and coaches up to 40 seats alongside sedans, and lists trips into Malaysia and school and worker transport among its services."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.932Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.292
+  },
+  {
+    "id": "apt01-changi-airport-transport-002",
+    "rank": 9,
+    "provider": "Changi Airport Transport",
+    "type": "price",
+    "value": "Hourly charter starts at $45 an hour with a 4-hour minimum.",
+    "url": "https://www.changiairporttransport.com/",
+    "snippet": "$65 One way Transfer $55 Hourly charter $45",
+    "sentences": [
+      "Hourly charter starts at $45 an hour with a 4-hour minimum."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.932Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.5
+  },
+  {
+    "id": "apt01-changi-airport-transport-003",
+    "rank": 9,
+    "provider": "Changi Airport Transport",
+    "type": "price",
+    "value": "| Arrival fares | E-Class $55 ($65 with meet and greet), Alphard $60 ($75), V-Class $65 ($85), 40-seat coach $140 |",
+    "url": "https://www.changiairporttransport.com/",
+    "snippet": "$60 Airport Arrival $65 One way Transfer $55",
+    "sentences": [
+      "| Arrival fares | E-Class $55 ($65 with meet and greet), Alphard $60 ($75), V-Class $65 ($85), 40-seat coach $140 |"
+    ],
+    "checkedAt": "2026-10-27T05:11:40.932Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.667
+  },
+  {
+    "id": "apt01-changi-airport-transport-004",
+    "rank": 9,
+    "provider": "Changi Airport Transport",
+    "type": "price",
+    "value": "What works: listed arrival fares from $55.",
+    "url": "https://www.changiairporttransport.com/",
+    "snippet": "Short Transfer $50 Airport Departure $60 Airport Arrival",
+    "sentences": [
+      "What works: listed arrival fares from $55."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.932Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.2
+  },
+  {
+    "id": "apt01-changi-airport-transport-005",
+    "rank": 9,
+    "provider": "Changi Airport Transport",
+    "type": "terms",
+    "value": "What to check: prices show \"$\" with no currency, meet and greet is a separate, dearer fare, and no waiting charges or cancellation terms are published.",
+    "url": "https://www.changiairporttransport.com/",
+    "snippet": "Great Our friendly and professional drivers are waiting",
+    "sentences": [
+      "What to check: prices show \"$\" with no currency, meet and greet is a separate, dearer fare, and no waiting charges or cancellation terms are published."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.932Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.133,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-changi-airport-transport-006",
+    "rank": 9,
+    "provider": "Changi Airport Transport",
+    "type": "service",
+    "value": "Website: changiairporttransport.com.",
+    "url": "https://www.changiairporttransport.com/",
+    "snippet": "--> Changi Airport Transport",
+    "sentences": [
+      "Website: changiairporttransport.com."
+    ],
+    "checkedAt": "2026-10-27T05:11:40.932Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.0,
+    "reviewOnRefresh": true
+  },
+  {
+    "id": "apt01-singapore-limo-services-001",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "price",
+    "value": "Singapore Limo Services keeps its offer short: five vehicle models, fixed arrival, departure and point-to-point fares, and hourly hire from S$70 to S$200 an hour with a 3-hour minimum.",
+    "url": "https://singaporelimoservice.com.sg/",
+    "snippet": "Home - Singapore Limo Services Home Fleet and",
+    "sentences": [
+      "Singapore Limo Services keeps its offer short: five vehicle models, fixed arrival, departure and point-to-point fares, and hourly hire from S$70 to S$200 an hour with a 3-hour minimum."
+    ],
+    "checkedAt": "2026-10-27T05:11:52.039Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.412
+  },
+  {
+    "id": "apt01-singapore-limo-services-002",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "price",
+    "value": "Midnight trips add S$15 and Tuas or Pioneer drops S$25.",
+    "url": "https://singaporelimoservice.com.sg/fleet-and-rates/",
+    "snippet": "of 15min waiting time $25 Tuas / Pioneer",
+    "sentences": [
+      "Midnight trips add S$15 and Tuas or Pioneer drops S$25."
+    ],
+    "checkedAt": "2026-10-27T05:11:53.922Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.5
+  },
+  {
+    "id": "apt01-singapore-limo-services-003",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "price",
+    "value": "Waiting is listed at S$10 per 15 minutes, paid to the driver.",
+    "url": "https://singaporelimoservice.com.sg/fleet-and-rates/",
+    "snippet": "0700 hours) $10 per block of 15min waiting",
+    "sentences": [
+      "Waiting is listed at S$10 per 15 minutes, paid to the driver."
+    ],
+    "checkedAt": "2026-10-27T05:11:53.922Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.4
+  },
+  {
+    "id": "apt01-singapore-limo-services-004",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "price",
+    "value": "| Arrival fares | Alphard S$100, E-Class S$100, V-Class S$110, Hiace S$100, S-Class S$250 |",
+    "url": "https://singaporelimoservice.com.sg/",
+    "snippet": "Now Mercedes S-Class x2 x3 Edit Arrival S$250",
+    "sentences": [
+      "| Arrival fares | Alphard S$100, E-Class S$100, V-Class S$110, Hiace S$100, S-Class S$250 |"
+    ],
+    "checkedAt": "2026-10-27T05:11:52.039Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.875
+  },
+  {
+    "id": "apt01-singapore-limo-services-005",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "price",
+    "value": "| Waiting | S$10 per 15 minutes, paid to the driver |",
+    "url": "https://singaporelimoservice.com.sg/fleet-and-rates/",
+    "snippet": "services Pay direct to driver if incur waiting",
+    "sentences": [
+      "| Waiting | S$10 per 15 minutes, paid to the driver |"
+    ],
+    "checkedAt": "2026-10-27T05:11:53.922Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.5
+  },
+  {
+    "id": "apt01-singapore-limo-services-006",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "price",
+    "value": "What works: waiting charged at S$10 per 15 minutes.",
+    "url": "https://singaporelimoservice.com.sg/",
+    "snippet": "Learn More All Services Freequently Asked Questions What",
+    "sentences": [
+      "What works: waiting charged at S$10 per 15 minutes."
+    ],
+    "checkedAt": "2026-10-27T05:11:52.039Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.2
+  },
+  {
+    "id": "apt01-singapore-limo-services-007",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "terms",
+    "value": "What to check: bookings run through WhatsApp, a phone line and a web form, and the rates page shows no address, company registration or cancellation terms.",
+    "url": "https://singaporelimoservice.com.sg/",
+    "snippet": "service through our Booking Form , phone, or",
+    "sentences": [
+      "What to check: bookings run through WhatsApp, a phone line and a web form, and the rates page shows no address, company registration or cancellation terms."
+    ],
+    "checkedAt": "2026-10-27T05:11:52.039Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.235
+  },
+  {
+    "id": "apt01-singapore-limo-services-008",
+    "rank": 10,
+    "provider": "Singapore Limo Services",
+    "type": "service",
+    "value": "Website: singaporelimoservice.com.sg.",
+    "url": "https://singaporelimoservice.com.sg/",
+    "snippet": "Home - Singapore Limo Services Home Fleet and",
+    "sentences": [
+      "Website: singaporelimoservice.com.sg."
+    ],
+    "checkedAt": "2026-10-27T05:11:52.039Z",
+    "verificationBasis": "supplied verified draft (26 Oct) plus source snapshot",
+    "sourceMatchScore": 0.0,
+    "reviewOnRefresh": true
+  }
+]

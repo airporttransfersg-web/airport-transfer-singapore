@@ -1,0 +1,1 @@
+export const formatReviewDate=(date:Date|string,monthOnly=false)=>new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Singapore',...(monthOnly?{}:{day:'numeric'}),month:'long',year:'numeric'}).format(new Date(date));

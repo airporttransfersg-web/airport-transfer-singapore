@@ -89,4 +89,15 @@ const pages = defineCollection({
     .strict(),
 });
 
-export const collections = { pages };
+const listicleReviews = defineCollection({
+  loader: glob({pattern: "**/*.mdx", base: "./src/content/listicle-reviews"}),
+  schema: z.object({
+    postId:z.string(), title:z.string(), description:z.string(), slug:z.string(),
+    titleYear:z.number().int(), raceYear:z.number().int().optional(), referenceYear:z.number().int().optional(),
+    raceWeekendLabel:z.string().optional(), referenceClosuresLabel:z.string().optional(),
+    publishedAt:z.coerce.date(), updatedAt:z.coerce.date(), nextRefreshAt:z.coerce.date(),
+    publishAt:z.coerce.date(), approvedForProduction:z.boolean().default(false), authorLabel:z.string(), datePrefix:z.string(),
+  }).strict(),
+});
+
+export const collections = { pages, listicleReviews };

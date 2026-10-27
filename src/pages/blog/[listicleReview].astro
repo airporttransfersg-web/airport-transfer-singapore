@@ -1,0 +1,7 @@
+---
+import {localListicleReviews} from '../../lib/listicle-reviews';
+import ListicleReview from '../../templates/ListicleReview.astro';
+export async function getStaticPaths(){return (await localListicleReviews()).map(entry=>({params:{listicleReview:entry.data.slug.split('/').filter(Boolean).at(-1)},props:{entry}}));}
+const {entry}=Astro.props;
+---
+<ListicleReview entry={entry}/>
