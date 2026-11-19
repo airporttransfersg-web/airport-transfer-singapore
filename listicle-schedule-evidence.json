@@ -1,33 +1,38 @@
 {
-  "schedule": {
-    "postId": "APT01",
-    "site": "airport-transfer-singapore",
-    "path": "/blog/changi-airport-transfer-options-compared/",
-    "port": 4330,
-    "proposedPublishAt": "2026-10-30T07:38:00+08:00",
-    "dailyRunSGT": "08:10",
-    "siteUrl": "https://airporttransfersingapore.com",
-    "publishAt": "2026-10-30T07:38:00+08:00",
-    "approvedForProduction": true,
-    "contentPath": "src/content/listicle-reviews/APT01/index.mdx",
-    "indexPath": "/blog/"
-  },
-  "build": {
-    "postId": "APT01",
-    "publishAt": "2026-10-30T07:38:00+08:00",
-    "normalProductionBuild": "passed",
-    "releaseBoundaryBuild": "passed",
-    "releaseClock": "2026-10-29T23:38:01.000Z",
-    "verifiedAt": "2026-10-27T05:31:17.323Z"
-  },
-  "deployConfigured": true,
-  "site": "ATS",
-  "revision": "20cdcc37bc08ddaeb082746ef16864f409c25864",
-  "run": "https://github.com/airporttransfersg-web/airport-transfer-singapore/actions/runs/40455703203",
+  "site": "airporttransfersingapore.com",
+  "postId": "APT02",
+  "revision": "018f746c0596512971e63cfe40a50303241b88bd",
+  "defaultBranch": "main",
+  "run": "https://github.com/airporttransfersg-web/airport-transfer-singapore/actions/runs/44458990179",
   "gates": "success",
-  "live": "skipped",
   "indexchexConfigured": true,
-  "deploy": null,
-  "verification": null,
-  "recordedAt": "2026-10-27T05:31:17.506Z"
+  "deployConfigured": true,
+  "scheduledWorkflow": {
+    "httpStatus": 200,
+    "state": "active",
+    "path": ".github/workflows/deploy-production.yml"
+  },
+  "schedule": {
+    "postId": "APT02",
+    "path": "/blog/airport-transfers-families-children-luggage/",
+    "contentPath": "src/content/listicle-reviews/APT02/index.mdx",
+    "siteUrl": "https://airporttransfersingapore.com",
+    "indexPath": "/blog/",
+    "proposedPublishAt": "2026-11-27T07:46:00+08:00",
+    "dailyRunSGT": "08:10",
+    "editorialApproved": true,
+    "approvedForProduction": true,
+    "publishAt": "2026-11-27T07:46:00+08:00"
+  },
+  "factAudit": {
+    "complete": true,
+    "bodySha256": "fc8723c5e979f59e44fc75e087f83a57d12591da62ff35bdc216305a6f7c1b7d",
+    "baselineSha256": "b81d0b666a5d662e8f10d6db05011ecb85c588c9e1af3867dde4a368bd32a151",
+    "factRecords": 152,
+    "carrierCount": 124
+  },
+  "dailyCronUTC": "10 0 * * *",
+  "dailyTimeSGT": "08:10",
+  "refreshEnabled": false,
+  "recordedAt": "2026-11-19T04:32:58.658Z"
 }
