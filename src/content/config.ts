@@ -95,8 +95,8 @@ const listicleReviews = defineCollection({
     postId:z.string(), title:z.string(), description:z.string(), slug:z.string(),
     titleYear:z.number().int(), raceYear:z.number().int().optional(), referenceYear:z.number().int().optional(),
     raceWeekendLabel:z.string().optional(), referenceClosuresLabel:z.string().optional(),
-    publishedAt:z.coerce.date(), updatedAt:z.coerce.date(), nextRefreshAt:z.coerce.date(),
-    publishAt:z.coerce.date(), approvedForProduction:z.boolean().default(false), authorLabel:z.string(), datePrefix:z.string(),
+    publishedAt:z.coerce.date().optional(), updatedAt:z.coerce.date(), nextRefreshAt:z.coerce.date().optional(),
+    publishAt:z.coerce.date().optional(), approvedForProduction:z.boolean().default(false), authorLabel:z.string(), datePrefix:z.string(),
   }).strict(),
 });
 

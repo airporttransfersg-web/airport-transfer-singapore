@@ -1,0 +1,98 @@
+[
+  {
+    "rank": 1,
+    "provider": "Airport Transfer Singapore",
+    "source": "https://airporttransfersingapore.com/",
+    "image": "/images/listicles/APT02/airport-transfer-singapore-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 2,
+    "provider": "Limousine Service Singapore",
+    "source": "https://www.limousineservicesingapore.com/",
+    "image": "/images/listicles/APT02/limousine-service-singapore-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 3,
+    "provider": "MySingaporeDriver",
+    "source": "https://mysingaporedriver.com/",
+    "image": "/images/listicles/APT02/mysingaporedriver-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 4,
+    "provider": "Singapore Chauffeur Service",
+    "source": "https://singaporechauffeurservice.com/",
+    "image": "/images/listicles/APT02/singapore-chauffeur-service-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 5,
+    "provider": "Hourly Chauffeur Singapore",
+    "source": "https://www.hourlychauffeursingapore.com/",
+    "image": "/images/listicles/APT02/hourly-chauffeur-singapore-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 6,
+    "provider": "Black Car Service Singapore",
+    "source": "https://blackcarservicesingapore.com/",
+    "image": "/images/listicles/APT02/black-car-service-singapore-home-20261119.webp",
+    "capturedAt": "2026-11-19T04:04:16.786Z",
+    "status": "captured"
+  },
+  {
+    "rank": 7,
+    "provider": "Car Tour Singapore",
+    "source": "https://cartoursingapore.com/",
+    "image": "/images/listicles/APT02/car-tour-singapore-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 8,
+    "provider": "Singapore F1 Chauffeur",
+    "source": "https://singaporef1chauffeur.com/",
+    "image": "/images/listicles/APT02/singapore-f1-chauffeur-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 9,
+    "provider": "Corporate Car Service Singapore",
+    "source": "https://corporatecarservicesingapore.com/",
+    "image": "/images/listicles/APT02/corporate-car-service-singapore-home-20261119.webp",
+    "capturedAt": "2026-11-19T04:04:16.786Z",
+    "status": "captured"
+  },
+  {
+    "rank": 10,
+    "provider": "Limo Maxi Cabs",
+    "source": "https://limomaxicabs.com/",
+    "image": "/images/listicles/APT02/limo-maxi-cabs-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  },
+  {
+    "rank": 11,
+    "provider": "Zimmiz Limousine",
+    "source": "https://zimmizlimousine.com/",
+    "image": null,
+    "capturedAt": null,
+    "status": "omitted; see capture-report.md"
+  },
+  {
+    "rank": 12,
+    "provider": "Astro Transports",
+    "source": "https://www.astromaxicab.sg/",
+    "image": "/images/listicles/APT02/astro-transports-home-20261027.webp",
+    "capturedAt": "2026-10-27T08:50:36.494Z",
+    "status": "captured"
+  }
+]

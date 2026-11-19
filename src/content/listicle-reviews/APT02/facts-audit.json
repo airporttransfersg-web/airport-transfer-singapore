@@ -1,0 +1,18 @@
+{
+  "postId": "APT02",
+  "complete": true,
+  "reviewedAt": "2026-11-19T04:20:36.376Z",
+  "factRecords": 152,
+  "carrierCount": 124,
+  "bodySha256": "fc8723c5e979f59e44fc75e087f83a57d12591da62ff35bdc216305a6f7c1b7d",
+  "baselineSha256": "b81d0b666a5d662e8f10d6db05011ecb85c588c9e1af3867dde4a368bd32a151",
+  "unresolved": [],
+  "reviewScope": "All twelve profiles, price/capacity comparison, question answers and practical steps reviewed against current primary sources and approved v2 owner rate card.",
+  "notes": [
+    "MSD seat range remains stated, unsupported widest comparison removed because ATS also names three types.",
+    "Quoted fares use the approved owner card. SFC S$115 is explicitly the Executive Business Sedan rate. No MSD monetary rate.",
+    "Limo Maxi Cabs and Zimmiz conflicting published figures are disclosed; currency, terms and final quotes require confirmation. Conflicting price records are protected and always reviewed on source change.",
+    "No claim that unknown child-seat, bag, GST or policy arrangements are absent.",
+    "Only the allowed backlink paragraph changes live APT01; refresh remains disabled."
+  ]
+}

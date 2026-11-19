@@ -62,6 +62,20 @@ jobs:
           SITE_ENV: production
         run: node scripts/verify-production-seo.mjs
 
+      - name: Check IndexChex configuration
+        id: indexchex
+        env:
+          INDEXCHEX_API_KEY: ${{ secrets.INDEXCHEX_API_KEY }}
+        shell: bash
+        run: |
+          if [[ -n "$INDEXCHEX_API_KEY" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "INDEXCHEX_API_KEY is not configured; release is held before deployment."
+            exit 1
+          fi
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
@@ -73,18 +87,8 @@ jobs:
       - name: Verify due listicle before any indexing
         run: node scripts/verify-scheduled-listicles-live.mjs
 
-      - name: Check IndexChex configuration
-        id: indexchex
-        env:
-          INDEXCHEX_API_KEY: ${{ secrets.INDEXCHEX_API_KEY }}
-        shell: bash
-        run: |
-          if [[ -n "$INDEXCHEX_API_KEY" ]]; then
-            echo "configured=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "configured=false" >> "$GITHUB_OUTPUT"
-            echo "INDEXCHEX_API_KEY is not configured; IndexChex submission is skipped."
-          fi
+      - name: Verify due APT02 article and paired navigation before indexing
+        run: node scripts/verify-batch2-live.mjs
 
       - name: Restore IndexChex submission history
         if: steps.indexchex.outputs.configured == 'true'

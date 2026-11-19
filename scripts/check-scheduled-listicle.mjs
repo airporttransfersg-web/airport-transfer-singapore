@@ -1,7 +1,7 @@
 import {readFile,access} from 'node:fs/promises';import {join,dirname} from 'node:path';import {pathToFileURL} from 'node:url';import {isListicleReleased,releaseNow} from '../src/lib/listicle-release.mjs';
-export function validateEditorial(source,evidence,facts,providers){
+export function validateEditorial(source,evidence,facts,providers,expected=10){
  const entries=[...source.matchAll(/<ProviderHome rank=\{(\d+)\}[^>]*\/>([\s\S]*?)(?=^### |^## |$(?![\s\S]))/gm)];
- if(entries.length!==10||new Set(entries.map(x=>Number(x[1]))).size!==10)throw Error('Expected ten unique ranked entries');
+ if(entries.length!==expected||new Set(entries.map(x=>Number(x[1]))).size!==expected)throw Error(`Expected ${expected} unique ranked entries`);
  for(const m of entries){const rank=Number(m[1]);if(!providers.some(p=>p.rank===rank))throw Error('Rank missing from manifest');const paragraphs=m[2].trim().split(/\n\s*\n/).filter(b=>b&&!/^(?:\||-|<|Good fit:|Not ideal:|What works:|What to check:|Contact:|Vendor site:|Website:|Web:|\*\*(?:Strengths|Gaps|To confirm)|See the |Start with )/.test(b));if(!paragraphs.some(p=>p.split(/\s+/).length>=40))throw Error(`Entry ${rank} needs a prose paragraph of at least 40 words`);if(!facts.some(f=>f.rank===rank&&f.sentences.length))throw Error(`Entry ${rank} has no fact register`);}
  for(const line of source.split('\n'))if(/\b(?:only|lowest|longest|cheapest|first)\b/i.test(line)&&!evidence.some(e=>e.text===line.trim()&&e.source&&e.reason))throw Error('Unreviewed comparative or exclusivity wording: '+line);
  return entries.length;

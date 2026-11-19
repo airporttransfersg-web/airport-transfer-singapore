@@ -1,0 +1,1022 @@
+{
+  "https://airporttransfersingapore.com/fleet-rates/": {
+    "url": "https://airporttransfersingapore.com/fleet-rates/",
+    "finalUrl": "https://airporttransfersingapore.com/fleet-rates/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:03.917Z",
+    "sha256": "8ea21fe42aaddea0a5608c578bc4bcc2be3f1a7ed1f275ff32209ec8981a97e8",
+    "mode": "verified-primary-excerpts",
+    "text": "Premium MPVS$90S$80S$85/hr\nExecutive MPVS$105S$95S$95/hr\nBusiness VanS$115S$105S$92/hr\nMinibusS$130S$110S$98/hr\n40-seater coachS$220S$200S$165/hr\nPremium MPV5 seats3 passengers + 3 large casesCouples and solo business travel\nExecutive MPV6 seats4 passengers + 4 large casesFamilies and client arrivals\nBusiness Van7 seats6 passengers + 6 large casesLong-haul arrivals and golf trips\nMinibus13 seats8 passengers + 8 large casesDelegations, crews and event teams\n40-seater coach40 seats40 passengers + 35 large casesConferences and full-manifest movements\nAdditional waiting starts from S$20 per 15 minutes and may vary by vehicle type. We confirm any charge with you before it is added.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Premium MPVS$90S$80S$85/hr"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive MPVS$105S$95S$95/hr"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business VanS$115S$105S$92/hr"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "MinibusS$130S$110S$98/hr"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "40-seater coachS$220S$200S$165/hr"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Premium MPV5 seats3 passengers + 3 large casesCouples and solo business travel"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive MPV6 seats4 passengers + 4 large casesFamilies and client arrivals"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business Van7 seats6 passengers + 6 large casesLong-haul arrivals and golf trips"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Minibus13 seats8 passengers + 8 large casesDelegations, crews and event teams"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "40-seater coach40 seats40 passengers + 35 large casesConferences and full-manifest movements"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Additional waiting starts from S$20 per 15 minutes and may vary by vehicle type. We confirm any charge with you before it is added."
+      }
+    ],
+    "fullTextSha256": "35a8541fceabad92a1c685abe32cc7738326d98f9df3909b73a88f4298fa14ea",
+    "fullTextLength": 4130
+  },
+  "https://airporttransfersingapore.com/": {
+    "url": "https://airporttransfersingapore.com/",
+    "finalUrl": "https://airporttransfersingapore.com/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:35:58.792Z",
+    "sha256": "94318fefc9331a084775fc49d4130ab2cc74f1a63699a8bb5da8b7023f26f3c2",
+    "mode": "verified-primary-excerpts",
+    "text": "Tolls, ERP charges, airport entry, parking, fuel and GST are included in the quoted rates below. The fare shown in the quotation is agreed before travel rather than calculated by a meter at the end of the journey.\nA family landing after a long-haul flight is managing tired children, checked cases and often a pushchair at the same time. The vehicle is sized at booking against the actual bag count, and any requested child seats are fitted before the driver leaves for the airport.\nLeaving child-seat requirements until travel day. Share each child’s age and approximate weight when booking so the appropriate restraint can be prepared.\nAllow 24 hours for a standard weekday transfer, 48 hours for larger vehicles or child seats, 72 hours for cruise days, and longer for major events or multi-vehicle work.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Tolls, ERP charges, airport entry, parking, fuel and GST are included in the quoted rates below. The fare shown in the quotation is agreed before travel rather than calculated by a meter at the end of the journey."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "A family landing after a long-haul flight is managing tired children, checked cases and often a pushchair at the same time. The vehicle is sized at booking against the actual bag count, and any requested child seats are fitted before the driver leaves for the airport."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Leaving child-seat requirements until travel day. Share each child’s age and approximate weight when booking so the appropriate restraint can be prepared."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Allow 24 hours for a standard weekday transfer, 48 hours for larger vehicles or child seats, 72 hours for cruise days, and longer for major events or multi-vehicle work."
+      }
+    ],
+    "fullTextSha256": "ae0f7c1127ee38b173bc0f40615a44cd2cbafcf834c4deac4947d6aa3785cde5",
+    "fullTextLength": 22754
+  },
+  "https://airporttransfersingapore.com/services/changi-airport-transfers/": {
+    "url": "https://airporttransfersingapore.com/services/changi-airport-transfers/",
+    "finalUrl": "https://airporttransfersingapore.com/services/changi-airport-transfers/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:06.359Z",
+    "sha256": "b3aede0184f559f13dc3a3555aed4f3ec0ea8f5a03ea010b5fb3964b3bba6d5d",
+    "mode": "verified-primary-excerpts",
+    "text": "Lead time24 hours standard; 48 hours for a Business Van, Minibus, coach or child seats\nOutside the arrival hall exit, at the glass doors nearest your flight's baggage belt, holding a name board. You get a photo of the spot when you land.\nStraightforward bookings should be cancelled at least 24 hours before pickup. Event, multi-vehicle, coach and other special arrangements follow the cancellation terms stated in the quotation.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Lead time24 hours standard; 48 hours for a Business Van, Minibus, coach or child seats"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Outside the arrival hall exit, at the glass doors nearest your flight's baggage belt, holding a name board. You get a photo of the spot when you land."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Straightforward bookings should be cancelled at least 24 hours before pickup. Event, multi-vehicle, coach and other special arrangements follow the cancellation terms stated in the quotation."
+      }
+    ],
+    "fullTextSha256": "5f88c429d78c9170af4e17943465ef5e3ffe4430a7792118e54ff2b75c4537ea",
+    "fullTextLength": 21775
+  },
+  "https://www.limousineservicesingapore.com/rates/": {
+    "url": "https://www.limousineservicesingapore.com/rates/",
+    "finalUrl": "https://www.limousineservicesingapore.com/rates/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:03.635Z",
+    "sha256": "22750126a20fcd693858837956c291ea443a31fd9f1a9a968cae73da826231cf",
+    "mode": "verified-primary-excerpts",
+    "text": "Premium MPVS$98S$87\nExecutive MPVS$114S$103\nBusiness Class VanS$124S$114\nMinibusS$141S$119\n40-seater coachS$238S$216\nA limousine in Singapore costs from S$90 an hour with a 3-hour minimum, or from S$87 for a one-way airport or cruise terminal departure. Rolls-Royce and Mercedes-Maybach are S$1,290 an hour with a 6-hour minimum. These are all-in prices: ERP, fuel, tolls, parking and GST are included.\nChild seat: S$22 per seat per trip\nLate night (23:00 to 06:59): from S$23 per trip, depending on the vehicle\nExtra stop on the way: S$20, with 15 minutes included\nWaiting past the free window: S$25 per 15 minutes",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Premium MPVS$98S$87"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive MPVS$114S$103"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business Class VanS$124S$114"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "MinibusS$141S$119"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "40-seater coachS$238S$216"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "A limousine in Singapore costs from S$90 an hour with a 3-hour minimum, or from S$87 for a one-way airport or cruise terminal departure. Rolls-Royce and Mercedes-Maybach are S$1,290 an hour with a 6-hour minimum. These are all-in prices: ERP, fuel, tolls, parking and GST are included."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Child seat: S$22 per seat per trip"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Late night (23:00 to 06:59): from S$23 per trip, depending on the vehicle"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Extra stop on the way: S$20, with 15 minutes included"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Waiting past the free window: S$25 per 15 minutes"
+      }
+    ],
+    "fullTextSha256": "d97feb21c070e823a8bee7aeb40937a5b5efa8768cd3fceb0a76034d4cc03343",
+    "fullTextLength": 5911
+  },
+  "https://www.limousineservicesingapore.com/terms/": {
+    "url": "https://www.limousineservicesingapore.com/terms/",
+    "finalUrl": "https://www.limousineservicesingapore.com/terms/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:04.045Z",
+    "sha256": "e84bfcea42e1a88d9bc76d0272e051413a1004f8854bcefdf84ac0486bd9f13f",
+    "mode": "verified-primary-excerpts",
+    "text": "The published standard policy allows cancellation without charge when received at least three days before the job. For a cancellation inside that period, or for a special-event, multiple-vehicle or other individually quoted booking, follow the cancellation terms in the accepted quotation or confirmation. If the quotation does not explain a charge, contact us before cancelling so we can clarify it.\nPlease give at least 48 hours’ notice for a change to the time, pickup, drop-off or vehicle. A change is effective only after we confirm it in writing. The full quoted fare applies to a no-show unless the booking confirmation states otherwise.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "The published standard policy allows cancellation without charge when received at least three days before the job. For a cancellation inside that period, or for a special-event, multiple-vehicle or other individually quoted booking, follow the cancellation terms in the accepted quotation or confirmation. If the quotation does not explain a charge, contact us before cancelling so we can clarify it."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Please give at least 48 hours’ notice for a change to the time, pickup, drop-off or vehicle. A change is effective only after we confirm it in writing. The full quoted fare applies to a no-show unless the booking confirmation states otherwise."
+      }
+    ],
+    "fullTextSha256": "3d2d90014369e717c62d1dcf4531ce11600e17d03a6d10d4ad28a8d64bd0a76f",
+    "fullTextLength": 6049
+  },
+  "https://www.limousineservicesingapore.com/": {
+    "url": "https://www.limousineservicesingapore.com/",
+    "finalUrl": "https://www.limousineservicesingapore.com/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:35:58.416Z",
+    "sha256": "3df7848b2bff3b4af24a4e10dfd09409ff876d1a7669d71a6172fe2106e2d7af",
+    "mode": "verified-primary-excerpts",
+    "text": "Your chauffeur’s details are sent before the job. After you fill in the booking form, we confirm the job and send your chauffeur’s name and contact number ahead of the pickup.\nCall +65 9446 4444 or email bookings@limousineservicesingapore.com with your date, pickup time, pickup address, number of passengers and bags, and the vehicle you want. Our office is open Monday to Friday, 09:00 to 17:00, and replies within 1 working day. Every vehicle is LTA licensed.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Your chauffeur’s details are sent before the job. After you fill in the booking form, we confirm the job and send your chauffeur’s name and contact number ahead of the pickup."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Call +65 9446 4444 or email bookings@limousineservicesingapore.com with your date, pickup time, pickup address, number of passengers and bags, and the vehicle you want. Our office is open Monday to Friday, 09:00 to 17:00, and replies within 1 working day. Every vehicle is LTA licensed."
+      }
+    ],
+    "fullTextSha256": "bd48985c4c5eb1e7c5678221210797f60e0c5a967c676c4be50725568c4a9dcb",
+    "fullTextLength": 9648
+  },
+  "https://mysingaporedriver.com/services/airport-transfer/": {
+    "url": "https://mysingaporedriver.com/services/airport-transfer/",
+    "finalUrl": "https://mysingaporedriver.com/services/airport-transfer-singapore/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:07.030Z",
+    "sha256": "7985ea67977e85388ce7ece5002621e5aa2012f409a9a85ee499fe6535df8156",
+    "mode": "verified-primary-excerpts",
+    "text": "Wheelchair Minibuses 2 2 Welcab Vehicles 8 8 Minibuses 14 14 Coasters 40 40 Field Buses\nFirst-Class Minibus 9 9\nPremium MPV 3 3\nWe can provide age-appropriate child seats upon request. Please indicate this under “Additional Requirements” when booking so we can allocate the correct seat. Requirements depend on your child’s height, age, and the vehicle type. If you are unsure, contact us for guidance.\nWe offer wheelchair-accessible vehicles upon request. Please specify whether the wheelchair is foldable and the number of passengers, and we will recommend the appropriate vehicle configuration.\nContact us via live chat, email, or phone. Tell us your group size and luggage, and we’ll recommend the right vehicle (sedan, MPV, van, minibus/bus) and confirm the best pick-up time, eliminating the guess work.\nFor itineraries involving multiple legs, vehicles, or large group coordination, please use the enquiry form or email us. We will provide a customised plan and quotation, including scheduling, routing, and vehicle allocation.\nCoordinated Airport Porter Service\nSkip long queues with VIP fast-track assistance support for a quicker, more private immigration process via the private terminal (CIP), popular with corporate travellers and VIP guests.\nFor Changi Airport (SIN) arrivals, the assigned chauffeur will meet and greet you or your guest at the arrival hall with a personalised name sign, assist with luggage if needed, and bring you straight to the vehicle.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Wheelchair Minibuses 2 2 Welcab Vehicles 8 8 Minibuses 14 14 Coasters 40 40 Field Buses"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "First-Class Minibus 9 9"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Premium MPV 3 3"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "We can provide age-appropriate child seats upon request. Please indicate this under “Additional Requirements” when booking so we can allocate the correct seat. Requirements depend on your child’s height, age, and the vehicle type. If you are unsure, contact us for guidance."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "We offer wheelchair-accessible vehicles upon request. Please specify whether the wheelchair is foldable and the number of passengers, and we will recommend the appropriate vehicle configuration."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Contact us via live chat, email, or phone. Tell us your group size and luggage, and we’ll recommend the right vehicle (sedan, MPV, van, minibus/bus) and confirm the best pick-up time, eliminating the guess work."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "For itineraries involving multiple legs, vehicles, or large group coordination, please use the enquiry form or email us. We will provide a customised plan and quotation, including scheduling, routing, and vehicle allocation."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Coordinated Airport Porter Service"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Skip long queues with VIP fast-track assistance support for a quicker, more private immigration process via the private terminal (CIP), popular with corporate travellers and VIP guests."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "For Changi Airport (SIN) arrivals, the assigned chauffeur will meet and greet you or your guest at the arrival hall with a personalised name sign, assist with luggage if needed, and bring you straight to the vehicle."
+      }
+    ],
+    "fullTextSha256": "da82bd2c770e6bb44c31d1a0bc0e3c0bae8fd271969bb879adcd848d69bf1d1c",
+    "fullTextLength": 20061
+  },
+  "https://mysingaporedriver.com/blog/singapore-airport-transfer-with-kids/": {
+    "url": "https://mysingaporedriver.com/blog/singapore-airport-transfer-with-kids/",
+    "finalUrl": "https://mysingaporedriver.com/blog/singapore-airport-transfer-with-kids/",
+    "status": 200,
+    "checkedAt": "2026-11-19T04:03:24.226Z",
+    "sha256": "b4f1a6f596e091b60947044972dfa77e3bd975298aa41ebd9b425d86e6ec6ec1",
+    "mode": "verified-primary-excerpts",
+    "text": "Infant capsule (0–12 months)\nMany parents request infant seats before travelling because carrying a sleeping baby through the airport is already tiring enough. Due to the size of the child seat, it is only available on our executive business van and first-class minibus vehicle variants.\nToddler (Urban Kanga) is suitable for children aged 9 months to 4 years old. These seats are front-facing and offer more support to toddlers.\nThese seats are available on all our executive vehicle variants.\nBooster Seats For Older Kids (Mifold)\nPickup process: Driver arrives with child seat pre-fitted; 30–45 min from landing to exit\nMeet outside the Arrival Hall, not at the curbside: Our services include a meet-and-greet, where our chauffeur will wait for you at the arrival hall. We advise our customers to look out for their driver with a name sign once they have exited the arrival hall, and not to stray further.\nHave a stroller? It usually comes out at the oversized baggage belt, which can add more time to the baggage claim process.\nLuggage tip: 2 cabin bags ≈ , 1 checked bag in boot space; prams count as oversized",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Infant capsule (0–12 months)"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Many parents request infant seats before travelling because carrying a sleeping baby through the airport is already tiring enough. Due to the size of the child seat, it is only available on our executive business van and first-class minibus vehicle variants."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Toddler (Urban Kanga) is suitable for children aged 9 months to 4 years old. These seats are front-facing and offer more support to toddlers."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "These seats are available on all our executive vehicle variants."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Booster Seats For Older Kids (Mifold)"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Pickup process: Driver arrives with child seat pre-fitted; 30–45 min from landing to exit"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Meet outside the Arrival Hall, not at the curbside: Our services include a meet-and-greet, where our chauffeur will wait for you at the arrival hall. We advise our customers to look out for their driver with a name sign once they have exited the arrival hall, and not to stray further."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Have a stroller? It usually comes out at the oversized baggage belt, which can add more time to the baggage claim process."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Luggage tip: 2 cabin bags ≈ , 1 checked bag in boot space; prams count as oversized"
+      }
+    ],
+    "fullTextSha256": "35878a37f6c6e65fdb1fd507afce18fe08390c26c9ce0bc97140e5d4ea6d1e65",
+    "fullTextLength": 17590
+  },
+  "https://singaporechauffeurservice.com/rates/": {
+    "url": "https://singaporechauffeurservice.com/rates/",
+    "finalUrl": "https://singaporechauffeurservice.com/rates/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:03.265Z",
+    "sha256": "85aa9a4c9a555f11de7dd9a5fe96866669c46df2ca2c4a13abe58302e981fa6d",
+    "mode": "verified-primary-excerpts",
+    "text": "Executive Business Sedan22S$105\nExecutive MPV44S$122\nBusiness Class Van66S$126\nMinibus88S$139\nHourly bookings carry a 3-hour minimum on every class. One free change is allowed up to 12 hours before pickup. Standard bookings can be cancelled without charge up to 48 hours before pickup.\n20–25%",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive Business Sedan22S$105"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive MPV44S$122"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business Class Van66S$126"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Minibus88S$139"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Hourly bookings carry a 3-hour minimum on every class. One free change is allowed up to 12 hours before pickup. Standard bookings can be cancelled without charge up to 48 hours before pickup."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "20–25%"
+      }
+    ],
+    "fullTextSha256": "7c0ea752da306e493623229b16cdc623115fbe6c18d789ecf4ddd01a97f7d4ac",
+    "fullTextLength": 5284
+  },
+  "https://singaporechauffeurservice.com/": {
+    "url": "https://singaporechauffeurservice.com/",
+    "finalUrl": "https://singaporechauffeurservice.com/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:35:58.861Z",
+    "sha256": "22b094f400d07078c7f0481374a054edfbb4bec7a01fefdb32a89b116d0402de",
+    "mode": "verified-primary-excerpts",
+    "text": "enquiries receive a reply within 10 minutes.\nWe reply within 10 minutes during sales hours. Allow 24–48 hours for a standard booking, then receive the vehicle class and confirmed itinerary.\nYour confirmed booking carries the agreed fare and timing. Airport and cruise waiting starts at landing or scheduled arrival; other pickups start at the specified time.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "enquiries receive a reply within 10 minutes."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "We reply within 10 minutes during sales hours. Allow 24–48 hours for a standard booking, then receive the vehicle class and confirmed itinerary."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Your confirmed booking carries the agreed fare and timing. Airport and cruise waiting starts at landing or scheduled arrival; other pickups start at the specified time."
+      }
+    ],
+    "fullTextSha256": "f008829b6df9bbf26ebf0078d49ba601c0b9ae1c423256b2979f3a5ddc072b99",
+    "fullTextLength": 14840
+  },
+  "https://www.hourlychauffeursingapore.com/rates/": {
+    "url": "https://www.hourlychauffeursingapore.com/rates/",
+    "finalUrl": "https://www.hourlychauffeursingapore.com/rates/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:02.309Z",
+    "sha256": "89d3bff5e65a8e9f029c03dfb9a9375af02572e078791399270f3b58c3cd58ab",
+    "mode": "verified-primary-excerpts",
+    "text": "Executive MPV44S$1103 hours\nBusiness Class Van66S$1003 hours\nMinibus88S$1103 hours\nThe Executive Business Sedan at S$95 an hour. With the 3-hour minimum, the shortest booking is S$285.\nYes. ERP, fuel, tolls, parking and GST are all in the hourly rate.\nChild seat: S$20 per seat per trip",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive MPV44S$1103 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business Class Van66S$1003 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Minibus88S$1103 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "The Executive Business Sedan at S$95 an hour. With the 3-hour minimum, the shortest booking is S$285."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Yes. ERP, fuel, tolls, parking and GST are all in the hourly rate."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Child seat: S$20 per seat per trip"
+      }
+    ],
+    "fullTextSha256": "2568b41e8e67bf87e71ec4cb07268b3d531c856c76f54b7b846ff428637bf6ac",
+    "fullTextLength": 4415
+  },
+  "https://www.hourlychauffeursingapore.com/": {
+    "url": "https://www.hourlychauffeursingapore.com/",
+    "finalUrl": "https://www.hourlychauffeursingapore.com/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:35:58.948Z",
+    "sha256": "cded8723f951e8f7c88f05a6375d616829a374d768bcfef1374a62d0bbab351f",
+    "mode": "verified-primary-excerpts",
+    "text": "Book at least 48 hours ahead\nThere’s no waiting charge inside your booked hours, however long you’re in a meeting or a shop.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Book at least 48 hours ahead"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "There’s no waiting charge inside your booked hours, however long you’re in a meeting or a shop."
+      }
+    ],
+    "fullTextSha256": "e5670849cc52e5a4d34df9256bf317cf5bde04f4881987327b3367666dcc48c7",
+    "fullTextLength": 6341
+  },
+  "https://www.hourlychauffeursingapore.com/terms/": {
+    "url": "https://www.hourlychauffeursingapore.com/terms/",
+    "finalUrl": "https://www.hourlychauffeursingapore.com/terms/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:02.526Z",
+    "sha256": "3ba075bcafa34a658f9b52ea6b3a75d25867a3dad6285f8038ed64d4637dceca",
+    "mode": "verified-primary-excerpts",
+    "text": "Cancellations made less than 12 hours before the booking are charged in full. No-shows are charged in full. If you need to cancel earlier, contact us as soon as possible; any booking-specific cancellation terms in your accepted quotation or confirmation apply.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Cancellations made less than 12 hours before the booking are charged in full. No-shows are charged in full. If you need to cancel earlier, contact us as soon as possible; any booking-specific cancellation terms in your accepted quotation or confirmation apply."
+      }
+    ],
+    "fullTextSha256": "c055ebd9995a9a3713144c016c29c881654360fc3bfb4b6acc21d70fe904e39f",
+    "fullTextLength": 4667
+  },
+  "https://blackcarservicesingapore.com/fleet/": {
+    "url": "https://blackcarservicesingapore.com/fleet/",
+    "finalUrl": "https://blackcarservicesingapore.com/fleet/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:18.269Z",
+    "sha256": "b2f019ee445bc1d3db874bb8de2cb79cd534af6a2cad46aef7ce8b51e14037e0",
+    "mode": "verified-primary-excerpts",
+    "text": "Honda StepwagonMPV3S$107S$113S$1004 hours\nToyota VellfireExecutive MPV4S$138S$132S$1194 hours\nMercedes-Benz VianoBusiness Van6 to 7S$125S$144S$1324 hours\nFarizonMinibus8S$138S$163S$1384 hours",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Honda StepwagonMPV3S$107S$113S$1004 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Toyota VellfireExecutive MPV4S$138S$132S$1194 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Mercedes-Benz VianoBusiness Van6 to 7S$125S$144S$1324 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "FarizonMinibus8S$138S$163S$1384 hours"
+      }
+    ],
+    "fullTextSha256": "4ff0363d55d079c3544185b4037c652c83a0ea0e23a103a20456d349f57d5d4f",
+    "fullTextLength": 6459
+  },
+  "https://blackcarservicesingapore.com/airport-black-car/": {
+    "url": "https://blackcarservicesingapore.com/airport-black-car/",
+    "finalUrl": "https://blackcarservicesingapore.com/airport-black-car/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:18.525Z",
+    "sha256": "746a2160ce04d19cfc7737887877c9af732f781fa9da6d96329fc3385e41950e",
+    "mode": "verified-primary-excerpts",
+    "text": "Terminal 1Basement 1, Doors 1 to 6 or 7 to 12\nTerminal 2Level 1, Doors 2 to 7\nTerminal 3Basement 1, Doors 1 to 5\nTerminal 4Level 1, Doors 1 to 3 (private pick-up)\nChangi doesn’t let drivers park or wait at the kerb or at the pick-up points themselves. That’s why your exact meeting arrangement is confirmed in writing before you fly: you’ll know which terminal, which level and which door before you land.\nEvery arrival includes 45 minutes of free waiting after landing. If you expect a long wait (a connecting bag, a pet, an oversized item) tell us in the enquiry; waiting beyond 45 minutes is charged as set out in your quotation.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Terminal 1Basement 1, Doors 1 to 6 or 7 to 12"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Terminal 2Level 1, Doors 2 to 7"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Terminal 3Basement 1, Doors 1 to 5"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Terminal 4Level 1, Doors 1 to 3 (private pick-up)"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Changi doesn’t let drivers park or wait at the kerb or at the pick-up points themselves. That’s why your exact meeting arrangement is confirmed in writing before you fly: you’ll know which terminal, which level and which door before you land."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Every arrival includes 45 minutes of free waiting after landing. If you expect a long wait (a connecting bag, a pet, an oversized item) tell us in the enquiry; waiting beyond 45 minutes is charged as set out in your quotation."
+      }
+    ],
+    "fullTextSha256": "2af9dd5b06860d44f0817574ef36f0af68b82d5cbc72ba9f4cc27e933a8abf37",
+    "fullTextLength": 6118
+  },
+  "https://blackcarservicesingapore.com/terms/": {
+    "url": "https://blackcarservicesingapore.com/terms/",
+    "finalUrl": "https://blackcarservicesingapore.com/terms/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:18.813Z",
+    "sha256": "6bbbb0c57528f313b8b61a8911662425a0afa2d3702bfa2b0ce1da8d651f67c9",
+    "mode": "verified-primary-excerpts",
+    "text": "Enquiries are accepted by email and through the online form. Our team responds within 1 to 2 working days (Singapore time). An automatic email confirms that your enquiry arrived; it does not reserve a car.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Enquiries are accepted by email and through the online form. Our team responds within 1 to 2 working days (Singapore time). An automatic email confirms that your enquiry arrived; it does not reserve a car."
+      }
+    ],
+    "fullTextSha256": "be8b8a8944b77027aeedb9473d3d760dc152fe08a47f0e8983c7812488424902",
+    "fullTextLength": 4051
+  },
+  "https://cartoursingapore.com/airport-layover-car-tours/": {
+    "url": "https://cartoursingapore.com/airport-layover-car-tours/",
+    "finalUrl": "https://cartoursingapore.com/airport-layover-car-tours/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:20.536Z",
+    "sha256": "f280be0666561e7aecd285ebee8fb78acd37a1698755ea7ba1d4a2eae55da10c",
+    "mode": "verified-primary-excerpts",
+    "text": "Shortest layover that worksAbout 7 hours\n2:15 to 3:00Drive back to Changi",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Shortest layover that worksAbout 7 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "2:15 to 3:00Drive back to Changi"
+      }
+    ],
+    "fullTextSha256": "0658f35fa5aa33e8b42833bf8062578aa74fcf209d5ccffe49f54cb67ce8c3bb",
+    "fullTextLength": 7714
+  },
+  "https://cartoursingapore.com/fleet/": {
+    "url": "https://cartoursingapore.com/fleet/",
+    "finalUrl": "https://cartoursingapore.com/fleet/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:03.922Z",
+    "sha256": "cfceb0b5178226b17eb80a44837187ad2a249904ecdd9e366e91de0ec7de8d77",
+    "mode": "verified-primary-excerpts",
+    "text": "Executive MPV6S$105S$420S$132\nVIP Minibus / wheelchair minibus13, or 6 plus 1 wheelchairS$116S$464S$145\nThe VIP Minibus and the wheelchair minibus are the same vehicle at the same rate. In normal layout it seats 13. In wheelchair layout it carries one wheelchair passenger, with the chair open and secured, plus up to 6 others.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive MPV6S$105S$420S$132"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "VIP Minibus / wheelchair minibus13, or 6 plus 1 wheelchairS$116S$464S$145"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "The VIP Minibus and the wheelchair minibus are the same vehicle at the same rate. In normal layout it seats 13. In wheelchair layout it carries one wheelchair passenger, with the chair open and secured, plus up to 6 others."
+      }
+    ],
+    "fullTextSha256": "11bf992ea3653a40df0536836ee0de1c2cef9066afb5aacf24b894af912f6b59",
+    "fullTextLength": 6671
+  },
+  "https://cartoursingapore.com/terms/": {
+    "url": "https://cartoursingapore.com/terms/",
+    "finalUrl": "https://cartoursingapore.com/terms/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:04.289Z",
+    "sha256": "8c00bd213edad6afc8eb21213cf51e19264e05786fd757a021fcc5089af0c2d5",
+    "mode": "verified-primary-excerpts",
+    "text": "Minimum booking4 hours per vehicle, per day\nA booking cancelled less than 48 hours before the pickup time is charged in full.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Minimum booking4 hours per vehicle, per day"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "A booking cancelled less than 48 hours before the pickup time is charged in full."
+      }
+    ],
+    "fullTextSha256": "7d9b3e2e99ccdf31a02b25e6244b4df398a06c12ec65c1b19bddf5fcc714c95a",
+    "fullTextLength": 4940
+  },
+  "https://cartoursingapore.com/tour-guide-service/": {
+    "url": "https://cartoursingapore.com/tour-guide-service/",
+    "finalUrl": "https://cartoursingapore.com/tour-guide-service/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:03.808Z",
+    "sha256": "762afe95702be4e25ba1175cff779685b2793e82449134eb97d161cb8c032902",
+    "mode": "verified-primary-excerpts",
+    "text": "Guides work in English, Chinese, Japanese, Korean, Arabic, Spanish and German. Other languages are available on request, so tell us the language when you enquire and we will confirm whether a guide is free on your date.\nA tour guide service in Singapore puts a licensed guide with you for a fixed block of hours to explain the places you visit. Our guides hold Singapore Tourism Board (STB) tourist guide licences and keep them current through the STB renewal course. You can book a guide on their own, or add one to any private car tour of Singapore so the driver handles the road and the guide handles the story.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Guides work in English, Chinese, Japanese, Korean, Arabic, Spanish and German. Other languages are available on request, so tell us the language when you enquire and we will confirm whether a guide is free on your date."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "A tour guide service in Singapore puts a licensed guide with you for a fixed block of hours to explain the places you visit. Our guides hold Singapore Tourism Board (STB) tourist guide licences and keep them current through the STB renewal course. You can book a guide on their own, or add one to any private car tour of Singapore so the driver handles the road and the guide handles the story."
+      }
+    ],
+    "fullTextSha256": "94edbb614d2e6b212401d65dd42dc6595a0c26f8ed874f8154647b4c58d50186",
+    "fullTextLength": 7506
+  },
+  "https://singaporef1chauffeur.com/f1-airport-transfer/": {
+    "url": "https://singaporef1chauffeur.com/f1-airport-transfer/",
+    "finalUrl": "https://singaporef1chauffeur.com/f1-airport-transfer/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:04.331Z",
+    "sha256": "e64eed42d5add3443c3b6b66daa77f729d7aae603b5731b19ee077aa61d7442d",
+    "mode": "verified-primary-excerpts",
+    "text": "You send your flight number when you book. We track the flight, so the pickup moves with an early or late landing.\nThe driver waits at your flight’s exit inside the arrival hall, holding a name board.\nStandard fares start at S$88 for a Premium MPV departure. An event surcharge of 50% to 250% applies during the F1 period.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "You send your flight number when you book. We track the flight, so the pickup moves with an early or late landing."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "The driver waits at your flight’s exit inside the arrival hall, holding a name board."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Standard fares start at S$88 for a Premium MPV departure. An event surcharge of 50% to 250% applies during the F1 period."
+      }
+    ],
+    "fullTextSha256": "74d16c59bc8bb690d460f603436049456f3c8baab6543f2559f91eb2288d7f24",
+    "fullTextLength": 8373
+  },
+  "https://singaporef1chauffeur.com/": {
+    "url": "https://singaporef1chauffeur.com/",
+    "finalUrl": "https://singaporef1chauffeur.com/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:35:58.956Z",
+    "sha256": "cbed72c767eff7adb4c3f1e2a16e1f925a243ef55037fe3df14b1d143247b1ea",
+    "mode": "verified-primary-excerpts",
+    "text": "You receive your chauffeur’s name and contact number before the first pickup.\nStandard rates start at S$115 an hour for an Executive Business Sedan. An event surcharge of 50% to 250% applies during the F1 period. We confirm the total in writing.\nReplies within one hour during working hours.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "You receive your chauffeur’s name and contact number before the first pickup."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Standard rates start at S$115 an hour for an Executive Business Sedan. An event surcharge of 50% to 250% applies during the F1 period. We confirm the total in writing."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Replies within one hour during working hours."
+      }
+    ],
+    "fullTextSha256": "7566c645694ba02ef5e66f5fd3c0fac91b11e6958c575a700cd932fb5c577cdc",
+    "fullTextLength": 8310
+  },
+  "https://singaporef1chauffeur.com/fleet/": {
+    "url": "https://singaporef1chauffeur.com/fleet/",
+    "finalUrl": "https://singaporef1chauffeur.com/fleet/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:19.091Z",
+    "sha256": "7f1f0f435817b06e8e9d63eda776e1b73bde843fb14016514236739228f0bd42",
+    "mode": "verified-primary-excerpts",
+    "text": "Executive MPV (Toyota Alphard, Vellfire or DENZA D9)44S$1213 hours\nBusiness Class Van (Mercedes-Benz V-Class)66S$1103 hours",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Executive MPV (Toyota Alphard, Vellfire or DENZA D9)44S$1213 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business Class Van (Mercedes-Benz V-Class)66S$1103 hours"
+      }
+    ],
+    "fullTextSha256": "0c274d87f0bb8a086fb9d7cebf2bb6d4edc40eca73978dd411c1e4436ed8f687",
+    "fullTextLength": 5156
+  },
+  "https://corporatecarservicesingapore.com/fleet/": {
+    "url": "https://corporatecarservicesingapore.com/fleet/",
+    "finalUrl": "https://corporatecarservicesingapore.com/fleet/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:20.035Z",
+    "sha256": "53329451f1f4a8ee8d4e37e86add17414c4d38fb7d5bdd6613339c1d415c8ac4",
+    "mode": "verified-primary-excerpts",
+    "text": "Toyota NoahMPV3Airport transfers onlyS$104S$92Per trip\nDenza D9Executive MPV4S$127S$121S$1104 hours\nMercedes-Benz VitoBusiness Van6 to 7S$115S$133S$1214 hours\nToyota HiAceMinibus8S$127S$150S$1274 hours\nCoach49-seat coach49S$207S$253S$2304 hours",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Toyota NoahMPV3Airport transfers onlyS$104S$92Per trip"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Denza D9Executive MPV4S$127S$121S$1104 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Mercedes-Benz VitoBusiness Van6 to 7S$115S$133S$1214 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Toyota HiAceMinibus8S$127S$150S$1274 hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Coach49-seat coach49S$207S$253S$2304 hours"
+      }
+    ],
+    "fullTextSha256": "a08b5d8b0a64567b2a3b6e8717f5b4cfab30aaa2d7984b5d1d16aeecd0738f4a",
+    "fullTextLength": 6777
+  },
+  "https://corporatecarservicesingapore.com/corporate-airport-transfer/": {
+    "url": "https://corporatecarservicesingapore.com/corporate-airport-transfer/",
+    "finalUrl": "https://corporatecarservicesingapore.com/corporate-airport-transfer/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:19.993Z",
+    "sha256": "d20ee327eff08d42eb2cb78db623f4ab3af2f2bb289c48805d1025be0a25c9d6",
+    "mode": "verified-primary-excerpts",
+    "text": "Cost centre or PO reference, if finance needs it on the invoice\nA corporate airport transfer is a Changi pickup or drop-off that a company books for someone else: a director flying in, a client on the morning flight, a new hire arriving for their first week. Our corporate car service in Singapore prices these per trip, from S$92 for a departure in a Toyota Noah, and every arrival includes 75 minutes of free waiting after the flight lands.\nChangi does not allow drivers to park or wait at the kerb or at these pick-up points, so the meeting arrangement for each booking is agreed in advance. We confirm the exact point for your traveller in writing before the day, and you can forward that confirmation straight to them.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Cost centre or PO reference, if finance needs it on the invoice"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "A corporate airport transfer is a Changi pickup or drop-off that a company books for someone else: a director flying in, a client on the morning flight, a new hire arriving for their first week. Our corporate car service in Singapore prices these per trip, from S$92 for a departure in a Toyota Noah, and every arrival includes 75 minutes of free waiting after the flight lands."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Changi does not allow drivers to park or wait at the kerb or at these pick-up points, so the meeting arrangement for each booking is agreed in advance. We confirm the exact point for your traveller in writing before the day, and you can forward that confirmation straight to them."
+      }
+    ],
+    "fullTextSha256": "acf323ec2a4487188c4ba29bf3ef974a918ba42239ad55285eca2740e50bcfc6",
+    "fullTextLength": 7460
+  },
+  "https://corporatecarservicesingapore.com/terms/": {
+    "url": "https://corporatecarservicesingapore.com/terms/",
+    "finalUrl": "https://corporatecarservicesingapore.com/terms/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:20.702Z",
+    "sha256": "e031ad297320eb00898b33329467ab2179c8d185152ece5299f13ba42c1faf7e",
+    "mode": "verified-primary-excerpts",
+    "text": "Corporate invoicing is available. Payment dates, invoice details, billing cycle, credit terms and eligibility are agreed in writing during booking. No credit terms apply unless they have been agreed.\nBookings are arranged through the website enquiry form or by email. We aim to respond within one day (Singapore time). An automatic email confirms that your enquiry reached us; it is not a booking confirmation.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Corporate invoicing is available. Payment dates, invoice details, billing cycle, credit terms and eligibility are agreed in writing during booking. No credit terms apply unless they have been agreed."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Bookings are arranged through the website enquiry form or by email. We aim to respond within one day (Singapore time). An automatic email confirms that your enquiry reached us; it is not a booking confirmation."
+      }
+    ],
+    "fullTextSha256": "42db90d875a4ef9709f87b9c38b0a123c8c256535c949845735be4d88ca3b021",
+    "fullTextLength": 4719
+  },
+  "https://limomaxicabs.com/": {
+    "url": "https://limomaxicabs.com/",
+    "finalUrl": "https://limomaxicabs.com/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:35:59.387Z",
+    "sha256": "91a2b73230bc41db7922db8074c36425433212db65a9cc4ddb0c95782f3a5629",
+    "mode": "verified-primary-excerpts",
+    "text": "LIMO MAXI CABS PTE LTD REG NO 201508119W\nOur Minivan 9 Seater is an option if you want a slightly bigger ride than the maxicab 7 Seater. Toyota Hiace Commuter Highroof 9 Seater option can fit up to 6 big luggage while accommodating 9 passengers.\n13 PASSENGERS LUGGAGE CAPACITY 10 x 28″ LUGGAGE WITH 9 PASSENGERS\n23 PASSENGERS LUGGAGE CAPACITY 10 x 24″ LUGGAGE WITH 15 PASSENGERS\nMITSUBISHI ROSA 23 SEATER\n7 PASSENGERS LUGGAGE CAPACITY 6 x 28″ LUGGAGE ONE WAY TRANSFER $60 ARRIVAL (AIRPORT / CRUISE) $70\n6 PASSENGERS LUGGAGE CAPACITY 4 x 28″ LUGGAGE ONE WAY TRANSFER $65 ARRIVAL (AIRPORT / CRUISE) $75\n9 PASSENGERS LUGGAGE CAPACITY 6 x 28″ LUGGAGE ONE WAY TRANSFER $65 ARRIVAL (AIRPORT / CRUISE) $75\n13 PASSENGERS LUGGAGE CAPACITY 10 x 28″ LUGGAGE WITH 9 PASSENGERS ONE WAY TRANSFER $75 ARRIVAL (AIRPORT / CRUISE) $85\nARRIVAL (AIRPORT / CRUISE) $120\nNeed something bigger than a maxi cab? Booking our minivan or minibus will be a great choice if you have a lot more company and luggage. Baby seats or child seats are available upon advance request. We understand having babies or toddlers on holiday can be very challenging.\nWAITING TIME $10 PER 15-MINUTES BLOCK\nMIDNIGHT SURCHARGE $15 TRIP START OR END FROM 2330HRS TO 0559HRS\nPrefer going cashless? Not to worry. We at Limo Maxi Cabs accept other payment modes upon request. For all credit payments, an admin fee of 10% of the total charge applies.\n121 PAYA LEBAR WAY SINGAPORE 381121",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "LIMO MAXI CABS PTE LTD REG NO 201508119W"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Our Minivan 9 Seater is an option if you want a slightly bigger ride than the maxicab 7 Seater. Toyota Hiace Commuter Highroof 9 Seater option can fit up to 6 big luggage while accommodating 9 passengers."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "13 PASSENGERS LUGGAGE CAPACITY 10 x 28″ LUGGAGE WITH 9 PASSENGERS"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "23 PASSENGERS LUGGAGE CAPACITY 10 x 24″ LUGGAGE WITH 15 PASSENGERS"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "MITSUBISHI ROSA 23 SEATER"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "7 PASSENGERS LUGGAGE CAPACITY 6 x 28″ LUGGAGE ONE WAY TRANSFER $60 ARRIVAL (AIRPORT / CRUISE) $70"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "6 PASSENGERS LUGGAGE CAPACITY 4 x 28″ LUGGAGE ONE WAY TRANSFER $65 ARRIVAL (AIRPORT / CRUISE) $75"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "9 PASSENGERS LUGGAGE CAPACITY 6 x 28″ LUGGAGE ONE WAY TRANSFER $65 ARRIVAL (AIRPORT / CRUISE) $75"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "13 PASSENGERS LUGGAGE CAPACITY 10 x 28″ LUGGAGE WITH 9 PASSENGERS ONE WAY TRANSFER $75 ARRIVAL (AIRPORT / CRUISE) $85"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "ARRIVAL (AIRPORT / CRUISE) $120"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Need something bigger than a maxi cab? Booking our minivan or minibus will be a great choice if you have a lot more company and luggage. Baby seats or child seats are available upon advance request. We understand having babies or toddlers on holiday can be very challenging."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "WAITING TIME $10 PER 15-MINUTES BLOCK"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "MIDNIGHT SURCHARGE $15 TRIP START OR END FROM 2330HRS TO 0559HRS"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Prefer going cashless? Not to worry. We at Limo Maxi Cabs accept other payment modes upon request. For all credit payments, an admin fee of 10% of the total charge applies."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "121 PAYA LEBAR WAY SINGAPORE 381121"
+      }
+    ],
+    "fullTextSha256": "b60c7dd97f2e4cd34d083eb7d09c29bbd085fd4bfdd810aac3a2c9521c0973fb",
+    "fullTextLength": 13528
+  },
+  "https://limomaxicabs.com/airport-arrival/": {
+    "url": "https://limomaxicabs.com/airport-arrival/",
+    "finalUrl": "https://limomaxicabs.com/airport-arrival/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:20.397Z",
+    "sha256": "25f0446a118f3bb5e502b89e52067c9bcab5be98e965d70ed97dac7e32620eb9",
+    "mode": "verified-primary-excerpts",
+    "text": "ARRIVAL (AIRPORT / CRUISE) $80",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "ARRIVAL (AIRPORT / CRUISE) $80"
+      }
+    ],
+    "fullTextSha256": "cf06a309a8fdc80cd54078e83427ef04a3a849b13cd94f602bd94aabed843427",
+    "fullTextLength": 3551
+  },
+  "https://zimmizlimousine.com/": {
+    "url": "https://zimmizlimousine.com/",
+    "finalUrl": "https://www.zimmizlimousine.com/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:02.200Z",
+    "sha256": "c0a2e37272112a73173cc6265a0abd6879f4edb96fb87edf967f12ed545b9bee",
+    "mode": "verified-primary-excerpts",
+    "text": "Company UEN : 53445516J\nMon - Sun: 24 Hours\n6 PAX 4 x 28\" Luggage (with 5 Passenger)\n13 PAX 10 x 28\" Luggage (with 9 Passenger)\nMercedes Benz E Class\nCHILD SEAT\n$10 SGD PER SEAT\nOnce booking confirmed, cancellation at 95% refund with a minimum of 7 days' notice, cancellation at 50% refund with a minimum of 3 days' notice. No refund for all other scenarios.\nBusiness Mini Van Vellfire/Alphard COMFORT & STYLISH 6 PAX 4 x 28\" Luggage (with 5 Passenger) POINT TO POINT TRANSFER CITY TOUR TRANSIT AIRPORT ARRIVALS AIRPORT DEPARTURE HOURLY CHAUFFEUR SERVICES SINGAPORE TO MALAYSIA TRANSFER $80 SGD $90 SGD / HOUR $100 SGD $90 SGD $90 SGD / HOUR (3hr Min) Email to Check Prices *Additional Charges and T&Cs stated in the page below BOOK NOW\n$20 SGD START OR END FROM 2300 TO 0600\nOUTSKIRTS AREA\nAddress : 100 Jalan Sultan, #02-07, Sultan Plaza, Singapore 199001\nMercedes Benz S Class\nBusiness Mini Van Vellfire/Alphard\nADDITIONAL $20 SGD",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Company UEN : 53445516J"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Mon - Sun: 24 Hours"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "6 PAX 4 x 28\" Luggage (with 5 Passenger)"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "13 PAX 10 x 28\" Luggage (with 9 Passenger)"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Mercedes Benz E Class"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "CHILD SEAT"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "$10 SGD PER SEAT"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Once booking confirmed, cancellation at 95% refund with a minimum of 7 days' notice, cancellation at 50% refund with a minimum of 3 days' notice. No refund for all other scenarios."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business Mini Van Vellfire/Alphard COMFORT & STYLISH 6 PAX 4 x 28\" Luggage (with 5 Passenger) POINT TO POINT TRANSFER CITY TOUR TRANSIT AIRPORT ARRIVALS AIRPORT DEPARTURE HOURLY CHAUFFEUR SERVICES SINGAPORE TO MALAYSIA TRANSFER $80 SGD $90 SGD / HOUR $100 SGD $90 SGD $90 SGD / HOUR (3hr Min) Email to Check Prices *Additional Charges and T&Cs stated in the page below BOOK NOW"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "$20 SGD START OR END FROM 2300 TO 0600"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "OUTSKIRTS AREA"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Address : 100 Jalan Sultan, #02-07, Sultan Plaza, Singapore 199001"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Mercedes Benz S Class"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "Business Mini Van Vellfire/Alphard"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "ADDITIONAL $20 SGD"
+      }
+    ],
+    "fullTextSha256": "bffba80132d70563d67b9c6fb5cac72db0b72c120f0b7789c76945cd4c1eb916",
+    "fullTextLength": 3174
+  },
+  "https://www.zimmizlimousine.com/airport-arrival": {
+    "url": "https://www.zimmizlimousine.com/airport-arrival",
+    "finalUrl": "https://www.zimmizlimousine.com/airport-arrival",
+    "status": 200,
+    "checkedAt": "2026-11-19T04:07:38.525Z",
+    "sha256": "d9d6e18a280a441812fb234b9efb0bda7b82fe752f8c67310a1d9103eb09400f",
+    "mode": "verified-primary-excerpts",
+    "text": "RATE $80 SGD\n- Toyota Vellfire / Alphard will be use for the Airport Arrival. - Midnight Surcharges : $20 SGD [11PM - 7AM] - The airport arrival will be subjected to the passenger and luggage capacity of the vehicle.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "RATE $80 SGD"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "- Toyota Vellfire / Alphard will be use for the Airport Arrival. - Midnight Surcharges : $20 SGD [11PM - 7AM] - The airport arrival will be subjected to the passenger and luggage capacity of the vehicle."
+      }
+    ],
+    "fullTextSha256": "7e6ecb84be71de8fd9104adcd82abac1bc2798a09a04781285085b5595f3b1a6",
+    "fullTextLength": 1446
+  },
+  "https://www.astromaxicab.sg/": {
+    "url": "https://www.astromaxicab.sg/",
+    "finalUrl": "https://www.astromaxicab.sg/",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:01.036Z",
+    "sha256": "a3792766c362410d28f15c13d666867db0d3a2234e47dbc5f3a5b33ef37eac17",
+    "mode": "verified-primary-excerpts",
+    "text": "Astro Transports Pte Ltd. 54 Maude Road, # 03-01, Townshend Building Singapore - 208346\nSTANDARD SEDAN 4 SEATER\n6 SEATER ALPHARD / VELLFIRE\nMERCEDES VITO / VIANO 7 SEATER\n13 SEATER MINIBUS\n23 SEATER BUS\n45 SEATER BUS\nastromaxicabs@gmail.com",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "Astro Transports Pte Ltd. 54 Maude Road, # 03-01, Townshend Building Singapore - 208346"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "STANDARD SEDAN 4 SEATER"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "6 SEATER ALPHARD / VELLFIRE"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "MERCEDES VITO / VIANO 7 SEATER"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "13 SEATER MINIBUS"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "23 SEATER BUS"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "45 SEATER BUS"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "astromaxicabs@gmail.com"
+      }
+    ],
+    "fullTextSha256": "f6b9ba8243c60d38a8261dbb68c19c10283e2a246c7c5b6afece70ca613baa18",
+    "fullTextLength": 13656
+  },
+  "https://www.astromaxicab.sg/airport-transfer-in-singapore": {
+    "url": "https://www.astromaxicab.sg/airport-transfer-in-singapore",
+    "finalUrl": "https://www.astromaxicab.sg/airport-transfer-in-singapore",
+    "status": 200,
+    "checkedAt": "2026-11-18T13:36:21.947Z",
+    "sha256": "77a0ca3ce38842b9f85eff76c3a5f3102156412925104c5290a31013a2b0c03b",
+    "mode": "verified-primary-excerpts",
+    "text": "contacting the service provider with your flight details\n1 hour 15 minutes of free waiting time.\n$10 will be charged for every additional 15 minutes.",
+    "blocks": [
+      {
+        "tag": "verified-excerpt",
+        "text": "contacting the service provider with your flight details"
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "1 hour 15 minutes of free waiting time."
+      },
+      {
+        "tag": "verified-excerpt",
+        "text": "$10 will be charged for every additional 15 minutes."
+      }
+    ],
+    "fullTextSha256": "1b8d991de2fc439ebf8a84ccab4a5436fa91b7d51e19a9a6af9f09bbecf24316",
+    "fullTextLength": 12072
+  }
+}

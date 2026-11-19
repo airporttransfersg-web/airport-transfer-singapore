@@ -1,10 +1,14 @@
 ---
 import providers from '../../content/listicle-reviews/APT01/sources.json';
 import screenshots from "../../content/listicle-reviews/APT01/screenshots.json";
+import apt02Providers from '../../content/listicle-reviews/APT02/sources.json';
+import apt02Screenshots from '../../content/listicle-reviews/APT02/screenshots.json';
 import {formatReviewDate} from './post-date';
-interface Props {rank:number;updatedAt:Date|string}
-const {rank,updatedAt}=Astro.props;
-const provider=providers.find(p=>p.rank===rank);
-const captureDate=screenshots.find(p=>p.rank===rank)?.capturedAt??provider?.capturedAt??updatedAt;
+interface Props {rank:number;updatedAt:Date|string;postId?:string}
+const {rank,updatedAt,postId='APT01'}=Astro.props;
+const selectedProviders=postId==='APT02'?apt02Providers:providers;
+const selectedScreenshots=postId==='APT02'?apt02Screenshots:screenshots;
+const provider=selectedProviders.find(p=>p.rank===rank);
+const captureDate=selectedScreenshots.find(p=>p.rank===rank)?.capturedAt??updatedAt;
 ---
 {provider?.image && <figure class="review-provider-home"><img src={provider.image} alt={`${provider.name} homepage, captured ${formatReviewDate(captureDate)}`} width="1200" height="750" loading="lazy"/><figcaption>Homepage, captured <time datetime={new Date(captureDate).toISOString()}>{formatReviewDate(captureDate)}</time>.</figcaption></figure>}

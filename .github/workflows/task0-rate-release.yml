@@ -1,47 +1,64 @@
-name: Approved October rate-card release
+name: ATS listicle release readiness
+# Reuses the existing review/evidence path; never deploys or submits URLs.
 on:
   push:
-    branches: [main]
-    paths: ['.github/workflows/task0-rate-release.yml', 'scripts/october-rate-targets.json']
+    branches: [main, codex/apt02-review]
+    paths: ['.github/workflows/task0-rate-release.yml', 'src/content/listicle-reviews/APT02/**']
 permissions:
   contents: write
+  actions: read
 concurrency:
-  group: october-rate-card-release
+  group: schedule-readiness
   cancel-in-progress: false
 jobs:
   release:
-    if: github.event.head_commit.message == 'Apply approved October 2026 rate card (ATS)' || github.event.head_commit.message == 'Activate approved APT01 publication schedule'
+    if: github.ref == 'refs/heads/codex/apt02-review'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install standalone site dependencies
+      - name: Install dependencies
         run: npm install --no-package-lock
-      - name: Code and SEO gates
+      - name: Code, SEO, factual and release tests
         id: gates
-        run: npm run check && npm run test:listicles && node scripts/verify-listicle-release-builds.mjs && node scripts/verify-october-rates.mjs
-      - name: Existing ATS push workflow deploys this revision
-        run: echo "Waiting for the existing Deploy production site workflow."
-      - name: Verify updated live rates
-        if: github.event.head_commit.message != 'Activate approved APT01 publication schedule'
-        id: live
-        run: node scripts/verify-october-rates.mjs live
-      - name: Record release result without credentials
+        run: |
+          npm run check
+          npm run test:listicles
+          SITE_ENV=production npm run build:production
+          SITE_ENV=production node scripts/verify-production-seo.mjs
+          LISTICLE_RELEASE_TEST_NOW=2026-11-26T23:46:00Z SITE_ENV=production npm run build:production
+          LISTICLE_RELEASE_TEST_NOW=2026-11-26T23:46:00Z SITE_ENV=production node scripts/verify-production-seo.mjs
+          SITE_ENV=staging npm run build
+      - name: Preserve noindex review build
+        uses: actions/upload-artifact@v4
+        with:
+          name: apt02-review-build
+          path: dist
+      - name: Record readiness without credentials
         if: always()
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          DEPLOY_CONFIGURED: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
           GATES: ${{ steps.gates.outcome }}
-          LIVE: ${{ steps.live.outcome }}
-          INDEXCHEX_CONFIGURED: ${{ secrets.INDEXCHEX_API_KEY != '' || secrets.INDEXCHECKR_API_TOKEN != '' }}
+          INDEXCHEX_CONFIGURED: ${{ secrets.INDEXCHEX_API_KEY != '' }}
+          DEPLOY_CONFIGURED: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           node --input-type=module - <<'JS'
           import {readFile,writeFile} from 'node:fs/promises';
-          const schedule=JSON.parse(await readFile('scripts/listicle-schedule.json','utf8'));
-          const build=JSON.parse(await readFile('listicle-build-verification.json','utf8').catch(()=>'null'));
-          const optional=async path=>JSON.parse(await readFile(path,'utf8').catch(()=>'null'));
-          await writeFile('release-evidence.json',JSON.stringify({schedule,build,deployConfigured:process.env.DEPLOY_CONFIGURED==='true',site:"ATS",revision:process.env.GITHUB_SHA,run:`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,gates:process.env.GATES,live:process.env.LIVE,indexchexConfigured:process.env.INDEXCHEX_CONFIGURED==='true',deploy:await optional('deploy-result.json'),verification:await optional('rate-live-result.json'),recordedAt:new Date().toISOString()},null,2));
+          const schedule=JSON.parse(await readFile('scripts/batch2-release.json','utf8'));
+          const audit=JSON.parse(await readFile('src/content/listicle-reviews/APT02/facts-audit.json','utf8'));
+          const r=await fetch(`https://api.github.com/repos/${process.env.GITHUB_REPOSITORY}/actions/workflows/deploy-production.yml`,{headers:{Accept:'application/vnd.github+json',Authorization:`Bearer ${process.env.GITHUB_TOKEN}`,'X-GitHub-Api-Version':'2022-11-28'}});
+          const workflow=r.ok?await r.json():null;
+          await writeFile('schedule-evidence.json',JSON.stringify({site:'airporttransfersingapore.com',postId:'APT02',revision:process.env.GITHUB_SHA,defaultBranch:process.env.DEFAULT_BRANCH,run:`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,gates:process.env.GATES,indexchexConfigured:process.env.INDEXCHEX_CONFIGURED==='true',deployConfigured:process.env.DEPLOY_CONFIGURED==='true',scheduledWorkflow:{httpStatus:r.status,state:workflow?.state??null,path:workflow?.path??null},schedule,factAudit:{complete:audit.complete,bodySha256:audit.bodySha256,baselineSha256:audit.baselineSha256,factRecords:audit.factRecords,carrierCount:audit.carrierCount},dailyCronUTC:'10 0 * * *',dailyTimeSGT:'08:10',refreshEnabled:false,recordedAt:new Date().toISOString()},null,2)+'\n');
           JS
-          node scripts/record-schedule-evidence.mjs release-evidence.json
+          node scripts/record-schedule-evidence.mjs schedule-evidence.json
+      - name: Require readiness before main promotion
+        run: |
+          node --input-type=module - <<'JS'
+          import {readFile} from 'node:fs/promises';
+          const r=JSON.parse(await readFile('schedule-evidence.json','utf8'));
+          if(r.defaultBranch!=='main'||r.gates!=='success'||!r.indexchexConfigured||!r.deployConfigured||r.scheduledWorkflow.state!=='active'||!r.factAudit.complete||!r.schedule.approvedForProduction)throw Error('APT02 release readiness incomplete; inspect boolean/status evidence.');
+          console.log('APT02 gates, complete facts, existing deployment/key and active daily workflow confirmed; no publication or indexing request sent.');
+          JS
